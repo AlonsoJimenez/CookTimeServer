@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="C:\Users\pachopaco70\eclipse-workspace\CookTimeServer\WebContent" targetInArchive="/"/>
+    <dir sourceOnDisk="C:\Users\pachopaco70\eclipse-workspace\CookTimeServer\build\classes" targetInArchive="/WEB-INF/classes"/>
+</archive>

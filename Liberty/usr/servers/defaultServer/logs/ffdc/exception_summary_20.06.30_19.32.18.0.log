@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1    6/30/20 19:32:17:873 CST    6/30/20 19:32:17:873 CST java.lang.StringIndexOutOfBoundsException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.06.30_19.32.17.0.log
+------+------+---------------------------+---------------------------+---------------------------

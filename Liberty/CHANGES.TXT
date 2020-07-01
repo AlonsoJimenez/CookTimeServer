@@ -1,0 +1,19 @@
+OLGH10067 Update JPA to fix EclipseLink bug 618
+OLGH10236 Update JPA to fix EclipseLink bug 558283
+OLGH10240 Update JPA to fix EclipseLink bug 558414 
+OLGH9157 Update Eclipselink 2.6_WAS to ASM 7.2 to support Java 14.
+PH20847 Information disclosure in WebSphere Application Server (CVE-2020-4329)
+PH24423 WITH SCIM-1.0 FEATURE AND LDAP REGISTRY, SCIM QUERIES FOR GROUP MEMBERS DO NOT DELIVER THE DISPLAY NAME FOR GROUP MEMBERS.
+PH25479 JAXRS resource not injecting objects via CDI constructor injection
+PH25650 Message CWWKO0230I is issued even if the Asynchronous I/O support was not activated.
+OLGH10812 Update printSessionManagerConfigForDebug method to include cookieHttpOnly
+OLGH11773 [openidConnectServer-1.0] incorrect http status code for error response invalid_grant
+OLGH11795 EclipseLink: Deliver Bug #561664
+OLGH11882 Missing FunctionMapper
+OLGH11927 Include user name in CWWKS1773E error message TS003412433
+OLGH11977 May get an NPE in URLEncoder.encode when OAuth provder gets bad clientId TS003459997
+OLGH11984 JNDI lookup fails with org.osgi.framework.ServiceException
+OLGH12019 Application MBean status is not updated when application fails to start
+OLGH12024 The JCA SharedPool can leak MCWrapper objects
+OLGH12212 Cached configuration not used in some circumstances
+OLGH12297 Correct JSP 2.3. Feature File
