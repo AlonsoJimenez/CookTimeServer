@@ -23,13 +23,15 @@ public class User implements Comparable<String>{
 		this.email = email;
 		this.password = password;
 	}
+	private static SortAlgorithms sorter = new SortAlgorithms();
 	private boolean isChef;
+	SortingType sortType = SortingType.date;
 	private ArrayList<String> notifications = new ArrayList<String>();
 	private String profileDescription;
 	private int age;
 	private String name;
 	private String lastname;
-	private ArrayList<Integer> myMenu;
+	private ArrayList<Recipe> myMenu;
 	private ArrayList<User> followers = new ArrayList<User>();
 	private ArrayList<User> following = new ArrayList<User>();
     private String email = null;
@@ -132,17 +134,42 @@ public class User implements Comparable<String>{
     	toFollow.receiveNotification("The user " + this.name +" " +this.lastname + " has started following you");
     }
     
-    public void newFeed(int recipeCode) {
+    public void newFeed(Recipe recipeCode) {
     	myMenu.add(recipeCode);
     }
     
     public void newRecipe() {
-    	int codeTemp = Trees.recipeTree.newRecipe();
+    	Recipe codeTemp = Trees.recipeTree.newRecipe();
     	for(User eachUser: followers) {
     		eachUser.newFeed(codeTemp);
     	}
     	this.newFeed(codeTemp);
     }
+    
+    public void arrayBy(SortingType type) {
+    	SortingType temp = this.sortType;
+    	this.sortType = type;
+    	if(type == SortingType.stars) {
+    		this.myMenu = sorter.quickSort(myMenu);
+    	}else if(type == SortingType.date) {
+    		this.myMenu = sorter.bubbleSort(myMenu);
+    	}else if(type == SortingType.defaultType){
+    		this.sortType = temp;
+    		this.myMenu = sorter.insertionSort(myMenu, temp);
+    	}else {
+    		this.myMenu = sorter.radixSort(myMenu);
+    	}
+    }
+    
+    public JsonObject getRecipeOrganized(SortingType type) {
+    	JsonArrayBuilder builder = Json.createArrayBuilder();
+    	arrayBy(type);
+    	for(Recipe recipe : myMenu) {
+			builder.add(recipe.createJson());
+		}
+		return Json.createObjectBuilder().add("recipes", builder.build()).build();
+    }
+    
     
 
 	

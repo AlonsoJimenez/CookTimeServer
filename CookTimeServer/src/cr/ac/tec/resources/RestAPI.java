@@ -11,7 +11,6 @@ public class RestAPI extends Application {
 	@Override
 	public Set<Class<?>> getClasses(){
 		Set<Class<?>> classList = new HashSet<>();
-		classList.add(Login.class);
 		return classList;
 	}	
 
