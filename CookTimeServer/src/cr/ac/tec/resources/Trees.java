@@ -6,4 +6,5 @@ public class Trees {
 	public static BinaryTree profileTree = new BinaryTree();
 	public static AVLTree recipeTree = new AVLTree();
 	public static SplayTree enterpriceTree= new SplayTree();
+	
 }

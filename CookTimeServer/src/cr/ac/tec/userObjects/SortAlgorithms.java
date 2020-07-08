@@ -44,16 +44,14 @@ public class SortAlgorithms {
 		return begin+1;
 	}
 	
-	public ArrayList<Recipe> radixSort(){
-		
-	}
+	
 	
 	private int getNumber(SortingType type, Recipe recipe) {
 		if(type == SortingType.date) {
 			return recipe.getDay();
 		}else if(type == SortingType.difficulty) {
 			return recipe.getDifficulty();
-		}else (type == SortingType.stars) {
+		}else{
 			return recipe.getStars();
 		}
 	}
@@ -72,6 +70,62 @@ public class SortAlgorithms {
         return returnList;
 	}
 	
+	
+	public Integer findMax(ArrayList<Recipe> ar){
+        int max = ar.get(0).getDifficulty();
+        for(int temp = 1; temp < ar.size(); temp++){
+            if(max < ar.get(temp).getDifficulty()){
+                max = ar.get(temp).getDifficulty();
+            }
+        }
+        return max;
+    }
+
+    public ArrayList<Recipe> countingSort(ArrayList<Recipe> ar, int power){
+        ArrayList<Recipe> output = new ArrayList<>();
+
+        ArrayList<Integer> count = new ArrayList<>();
+
+        for (int i = 0; i <= 9; ++i) {
+            count.add(0);
+        }
+
+        for (int i = 0; i < ar.size(); ++i) {
+            output.add(new Recipe());
+        }
+
+        //
+        for (int i = 0; i < ar.size(); ++i) {
+            count.set((ar.get(i).getDifficulty()/power)%10, count.get((ar.get(i).getDifficulty()/power)%10)+1);
+        }
+
+        for (int i = 1; i < count.size(); ++i) {
+            count.set(i, count.get(i) + count.get(i-1));
+        }
+
+        for (int i = ar.size()-1; i >= 0; i--) {
+            output.set(count.get(((ar.get(i).getDifficulty()/power)%10))-1, ar.get(i));
+            count.set((ar.get(i).getDifficulty()/power)%10, count.get((ar.get(i).getDifficulty()/power)%10)-1);
+        }
+
+        return output;
+    }
+
+    
+    
+    public ArrayList<Recipe> radixSort(ArrayList<Recipe> ar){
+        int max = findMax(ar);
+
+        for(int cont = 0; max/(int)Math.pow(10, cont) >0; cont ++){
+            if(cont < 1){
+                ar = countingSort(ar, 1);
+            }else
+
+            ar = countingSort(ar, (int)Math.pow(10, cont));
+        }
+
+        return ar;
+    }
 	
 	
 }

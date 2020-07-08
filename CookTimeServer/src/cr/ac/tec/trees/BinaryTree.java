@@ -10,6 +10,10 @@ import cr.ac.tec.userObjects.User;
 public class BinaryTree {
     Node root = new Node(null);
     
+    public void writeFile() {
+    	
+    }
+    
     public void createUser(String name, String lastname, String email, int age, String password) throws NoSuchAlgorithmException {
     	MessageDigest hashPassword = MessageDigest.getInstance("MD5");
     	hashPassword.update(password.getBytes());

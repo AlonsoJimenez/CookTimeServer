@@ -12,11 +12,8 @@ import cr.ac.tec.userObjects.User;
 public class Login {
 	@GET 
 	public Response getProfile(@QueryParam("username") String username, @QueryParam("password") String password) {
-		BinaryTree m = new BinaryTree();
-		User juan 	= new User("juan","m");
-		m.insert(juan);
-		User temp = m.find(username);
-		return loginAnalizer(temp, password);
+		
+		return ;
 	}
 	
 	private Response loginAnalizer(User profile, String password) {

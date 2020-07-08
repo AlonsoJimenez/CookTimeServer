@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
-
 import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
@@ -23,8 +23,10 @@ public class User implements Comparable<String>{
 		this.email = email;
 		this.password = password;
 	}
+	
+	private byte[] imageBytes;
 	private static SortAlgorithms sorter = new SortAlgorithms();
-	private boolean isChef;
+	private boolean isChef = false;
 	SortingType sortType = SortingType.date;
 	private ArrayList<String> notifications = new ArrayList<String>();
 	private String profileDescription;
@@ -37,13 +39,6 @@ public class User implements Comparable<String>{
     private String email = null;
     private String password = null;
     
-    private JsonArray ListStringToJson (ArrayList<String> list) {
-    	JsonArrayBuilder arrayJson = Json.createArrayBuilder();
-    	for(String pointer: list) {
-    		arrayJson.add(pointer);
-    	}
-    	return arrayJson.build();
-    }
     
     private JsonArray ListUserToJson (ArrayList<User> list) {
     	JsonArrayBuilder arrayJson = Json.createArrayBuilder();
@@ -52,6 +47,11 @@ public class User implements Comparable<String>{
     	}
     	return arrayJson.build();
     }
+    
+    public void setImage(String bytes) {
+    	imageBytes = Base64.getDecoder().decode(bytes);
+    }
+    
     public  String getName() {
     	return this.name;
     }
@@ -106,9 +106,12 @@ public class User implements Comparable<String>{
     public  JsonObject getUserJSON()  {
         return Json.createObjectBuilder().add("email", email).
         		add("name",name).
+        		add("isChef", Boolean.toString(isChef)).
         		add("lastname", lastname).
         		add("age", Integer.toString(age)).
         		add("followers", ListUserToJson(this.followers)).
+        		add("following", ListUserToJson(this.following)).
+        		add("profilePicture", Base64.getEncoder().encodeToString(imageBytes)).
         		add("profileDescription", profileDescription).build();
     }
 
@@ -136,6 +139,7 @@ public class User implements Comparable<String>{
     
     public void newFeed(Recipe recipeCode) {
     	myMenu.add(recipeCode);
+    	this.arrayBy(SortingType.defaultType);
     }
     
     public void newRecipe() {
@@ -168,6 +172,16 @@ public class User implements Comparable<String>{
 			builder.add(recipe.createJson());
 		}
 		return Json.createObjectBuilder().add("recipes", builder.build()).build();
+    }
+    
+    
+    
+    public JsonObject getMenu() {
+    	JsonArrayBuilder builder = Json.createArrayBuilder();
+    	for(Recipe recipe : myMenu) {
+    		builder.add(recipe.createJson());
+    	}
+    	return Json.createObjectBuilder().add("menu", builder.build()).build();
     }
     
     
