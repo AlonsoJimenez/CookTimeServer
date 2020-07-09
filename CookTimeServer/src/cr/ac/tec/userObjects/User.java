@@ -3,6 +3,8 @@ package cr.ac.tec.userObjects;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
@@ -11,35 +13,37 @@ import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
+import javax.xml.bind.DatatypeConverter;
 
 import cr.ac.tec.resources.Trees;
 
-public class User implements Comparable<String>{
+public class User {
 	
-	public User(String email, String password, String name, String lastname, int age){
+	public User(String email, String name, String lastname, int age){
 		this.age = age;
 		this.name = name;
 		this.lastname = lastname;
 		this.email = email;
-		this.password = password;
+		
 	}
 	
-	private byte[] imageBytes;
 	private static SortAlgorithms sorter = new SortAlgorithms();
-	private boolean isChef = false;
 	SortingType sortType = SortingType.date;
+	private boolean isChef = false;
 	private ArrayList<String> notifications = new ArrayList<String>();
+	private String imageBytes;
 	private String profileDescription;
 	private int age;
 	private String name;
 	private String lastname;
 	private ArrayList<Recipe> myMenu;
 	private ArrayList<User> followers = new ArrayList<User>();
+	private ArrayList<Enterprise> companies = new ArrayList<Enterprise>();
 	private ArrayList<User> following = new ArrayList<User>();
     private String email = null;
     private String password = null;
     
-    
+    /*
     private JsonArray ListUserToJson (ArrayList<User> list) {
     	JsonArrayBuilder arrayJson = Json.createArrayBuilder();
     	for(User pointer: list) {
@@ -47,86 +51,83 @@ public class User implements Comparable<String>{
     	}
     	return arrayJson.build();
     }
+    */
     
-    public void setImage(String bytes) {
-    	imageBytes = Base64.getDecoder().decode(bytes);
-    }
     
     public  String getName() {
     	return this.name;
+    }
+    
+    public String getLastName() {
+    	return this.lastname;
     }
 
     public String getPassword() {
     	return this.password;
     }
     
-    public void setPassword (String password) {
-    	this.password = password;
+    public String getEmail() {
+    	return this.email;
+    }
+    
+    public ArrayList<User> getFollowers() {
+    	return this.followers;
+    }
+    
+    public ArrayList<User> getFollowing() {
+    	return this.following;
+    }
+    
+    public ArrayList<Enterprise> getCompanies() {
+    	return this.companies;
+    }
+    
+    public ArrayList<Recipe> getMyMenu() {
+    	return this.myMenu;
+    }
+    
+    public boolean getIsChef() {
+    	return this.isChef;
+    }
+    
+    public String getProfileDescription() {
+    	return this.profileDescription;
+    }
+    
+    public String getImageBytes() {
+    	return this.imageBytes;
+    }
+    
+    public int getAge() {
+    	return this.age;
+    }
+    
+    public ArrayList<String> getNotifications(){
+    	return this.notifications;
+    }
+    
+    
+    public void setImageBytes(String bytes) {
+    	imageBytes = bytes;
+    }
+    
+    public void setPassword (String password) throws NoSuchAlgorithmException {
+    	MessageDigest hashPassword = MessageDigest.getInstance("MD5");
+    	hashPassword.update(password.getBytes());
+    	String encryptedPassword = DatatypeConverter.printHexBinary(hashPassword.digest());
+    	this.password = encryptedPassword;
     }
     
     public void setEmail(String email) {
     	this.email = email;
     }
     
-    public String getEmail() {
-    	return this.email;
-    }
-    
-    public JsonObject checkNotifications(){
-    	if(notifications.isEmpty()) {
-    		return null;
-    	}else {
-    		JsonArrayBuilder notifcationsArray = Json.createArrayBuilder();
-    		JsonObjectBuilder notify = Json.createObjectBuilder();
-    		for(String note: notifications) {
-    			notifcationsArray.add(note);
-    		}
-    		notifications.clear();
-    		return notify.add("notifications", notifcationsArray.build()).build();
-    	}
-    }
     
     public void receiveNotification(String description) {
     	this.notifications.add(description);
     }
     
-    public int compareTo (String compare) {
-        for(int index = 0; index < this.email.length() ; index++) {
-        	if(index <= compare.length()) {
-        		return 1;
-        	}
-            if(Character.getNumericValue(compare.charAt(index))>Character.getNumericValue(this.email.charAt(index))) {
-                return -1;
-            }else if(Character.getNumericValue(compare.charAt(index))<Character.getNumericValue(this.email.charAt(index))) {
-                return 1;
-            }
-        }return 0;
-    }
-    
-    public  JsonObject getUserJSON()  {
-        return Json.createObjectBuilder().add("email", email).
-        		add("name",name).
-        		add("isChef", Boolean.toString(isChef)).
-        		add("lastname", lastname).
-        		add("age", Integer.toString(age)).
-        		add("followers", ListUserToJson(this.followers)).
-        		add("following", ListUserToJson(this.following)).
-        		add("profilePicture", Base64.getEncoder().encodeToString(imageBytes)).
-        		add("profileDescription", profileDescription).build();
-    }
-
-    public  String getUserString() {
-        String jsonString = null;
-        try(Writer writer = new StringWriter()) {
-            Json.createWriter(writer).write(getUserJSON());
-            jsonString = writer.toString();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            jsonString = "User does not exist";
-        }
-        return jsonString;
-    }
-    
+        
     public void setNewFollower(User follower) {
     	this.followers.add(follower);
     }
@@ -142,13 +143,14 @@ public class User implements Comparable<String>{
     	this.arrayBy(SortingType.defaultType);
     }
     
-    public void newRecipe() {
-    	Recipe codeTemp = Trees.recipeTree.newRecipe();
+    
+    public void newRecipe(Recipe codeTemp) {
     	for(User eachUser: followers) {
     		eachUser.newFeed(codeTemp);
     	}
     	this.newFeed(codeTemp);
     }
+    
     
     public void arrayBy(SortingType type) {
     	SortingType temp = this.sortType;
@@ -165,6 +167,39 @@ public class User implements Comparable<String>{
     	}
     }
     
+    public void createEnterprise(Enterprise company) {
+    	company.addMembers(this);
+    	this.addCompany(company);
+    }
+    
+    public void addCompany(Enterprise company) {
+    	this.companies.add(company);
+    }
+    
+    
+    /*
+    public JsonObject getMenu() {
+    	JsonArrayBuilder builder = Json.createArrayBuilder();
+    	for(Recipe recipe : myMenu) {
+    		builder.add(recipe.createJson());
+    	}
+    	return Json.createObjectBuilder().add("menu", builder.build()).build();
+    }
+    */
+    public JsonObject checkNotifications(){
+    	if(notifications.isEmpty()) {
+    		return null;
+    	}else {
+    		JsonArrayBuilder notifcationsArray = Json.createArrayBuilder();
+    		JsonObjectBuilder notify = Json.createObjectBuilder();
+    		for(String note: notifications) {
+    			notifcationsArray.add(note);
+    		}
+    		notifications.clear();
+    		return notify.add("notifications", notifcationsArray.build()).build();
+    	}
+    }
+    
     public JsonObject getRecipeOrganized(SortingType type) {
     	JsonArrayBuilder builder = Json.createArrayBuilder();
     	arrayBy(type);
@@ -174,19 +209,20 @@ public class User implements Comparable<String>{
 		return Json.createObjectBuilder().add("recipes", builder.build()).build();
     }
     
-    
-    
-    public JsonObject getMenu() {
-    	JsonArrayBuilder builder = Json.createArrayBuilder();
-    	for(Recipe recipe : myMenu) {
-    		builder.add(recipe.createJson());
-    	}
-    	return Json.createObjectBuilder().add("menu", builder.build()).build();
+    /*
+    public  JsonObject getUserJSON()  {
+        return Json.createObjectBuilder().add("email", email).
+        		add("name",name).
+        		add("isChef", Boolean.toString(isChef)).
+        		add("lastname", lastname).
+        		add("age", Integer.toString(age)).
+        		add("followers", ListUserToJson(this.followers)).
+        		add("following", ListUserToJson(this.following)).
+        		add("profilePicture", Base64.getEncoder().encodeToString(imageBytes)).
+        		add("profileDescription", profileDescription).build();
     }
-    
-    
+    */
 
-	
-    
+     
     
 }

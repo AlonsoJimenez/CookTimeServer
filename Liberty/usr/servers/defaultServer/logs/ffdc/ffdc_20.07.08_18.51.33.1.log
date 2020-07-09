@@ -1,0 +1,1212 @@
+------Start of DE processing------ = [7/8/20 18:51:33:461 CST]
+Exception = java.lang.IllegalStateException
+Source = com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.install
+probeid = 950
+Stack Dump = java.lang.IllegalStateException: java.lang.IllegalStateException: CWWKS0005E: A configuration exception has occurred. No available Authentication service.
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.createPOA(EJBRemoteRuntimeImpl.java:317)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.getEjbAdapter(EJBRemoteRuntimeImpl.java:300)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.bind(EJBRemoteRuntimeImpl.java:185)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.bindSystem(EJBRemoteRuntimeImpl.java:179)
+	at com.ibm.ws.ejbcontainer.osgi.internal.SystemNameSpaceBinderImpl.bindBindings(SystemNameSpaceBinderImpl.java:77)
+	at com.ibm.ws.ejbcontainer.osgi.internal.SystemNameSpaceBinderImpl.bindBindings(SystemNameSpaceBinderImpl.java:24)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterface(AbstractEJBRuntime.java:997)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterfaces(AbstractEJBRuntime.java:935)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterfaces(AbstractEJBRuntime.java:862)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl.bindInterfaces(EJBRuntimeImpl.java:1195)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.startModule(AbstractEJBRuntime.java:524)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl.startSystemModule(EJBRuntimeImpl.java:1133)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBContainerImpl.startSystemModule(EJBContainerImpl.java:232)
+	at com.ibm.ws.management.j2ee.mejb.service.ManagementEJBService.startManagementEJB(ManagementEJBService.java:160)
+	at com.ibm.ws.management.j2ee.mejb.service.ManagementEJBService.setEJBRemoteRuntime(ManagementEJBService.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.invoke(BindMethod.java:42)
+	at org.apache.felix.scr.impl.manager.DependencyManager.doInvokeBindMethod(DependencyManager.java:1882)
+	at org.apache.felix.scr.impl.manager.DependencyManager.invokeBindMethod(DependencyManager.java:1857)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.invokeBindMethod(SingleComponentManager.java:437)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleDynamicCustomizer.addedService(DependencyManager.java:830)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleDynamicCustomizer.addedService(DependencyManager.java:789)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:907)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:893)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:960)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:733)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1091)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1043)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:907)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:893)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:960)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:733)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:667)
+	at org.apache.felix.scr.impl.manager.ComponentFactoryImpl.newInstance(ComponentFactoryImpl.java:131)
+	at com.ibm.ws.transport.iiop.internal.ReadyListenerImpl.readyChanged(ReadyListenerImpl.java:110)
+	at com.ibm.ws.transport.iiop.security.AbstractCsiv2SubsystemFactory$ReadyRegistration.check(AbstractCsiv2SubsystemFactory.java:217)
+	at com.ibm.ws.transport.iiop.security.AbstractCsiv2SubsystemFactory.updateRegistered(AbstractCsiv2SubsystemFactory.java:167)
+	at com.ibm.ws.transport.iiop.server.security.CSIv2SubsystemFactory.updatedSecurityService(CSIv2SubsystemFactory.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$NotResolved.invoke(BaseMethod.java:633)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.invoke(BindMethod.java:42)
+	at org.apache.felix.scr.impl.manager.DependencyManager.invokeUpdatedMethod(DependencyManager.java:1934)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.invokeUpdatedMethod(SingleComponentManager.java:448)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.modifiedService(DependencyManager.java:1118)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.modifiedService(DependencyManager.java:1043)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerModified(ServiceTracker.java:1229)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerModified(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:883)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.setProperties(ServiceRegistrationImpl.java:172)
+	at com.ibm.ws.kernel.service.util.ServiceRegistrationModifier.updateService(ServiceRegistrationModifier.java:143)
+	at com.ibm.ws.kernel.service.util.ServiceRegistrationModifier.update(ServiceRegistrationModifier.java:103)
+	at com.ibm.ws.security.internal.SecurityServiceImpl.setUserRegistry(SecurityServiceImpl.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.invoke(BindMethod.java:42)
+	at org.apache.felix.scr.impl.manager.DependencyManager.doInvokeBindMethod(DependencyManager.java:1882)
+	at org.apache.felix.scr.impl.manager.DependencyManager.invokeBindMethod(DependencyManager.java:1857)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.invokeBindMethod(SingleComponentManager.java:437)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:328)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:297)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:1071)
+	at com.ibm.ws.kernel.service.util.ServiceRegistrationModifier.updateService(ServiceRegistrationModifier.java:145)
+	at com.ibm.ws.kernel.service.util.ServiceRegistrationModifier.registerOrUpdate(ServiceRegistrationModifier.java:84)
+	at com.ibm.ws.security.registry.internal.UserRegistryServiceImpl.activate(UserRegistryServiceImpl.java:305)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:318)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:308)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:342)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:115)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:957)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:766)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:341)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:297)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:907)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:893)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:960)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:733)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:667)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:433)
+	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.configurationUpdated(ConfigurableComponentHolder.java:441)
+	at org.apache.felix.scr.impl.manager.RegionConfigurationSupport.configurationEvent(RegionConfigurationSupport.java:340)
+	at org.apache.felix.scr.impl.manager.RegionConfigurationSupport$2.configurationEvent(RegionConfigurationSupport.java:115)
+	at com.ibm.ws.config.admin.internal.ConfigEventDispatcher$1.run(ConfigEventDispatcher.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at com.ibm.ws.config.admin.internal.UpdateQueue$Queue.run(UpdateQueue.java:66)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: CWWKS0005E: A configuration exception has occurred. No available Authentication service.
+	at com.ibm.ws.security.internal.SecurityServiceImpl.autoDetectService(SecurityServiceImpl.java:405)
+	at com.ibm.ws.security.internal.SecurityServiceImpl.getAuthenticationService(SecurityServiceImpl.java:425)
+	at com.ibm.ws.transport.iiop.server.security.CSIv2SubsystemFactory.getTargetPolicy(CSIv2SubsystemFactory.java:132)
+	at com.ibm.ws.transport.iiop.internal.ServerPolicySourceImpl.addConfiguredPolicies(ServerPolicySourceImpl.java:77)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.createPOA(EJBRemoteRuntimeImpl.java:315)
+	... 192 more
+
+Dump of callerThis
+Object type = com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl
+  CLASS_NAME = "com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl"
+  tc = class com.ibm.websphere.ras.TraceComponent@51fd46be
+    strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl,class com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl,[EJBContainer],com.ibm.ws.ejbcontainer.osgi.internal.resources.EJBContainerMessages,null]"
+  REFERENCE_INJECTION_ENGINE = "injectionEngine"
+  REFERENCE_SERIALIZATION_SERVICE = "serializationService"
+  REFERENCE_MDB_RUNTIME = "mdbRuntime"
+  REFERENCE_JPA_CONTAINER = "jpaContainer"
+  REFERENCE_JCDI_HELPER_FACTORY = "jndiHelperFactory"
+  REFERENCE_EJB_ASYNC_RUNTIME = "ejbAsyncRuntime"
+  REFERENCE_EJB_TIMER_RUNTIME = "ejbTimerRuntime"
+  REFERENCE_EJB_PERSISTENT_TIMER_RUNTIME = "ejbPersistentTimerRuntime"
+  REFERENCE_EJB_HOME_RUNTIME = "ejbHomeRuntime"
+  REFERENCE_EJB_REMOTE_RUNTIME = "ejbRemoteRuntime"
+  REFERENCE_EJB_MBEAN_RUNTIME = "ejbMBeanRuntime"
+  REFERENCE_MANAGED_OBJECT_SERVICE = "managedObjectService"
+  REFERENCE_CLASSLOADING_SERVICE = "classLoadingService"
+  DEFAULT_VERSION = class org.osgi.framework.Version@7a0b831e
+    major = 3
+    minor = 1
+    micro = 0
+    qualifier = ""
+    SEPARATOR = "."
+    versionString = null
+    hash = 0
+    emptyVersion = class org.osgi.framework.Version@4652669b
+  REFERENCE_RUNTIME_VERSION = "ejbRuntimeVersion"
+  runtimeVersion = class org.osgi.framework.Version@11d5cad4
+    major = 3
+    minor = 2
+    micro = 0
+    qualifier = ""
+    SEPARATOR = "."
+    versionString = null
+    hash = 0
+    emptyVersion = class org.osgi.framework.Version@4652669b
+      major = 0
+      minor = 0
+      micro = 0
+      qualifier = ""
+      SEPARATOR = "."
+      versionString = "0.0.0"
+      hash = 486695567
+      emptyVersion = class org.osgi.framework.Version@4652669b
+  ejbMDOrchestrator = class com.ibm.ws.ejbcontainer.osgi.internal.EJBMDOrchestratorImpl@3a3d650f
+    tc = class com.ibm.websphere.ras.TraceComponent@766466e
+      strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.internal.EJBMDOrchestratorImpl,class com.ibm.ws.ejbcontainer.osgi.internal.EJBMDOrchestratorImpl,[EJBContainer],com.ibm.ws.ejbcontainer.osgi.internal.resources.EJBContainerMessages,null]"
+    tcContainer = class com.ibm.websphere.ras.TraceComponent@1ac2a152
+      strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.internal.EJBMDOrchestratorImpl,class com.ibm.ws.ejbcontainer.osgi.internal.EJBMDOrchestratorImpl,[EJBContainer],com.ibm.ejs.container.container,null]"
+    managedObjectServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@55e69874
+    EJBLOCAL_BINDING_PREFIX = "ejblocal:"
+    serialVersionUID = 5915777333184165017
+    CLASS_NAME = "com.ibm.ws.metadata.ejb.EJBMDOrchestrator"
+    tc = class com.ibm.websphere.ras.TraceComponent@74cd2e8e
+      strings[0] = "TraceComponent[com.ibm.ws.metadata.ejb.EJBMDOrchestrator,class com.ibm.ws.metadata.ejb.EJBMDOrchestrator,[EJBContainer],com.ibm.ejs.container.container,null]"
+    tcVerbose = class com.ibm.websphere.ras.TraceComponent@27865cad
+      strings[0] = "TraceComponent[com.ibm.ws.metadata.ejb.EJBMDOrchestrator-Verbose,class com.ibm.ws.metadata.ejb.EJBMDOrchestrator,[MetaDataVerbose],com.ibm.ejs.container.container,null]"
+    tcInjection = class com.ibm.websphere.ras.TraceComponent@400fc762
+      strings[0] = "TraceComponent[com.ibm.ws.metadata.ejb.EJBMDOrchestrator-Injection,class com.ibm.ws.metadata.ejb.EJBMDOrchestrator,[Injection],com.ibm.wsspi.injectionengine.injection,null]"
+    NO_PARAMS = class java.lang.Class[0]
+    nameTypeFromBeanTypeMap = class java.lang.String[9]
+      String[0] = null
+      String[1] = "UNKNOWN"
+      String[2] = "SG"
+      String[3] = "SL"
+      String[4] = "SF"
+      String[5] = "BMP"
+      String[6] = "CMP"
+      String[7] = "MDB"
+      String[8] = "MB"
+    compressBeanTypeMap = {0,0,1,1,1,2,2,3,4} /* array length = 9 */
+    Unknown_Type = 0
+    Session_Type = 1
+    Entity_Type = 2
+    Message_Type = 3
+    Managed_Type = 4
+  container = class com.ibm.ejs.container.EJSContainer@4d9ea791
+  classDefiner = class com.ibm.ws.ejbcontainer.jitdeploy.ClassDefiner@6b2bce4f
+    svFindLoadedClassMethod = null
+    svDefineClassMethod = null
+    svAllPermissionProtectionDomain = null
+  injectionEngineSRRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@54173a94
+    referenceName = "injectionEngine"
+    tuple = class java.util.concurrent.atomic.AtomicReference@7bc3bc1f
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@45efdb0f
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+      strings[0] = "TraceComponent[com.ibm.wsspi.kernel.service.utils.AtomicServiceReference,class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference,[kernelUtils],com.ibm.ws.kernel.service.utils.resources.ServiceMessages,null]"
+  securityCollaborator = class com.ibm.ws.ejbcontainer.security.internal.EJBSecurityCollaboratorImpl@5d33804
+    tc = class com.ibm.websphere.ras.TraceComponent@2f3ce8f
+      strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.security.internal.EJBSecurityCollaboratorImpl,class com.ibm.ws.ejbcontainer.security.internal.EJBSecurityCollaboratorImpl,[SecurityCollaborator],com.ibm.ws.ejbcontainer.security.internal.resources.EJBSecurityMessages,null]"
+    KEY_SECURITY_SERVICE = "securityService"
+    KEY_CREDENTIAL_SERVICE = "credentialsService"
+    KEY_UNAUTHENTICATED_SUBJECT_SERVICE = "unauthenticatedSubjectService"
+    KEY_JACC_SERVICE = "jaccService"
+    securityServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@3ffdbd9b
+      referenceName = "securityService"
+      tuple = class java.util.concurrent.atomic.AtomicReference@63f6dcd6
+      serialVersionUID = 2226592364007985000
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+    credServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@4e70b8ca
+      referenceName = "credentialsService"
+      tuple = class java.util.concurrent.atomic.AtomicReference@79ad3ac
+      serialVersionUID = 2226592364007985000
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+    unauthenticatedSubjectServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@7e8e220c
+      referenceName = "unauthenticatedSubjectService"
+      tuple = class java.util.concurrent.atomic.AtomicReference@1ef14b25
+      serialVersionUID = 2226592364007985000
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+    jaccService = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@6817ecfb
+      referenceName = "jaccService"
+      tuple = class java.util.concurrent.atomic.AtomicReference@5507db21
+      serialVersionUID = 2226592364007985000
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+    subjectManager = class com.ibm.ws.security.context.SubjectManager@3a548507
+      threadLocal = class com.ibm.ws.security.context.SubjectManager$SecurityThreadLocal@6efc1d18
+      serialVersionUID = 8008928227801865506
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@6423b81d
+    collabUtils = class com.ibm.ws.security.collaborator.CollaboratorUtils@7129cc6f
+      tc = class com.ibm.websphere.ras.TraceComponent@4bca9006
+      subjectManager = class com.ibm.ws.security.context.SubjectManager@3a548507
+      serialVersionUID = 1544996125297377090
+    ejbAuditHashMap = class java.util.HashMap@7eb81e04
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    auditManager = class com.ibm.websphere.security.audit.context.AuditManager@299f551c
+      threadLocal = class com.ibm.websphere.security.audit.context.AuditManager$AuditThreadLocal@d067a8c
+      serialVersionUID = 8297158904878279977
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@4d69eee3
+    extraAuditData = class java.util.HashMap@37fd9195
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    ejbSecConfig = class com.ibm.ws.ejbcontainer.security.internal.EJBSecurityConfigImpl@88869b1
+      CFG_KEY_USE_UNAUTH_FOR_EXPIRED_CREDS = "useUnauthenticatedForExpiredCredentials"
+      CFG_KEY_REALM_QUALIFY_USER_NAME = "useRealmQualifiedUserNames"
+      useUnauthenticatedForExpiredCredentials = false
+      useRealmQualifiedUserNames = false
+      serialVersionUID = -5143510054746337135
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@bac8dcf
+    eah = class com.ibm.ws.ejbcontainer.security.internal.EJBSecurityCollaboratorImpl@5d33804
+    serialVersionUID = -7046417664225712733
+  javaColonHelper = class com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBJavaColonNamingHelper@3dc9a500
+    tc = class com.ibm.websphere.ras.TraceComponent@3aa0dc9f
+      strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBJavaColonNamingHelper,class com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBJavaColonNamingHelper,[EJBContainer],com.ibm.ws.ejbcontainer.osgi.internal.resources.EJBContainerMessages,null]"
+    javaColonGlobalBindings = class com.ibm.ws.container.service.naming.JavaColonNamespaceBindings@2ef07b42
+      namespace = class com.ibm.ws.container.service.naming.NamingConstants$JavaColonNamespace@c22e0fd
+      classNameProvider = class com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBJavaColonNamingHelper@3dc9a500
+      contextBindings = null
+      contexts = null
+      serialVersionUID = -4020308321774505943
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@5346f488
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    javaColonLock = class java.util.concurrent.locks.ReentrantReadWriteLock@1fe3b118
+      serialVersionUID = -6992448646407690164
+      readerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock@1a6c46f0
+      writerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock@6909ec6c
+      sync = class java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@2bcecbf
+      UNSAFE = class sun.misc.Unsafe@3be3ec37
+      TID_OFFSET = 40
+    metaDataSlotService = class com.ibm.ws.container.service.metadata.internal.MetaDataSlotServiceImpl@75eb3f75
+      metaDataService = class com.ibm.ws.container.service.metadata.internal.MetaDataServiceImpl@dd2b1f2
+      bundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@1fa1920
+      slots = class java.util.ArrayList@4110fd4
+      serialVersionUID = -7680974551757343059
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@538b6b8c
+    roiFactory = class com.ibm.ws.clientcontainer.remote.common.object.ORBEnabledRemoteObjectInstanceFactoryImpl@6cb798be
+      serialVersionUID = -6135362960833706187
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@19fe0264
+      serialVersionUID = -1593201671635326830
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@37e2ea6e
+    mmdSlot = class com.ibm.ws.runtime.metadata.MetaDataSlotImpl@a72e273
+      id = 4
+      destroyed = false
+      metadataIntf = class java.lang.Class@2b989231
+      manager = class com.ibm.ws.container.service.metadata.internal.ModuleMetaDataManager@2fe36ea
+      bundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@1fa1920
+    amdSlot = class com.ibm.ws.runtime.metadata.MetaDataSlotImpl@2775a214
+      id = 1
+      destroyed = false
+      metadataIntf = class java.lang.Class@22bcb282
+      manager = class com.ibm.ws.container.service.metadata.internal.ApplicationMetaDataManager@61fe2258
+      bundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@1fa1920
+    serialVersionUID = -3212269771182053752
+    homeRuntime = true
+    remoteRuntime = false
+    tc = class com.ibm.websphere.ras.TraceComponent@30b3f3bf
+    serialVersionUID = -3640155928955231790
+  ejbLocalNamingHelper = class com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBLocalNamingHelperImpl@8254d40
+    tc = class com.ibm.websphere.ras.TraceComponent@68fd6688
+      strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBLocalNamingHelperImpl,class com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBLocalNamingHelperImpl,[EJBContainer],com.ibm.ws.ejbcontainer.osgi.internal.resources.EJBContainerMessages,null]"
+    EJBLocalBindings = class java.util.HashMap@1d7d29e5
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    javaColonLock = class java.util.concurrent.locks.ReentrantReadWriteLock@4dbcb8b3
+      serialVersionUID = -6992448646407690164
+      readerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock@3dcd89b7
+      writerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock@501f1a03
+      sync = class java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@2a13be63
+      UNSAFE = class sun.misc.Unsafe@3be3ec37
+      TID_OFFSET = 40
+    serialVersionUID = -1175534923715618526
+    homeRuntime = true
+    remoteRuntime = false
+    tc = class com.ibm.websphere.ras.TraceComponent@30b3f3bf
+    serialVersionUID = -3640155928955231790
+  localColonNamingHelper = class com.ibm.ws.ejbcontainer.osgi.internal.naming.LocalColonEJBNamingHelperImpl@650b054a
+    tc = class com.ibm.websphere.ras.TraceComponent@1a099361
+      strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.internal.naming.LocalColonEJBNamingHelperImpl,class com.ibm.ws.ejbcontainer.osgi.internal.naming.LocalColonEJBNamingHelperImpl,[EJBContainer],com.ibm.ws.ejbcontainer.osgi.internal.resources.EJBContainerMessages,null]"
+    localColonEJBBindings = class java.util.HashMap@5c0db5f9
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    javaColonLock = class java.util.concurrent.locks.ReentrantReadWriteLock@3a0935d7
+      serialVersionUID = -6992448646407690164
+      readerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock@6ae1fc35
+      writerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock@51ed75c5
+      sync = class java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@25e9ade7
+      UNSAFE = class sun.misc.Unsafe@3be3ec37
+      TID_OFFSET = 40
+    serialVersionUID = -4780118417520358489
+    homeRuntime = true
+    remoteRuntime = false
+    tc = class com.ibm.websphere.ras.TraceComponent@30b3f3bf
+      strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBNamingInstancer,class com.ibm.ws.ejbcontainer.osgi.internal.naming.EJBNamingInstancer,[EJBContainer],com.ibm.ws.ejbcontainer.osgi.internal.resources.EJBContainerMessages,null]"
+    serialVersionUID = -3640155928955231790
+  scheduledExecutorService = class com.ibm.ws.threading.internal.ScheduledExecutorImpl@790402f7
+    threadGroupName = "Scheduled Executor Thread Group"
+    executor = class com.ibm.ws.threading.internal.ExecutorServiceImpl@25fd6f3b
+      threadPool = class java.util.concurrent.ThreadPoolExecutor@1bf0785b
+      threadPoolController = class com.ibm.ws.threading.internal.ThreadPoolController@2dfe0179
+      poolName = "Default Executor"
+      MINIMUM_POOL_SIZE = 4
+      componentConfig = class org.apache.felix.scr.impl.helper.ReadOnlyDictionary@3be658c2
+      interceptorsActive = false
+      interceptors = class java.util.concurrent.CopyOnWriteArraySet@471404fb
+      threadFactory = null
+      serverStopping = true
+      phaser = class java.util.concurrent.Phaser@5f3e8ee2
+      serialVersionUID = 6930666794455919448
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@28e55298
+    serialVersionUID = -9110693807503469597
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@38ff639f
+      strings[0] = "TraceComponent[com.ibm.ws.threading.internal.ScheduledExecutorImpl,class com.ibm.ws.threading.internal.ScheduledExecutorImpl,[Threading],com.ibm.ws.threading.internal.resources.ThreadingMessages,null]"
+    continueExistingPeriodicTasksAfterShutdown = false
+    executeExistingDelayedTasksAfterShutdown = true
+    removeOnCancel = false
+    sequencer = class java.util.concurrent.atomic.AtomicLong@53dcc31a
+      serialVersionUID = 1927816293512124184
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 16
+      VM_SUPPORTS_LONG_CAS = true
+      value = 3810
+      serialVersionUID = -8742448824652078965
+    ctl = class java.util.concurrent.atomic.AtomicInteger@607050df
+      serialVersionUID = 6214790243416807050
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = -536870911
+      serialVersionUID = -8742448824652078965
+    COUNT_BITS = 29
+    CAPACITY = 536870911
+    RUNNING = -536870912
+    SHUTDOWN = 0
+    STOP = 536870912
+    TIDYING = 1073741824
+    TERMINATED = 1610612736
+    workQueue = class java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue@7186d82c
+      INITIAL_CAPACITY = 16
+      queue = interface java.util.concurrent.RunnableScheduledFuture[24]
+      lock = class java.util.concurrent.locks.ReentrantLock@3254d950
+      size = 7
+      leader = class java.lang.Thread@3887753b
+      available = class java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6479400a
+      MAX_ARRAY_SIZE = 2147483639
+    mainLock = class java.util.concurrent.locks.ReentrantLock@3fcce590
+      serialVersionUID = 7373984872572414699
+      sync = class java.util.concurrent.locks.ReentrantLock$NonfairSync@a590a46
+    workers = class java.util.HashSet@abd2560
+      serialVersionUID = -5024744406713321676
+      map = class java.util.HashMap@5a03bb0a
+      PRESENT = class java.lang.Object@40f579ab
+      MAX_ARRAY_SIZE = 2147483639
+    termination = class java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@68a97a40
+      serialVersionUID = 1173984872572414699
+      firstWaiter = null
+      lastWaiter = null
+      REINTERRUPT = 1
+      THROW_IE = -1
+      this$0 = class java.util.concurrent.locks.ReentrantLock$NonfairSync@a590a46
+    largestPoolSize = 1
+    completedTaskCount = 0
+    threadFactory = class com.ibm.ws.threading.internal.ThreadFactoryImpl@2fa998c1
+      tc = class com.ibm.websphere.ras.TraceComponent@72af7c4f
+      TRACE_ENABLED_AT_STARTUP = false
+      createdThreadCount = class java.util.concurrent.atomic.AtomicInteger@7abe3732
+      executorName = "Scheduled Executor"
+      threadGroup = class java.lang.ThreadGroup@771ae923
+      contextClassLoader = class org.eclipse.osgi.internal.framework.ContextFinder@75d0c1d1
+      serialVersionUID = -3600085245630848128
+    handler = class java.util.concurrent.ThreadPoolExecutor$AbortPolicy@23bbe25
+    keepAliveTime = 0
+    allowCoreThreadTimeOut = false
+    corePoolSize = 1
+    maximumPoolSize = 2147483647
+    defaultHandler = class java.util.concurrent.ThreadPoolExecutor$AbortPolicy@23bbe25
+    shutdownPerm = class java.lang.RuntimePermission@5e1231c5
+      serialVersionUID = 7399184964622342223
+      serialVersionUID = 6279438298436773498
+      wildcard = false
+      path = "modifyThread"
+      exitVM = false
+      serialVersionUID = -5636570222231596674
+      name = "modifyThread"
+    acc = null
+    ONLY_ONE = true
+    $assertionsDisabled = true
+  deferrableScheduledExecutorService = class com.ibm.ws.threading.internal.DeferrableScheduledExecutorImpl@9954972
+    PERIOD_MILLISECONDS = 15000
+    executor = class com.ibm.ws.threading.internal.ScheduledExecutorImpl@790402f7
+    serialVersionUID = 117550544710569826
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@22ba54d8
+      strings[0] = "TraceComponent[com.ibm.ws.threading.internal.DeferrableScheduledExecutorImpl,class com.ibm.ws.threading.internal.DeferrableScheduledExecutorImpl,[Threading],com.ibm.ws.threading.internal.resources.ThreadingMessages,null]"
+  j2eeNameFactory = class com.ibm.ws.container.service.metadata.internal.J2EENameFactoryImpl@2b784a4d
+    serialVersionUID = 3486344295038028821
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@43734164
+      strings[0] = "TraceComponent[com.ibm.ws.container.service.metadata.internal.J2EENameFactoryImpl,class com.ibm.ws.container.service.metadata.internal.J2EENameFactoryImpl,[Runtime],null,null]"
+  metaDataService = class com.ibm.ws.container.service.metadata.internal.MetaDataServiceImpl@dd2b1f2
+    applicationMetaDataManager = class com.ibm.ws.container.service.metadata.internal.ApplicationMetaDataManager@61fe2258
+    moduleMetaDataManager = class com.ibm.ws.container.service.metadata.internal.ModuleMetaDataManager@2fe36ea
+      serialVersionUID = 2513574389899327209
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@44de8fe8
+      listeners = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@246fca27
+      metaDataIDs = class com.ibm.ws.container.service.metadata.internal.IndexList@51b0cd6d
+      metaDatas = class java.util.ArrayList@2414788
+      slotIDs = class com.ibm.ws.container.service.metadata.internal.IndexList@4bf51301
+      serialVersionUID = 5464421863354792977
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@330e2745
+    componentMetaDataManager = class com.ibm.ws.container.service.metadata.internal.ComponentMetaDataManager@100c8866
+      serialVersionUID = 8629793739641703882
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@55d0ac92
+      listeners = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@5c3ea8b9
+      metaDataIDs = class com.ibm.ws.container.service.metadata.internal.IndexList@7fbe885c
+      metaDatas = class java.util.ArrayList@10bba557
+      slotIDs = class com.ibm.ws.container.service.metadata.internal.IndexList@5c13766c
+      serialVersionUID = 5464421863354792977
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@330e2745
+    methodMetaDataManager = class com.ibm.ws.container.service.metadata.internal.MethodMetaDataManager@33999d7a
+      serialVersionUID = -8002489041502300640
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@5b69891f
+      listeners = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@5686599f
+      metaDataIDs = class com.ibm.ws.container.service.metadata.internal.IndexList@279bb9ff
+      metaDatas = class java.util.ArrayList@5ec8c340
+      slotIDs = class com.ibm.ws.container.service.metadata.internal.IndexList@100e512
+      serialVersionUID = 5464421863354792977
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@330e2745
+    appModuleNameToModuleContainer = class java.util.concurrent.ConcurrentHashMap@236595b3
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 8
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[16]
+      nextTable = null
+      baseCount = 1
+      sizeCtl = 12
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@3be3ec37
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    jeeNameToComponentMetaData = class java.util.concurrent.ConcurrentHashMap@505fbe53
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 8
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[16]
+      nextTable = null
+      baseCount = 3
+      sizeCtl = 12
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@3be3ec37
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    deferredMetaDataFactories = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@24644386
+      referenceName = "deferredMetaDataFactory"
+      contextRef = class java.util.concurrent.atomic.AtomicReference@5be87e80
+      elementMap = class java.util.LinkedHashMap@18dd3636
+      elementSet = class java.util.concurrent.ConcurrentSkipListSet@90e1498
+      elementSetUnsorted = false
+      serialVersionUID = 756240983881166148
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@3cb019de
+    deferredMetaDataInitializers = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceMap@5be9783d
+      referenceName = "deferredMetaDataFactory"
+      context = class org.apache.felix.scr.impl.manager.ComponentContextImpl@1111d6aa
+      elementMap = class java.util.concurrent.ConcurrentHashMap@461dba40
+      serialVersionUID = 6980924785166233786
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@6a8cfb7e
+    serialVersionUID = -2494605732980966097
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@39aba00d
+      strings[0] = "TraceComponent[com.ibm.ws.container.service.metadata.internal.MetaDataServiceImpl,class com.ibm.ws.container.service.metadata.internal.MetaDataServiceImpl,[Runtime],null,null]"
+  classLoadingService = class com.ibm.ws.classloading.internal.ClassLoadingServiceImpl@16642b3d
+    tc = class com.ibm.websphere.ras.TraceComponent@261254e1
+      strings[0] = "TraceComponent[com.ibm.ws.classloading.internal.ClassLoadingServiceImpl,class com.ibm.ws.classloading.internal.ClassLoadingServiceImpl,[ClassLoadingService],com.ibm.ws.classloading.internal.resources.ClassLoadingServiceMessages,null]"
+    leakDetectionMap = class java.util.HashMap@659a8afc
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    appClassLoaders = class java.util.Collections$SetFromMap@3e30cee3
+      m = class java.util.WeakHashMap@3476a23c
+      s = class java.util.WeakHashMap$KeySet@3279f15b
+      serialVersionUID = 2454657854757543876
+      MAX_ARRAY_SIZE = 2147483639
+    TCCL_LOCK_WAIT = 15000
+    REFERENCE_GENERATORS = "generators"
+    bundleContext = class org.eclipse.osgi.internal.framework.BundleContextImpl@350565f8
+      findHookName = "org.osgi.framework.hooks.bundle.FindHook"
+      valid = true
+      bundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@b08c018
+      container = class org.eclipse.osgi.internal.framework.EquinoxContainer@2920567c
+      debug = class org.eclipse.osgi.internal.debug.Debug@6c3b31c6
+      servicesInUse = class java.util.HashMap@4a77daa1
+      activator = null
+      contextLock = class java.lang.Object@2f4b1e44
+    aclStore = class com.ibm.ws.classloading.internal.util.CanonicalStore@75befd75
+      map = class java.util.concurrent.ConcurrentHashMap@bbfd16d
+      q = class com.ibm.ws.classloading.internal.util.RefQueue@6ceb2f3d
+      serialVersionUID = 6715157558227169968
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@41d6c228
+    tcclStore = class com.ibm.ws.classloading.internal.util.CanonicalStore@3372a796
+      map = class java.util.concurrent.ConcurrentHashMap@790c194
+      q = class com.ibm.ws.classloading.internal.util.RefQueue@3d69dffe
+      serialVersionUID = 6715157558227169968
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@41d6c228
+    tcclStoreLock = class java.util.concurrent.locks.ReentrantLock@20e166e
+      serialVersionUID = 7373984872572414699
+      sync = class java.util.concurrent.locks.ReentrantLock$NonfairSync@19584059
+    digraph = class org.eclipse.equinox.internal.region.StandardRegionDigraph@3a71871a
+      EMPTY_EDGE_SET = class java.util.Collections$UnmodifiableSet@6f7301d5
+      monitor = class java.lang.Object@204bd91a
+      regions = class java.util.HashMap@3cf04f3e
+      bundleIdToRegionMapping = class org.eclipse.equinox.internal.region.StandardBundleIdToRegionMapping@368226a1
+      edges = class java.util.HashMap@4108e40d
+      bundleContext = class org.eclipse.osgi.internal.framework.BundleContextImpl@749c877b
+      threadLocal = class java.lang.ThreadLocal@3f75663f
+      subgraphTraverser = class org.eclipse.equinox.internal.region.SubgraphTraverser@1c24750
+      bundleCollisionHook = class org.eclipse.equinox.internal.region.hook.RegionBundleCollisionHook@26d2cee7
+      bundleEventHook = class org.eclipse.equinox.internal.region.hook.RegionBundleEventHook@20fc6ebc
+      bundleFindHook = class org.eclipse.equinox.internal.region.hook.RegionBundleFindHook@34acb002
+      serviceEventHook = class org.eclipse.equinox.internal.region.hook.RegionServiceEventHook@27c78900
+      serviceFindHook = class org.eclipse.equinox.internal.region.hook.RegionServiceFindHook@17d2cee9
+      resolverHookFactory = class org.eclipse.equinox.internal.region.hook.RegionResolverHookFactory@5498cb21
+      origin = null
+      originUpdateCount = -1
+      updateCount = class java.util.concurrent.atomic.AtomicLong@5e55d10
+      defaultRegion = null
+    redefiner = class com.ibm.ws.classloading.internal.util.ClassRedefiner@38268074
+      tc = class com.ibm.websphere.ras.TraceComponent@5151fcd8
+      LS = "
+"
+      inst = class com.sun.proxy.$Proxy0@181f8bda
+      serialVersionUID = 2420101865139508526
+    listener = class com.ibm.ws.classloading.internal.ClassLoadingServiceImpl$1@1e4edef1
+      this$0 = class com.ibm.ws.classloading.internal.ClassLoadingServiceImpl@16642b3d
+      serialVersionUID = -9159707349812113172
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@11134334
+    classloaders = class java.util.Collections$SynchronizedMap@6c810630
+      serialVersionUID = 1978198479659022715
+      m = class java.util.HashMap@19dd33f2
+      mutex = class java.util.Collections$SynchronizedMap@6c810630
+      keySet = null
+      entrySet = null
+      values = null
+    resourceProviders = class com.ibm.ws.classloading.internal.CompositeResourceProvider@5a7e15ed
+      lockFactory = class java.util.concurrent.locks.ReentrantReadWriteLock@65f21467
+      providerMap = class com.ibm.ws.classloading.internal.util.MultiMap@160d14e4
+      serialVersionUID = -5576435894946156347
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@2367461a
+    rememberedBundles = class java.util.concurrent.ConcurrentHashMap@56570bf6
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 8
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[16]
+      nextTable = null
+      baseCount = 1
+      sizeCtl = 12
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@3be3ec37
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    collectedBundles = class java.lang.ref.ReferenceQueue@3e86fe9b
+      NULL = class java.lang.ref.ReferenceQueue$Null@5b112339
+      ENQUEUED = class java.lang.ref.ReferenceQueue$Null@583c8049
+      lock = class java.lang.ref.ReferenceQueue$Lock@2d18abba
+      head = null
+      queueLength = 0
+      $assertionsDisabled = true
+    generatorRefs = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@5a52dffd
+      referenceName = "generators"
+      contextRef = class java.util.concurrent.atomic.AtomicReference@62bfea8e
+      elementMap = class java.util.LinkedHashMap@763521d0
+      elementSet = class java.util.concurrent.ConcurrentSkipListSet@7518ac80
+      elementSetUnsorted = false
+      serialVersionUID = 756240983881166148
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@3cb019de
+    generatorManager = class com.ibm.ws.classloading.internal.ClassGeneratorManager@70a96827
+      tc = class com.ibm.websphere.ras.TraceComponent@6aeac79
+      generatorRefs = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@5a52dffd
+      serialVersionUID = 4152663586056483310
+    appExtLibs = class java.util.concurrent.CopyOnWriteArrayList@1ecfc57f
+      serialVersionUID = 8673264195747942595
+      lock = class java.util.concurrent.locks.ReentrantLock@5b4fcb39
+      array = class java.lang.Object[0]
+      UNSAFE = class sun.misc.Unsafe@3be3ec37
+      lockOffset = 12
+    globalConfig = class com.ibm.ws.classloading.configuration.GlobalClassloadingConfiguration@1734821b
+      properties = class org.apache.felix.scr.impl.helper.ReadOnlyDictionary@1db144e3
+      serialVersionUID = 452562347104713756
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@2a51c952
+    metaInfServicesProviders = class java.util.concurrent.ConcurrentHashMap@5bd51a37
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 8
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = null
+      nextTable = null
+      baseCount = 0
+      sizeCtl = 0
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@3be3ec37
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    metaInfServicesRefs = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceMap@6086a93a
+      referenceName = "MetaInfServicesProvider"
+      context = class org.apache.felix.scr.impl.manager.ComponentContextImpl@7728220e
+      elementMap = class java.util.concurrent.ConcurrentHashMap@5118f2c6
+      serialVersionUID = 6980924785166233786
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@6a8cfb7e
+    protectionDomainMap = class java.util.HashMap@826c68
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    metadataIdentifierService = class com.ibm.ws.container.service.metadata.internal.MetaDataServiceImpl@dd2b1f2
+    globalSharedLibrary = class java.util.concurrent.atomic.AtomicReference@33151239
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = null
+    serialVersionUID = 4365026902615131286
+  appSlot = class com.ibm.ws.runtime.metadata.MetaDataSlotImpl@4f2e90bc
+    id = 2
+    destroyed = false
+    metadataIntf = class java.lang.Class@22bcb282
+      ANNOTATION = 8192
+      ENUM = 16384
+      SYNTHETIC = 4096
+      cachedConstructor = null
+      newInstanceCallerCache = null
+      name = null
+      allPermDomain = class java.security.ProtectionDomain@60df6a0b
+      useCaches = true
+      reflectionData = null
+      classRedefinedCount = 0
+      genericInfo = null
+      serialVersionUID = 3206093459760846163
+      serialPersistentFields = class java.io.ObjectStreamField[0]
+      reflectionFactory = class sun.reflect.ReflectionFactory@7cd89636
+      initted = true
+      enumConstants = null
+      enumConstantDirectory = null
+      annotationData = null
+      annotationType = null
+      classValueMap = null
+    manager = class com.ibm.ws.container.service.metadata.internal.ApplicationMetaDataManager@61fe2258
+      serialVersionUID = 1843747281024490904
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@726d2d9e
+      listeners = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceSet@1f801717
+      metaDataIDs = class com.ibm.ws.container.service.metadata.internal.IndexList@7ca1564
+      metaDatas = class java.util.ArrayList@1e448fa
+      slotIDs = class com.ibm.ws.container.service.metadata.internal.IndexList@14af78a4
+      serialVersionUID = 5464421863354792977
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@330e2745
+    bundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@1fa1920
+      equinoxContainer = class org.eclipse.osgi.internal.framework.EquinoxContainer@2920567c
+      module = class org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule@3907343f
+      monitor = class java.lang.Object@38e11661
+      context = class org.eclipse.osgi.internal.framework.BundleContextImpl@16163bf8
+      signerInfos = null
+      $SWITCH_TABLE$org$eclipse$osgi$container$Module$State = {1,2,3,4,5,6,7} /* array length = 7 */
+  userTransaction = class com.ibm.ws.transaction.services.UserTransactionService@6c538ef2
+    ut = class com.ibm.tx.jta.embeddable.impl.EmbeddableUserTransactionImpl@15f81c91
+      tc = class com.ibm.ejs.ras.TraceComponent@75c213b7
+      _instance = class com.ibm.tx.jta.embeddable.impl.EmbeddableUserTransactionImpl@15f81c91
+      isEnabled = class com.ibm.tx.jta.embeddable.impl.EmbeddableUserTransactionImpl$1@7cb07fb4
+      tc = class com.ibm.ws.tx.util.logging.WASTraceComponent@574f6c82
+      _callbackManager = class com.ibm.ws.uow.UOWScopeCallbackManager@915b94a
+      _tm = null
+      _instance = class com.ibm.tx.jta.impl.UserTransactionImpl@76273a03
+    serialVersionUID = -1625627843543890907
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@5e142366
+      strings[0] = "TraceComponent[com.ibm.ws.transaction.services.UserTransactionService,class com.ibm.ws.transaction.services.UserTransactionService,[transaction],com.ibm.ws.transaction.services.TransactionMessages,null]"
+  resourceRefConfigFactory = class com.ibm.ws.resource.internal.ResourceRefConfigFactoryImpl@5108b17
+    serialVersionUID = -2177844205625513625
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@6ccd6456
+      strings[0] = "TraceComponent[com.ibm.ws.resource.internal.ResourceRefConfigFactoryImpl,class com.ibm.ws.resource.internal.ResourceRefConfigFactoryImpl,[resource],com.ibm.ws.resource.internal.resources.Runtime,null]"
+  runtimeVersionRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@329a754b
+    referenceName = "ejbRuntimeVersion"
+    tuple = class java.util.concurrent.atomic.AtomicReference@68c2b748
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@22a4bbe1
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  serializationServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@98ab8d4
+    referenceName = "serializationService"
+    tuple = class java.util.concurrent.atomic.AtomicReference@40e2a2ce
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@7cc90f9f
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  mdbRuntimeServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@795e8309
+    referenceName = "mdbRuntime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@367e1e9a
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@627589bb
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  jpaContainerServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@7897e706
+    referenceName = "jpaContainer"
+    tuple = class java.util.concurrent.atomic.AtomicReference@622dcd46
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@678f6508
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  jcdiHelperFactoryServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@19c6f572
+    referenceName = "jndiHelperFactory"
+    tuple = class java.util.concurrent.atomic.AtomicReference@14e4b576
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@3b353776
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  ejbAsyncRuntimeServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@45d6a286
+    referenceName = "ejbAsyncRuntime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@753ea2e6
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@25774443
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  ejbTimerRuntimeServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@489d27fe
+    referenceName = "ejbTimerRuntime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@60ac36a
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@6d6c08be
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  ejbPersistentTimerRuntimeServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@ff5563c
+    referenceName = "ejbPersistentTimerRuntime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@251cbc93
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@225207f
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  ejbHomeRuntimeServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@21b64fd5
+    referenceName = "ejbHomeRuntime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@1d958d48
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@5aa5daad
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  ejbRemoteRuntimeServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@51840bf7
+    referenceName = "ejbRemoteRuntime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@779108c1
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@1bcb9910
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  ejbMBeanRuntimeServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@708774ee
+    referenceName = "ejbMBeanRuntime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@7c728381
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@1b71b86b
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  managedObjectServiceRef = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@55e69874
+    referenceName = "managedObjectService"
+    tuple = class java.util.concurrent.atomic.AtomicReference@5f39396a
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@461aa11d
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  remoteFeatureLatch = null
+  ejbRuntimeActive = true
+  serverStopping = true
+  webServicesHandlerResolver = class com.ibm.ws.jaxws.ejb.EJBHandlerResolver@463dadfa
+    tc = class com.ibm.websphere.ras.TraceComponent@101e9a05
+      strings[0] = "TraceComponent[com.ibm.ws.jaxws.ejb.EJBHandlerResolver,class com.ibm.ws.jaxws.ejb.EJBHandlerResolver,[JaxWsEJB],com.ibm.ws.jaxws.ejb.internal.resources.JaxWsEJBMessages,null]"
+    serialVersionUID = 8539805581445672797
+  ejbPMICollaboratorFactory = null
+  persistentTimerMsgLogged = false
+  CACHE_SIZE = "cacheSize"
+  CACHE_CLEANUP_INTERVAL = "cacheCleanupInterval"
+  POOL_CLEANUP_INTERVAL = "poolCleanupInterval"
+  START_EJBS_AT_APP_START = "startEJBsAtAppStart"
+  BIND_TO_SERVER_ROOT = "bindToServerRoot"
+  BIND_TO_JAVA_GLOBAL = "bindToJavaGlobal"
+  DISABLE_SHORT_DEFAULT_BINDINGS = "disableShortDefaultBindings"
+  IGNORE_DUPLICATE_BINDINGS = "ignoreDuplicateEJBBindings"
+  CUSTOM_BINDINGS_ON_ERROR = "customBindingsOnError"
+  serialVersionUID = -1083218400533711151
+  CLASS_NAME = "com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime"
+  tc = class com.ibm.websphere.ras.TraceComponent@4bc17bfc
+    strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime,class com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime,[EJBContainer],com.ibm.ejs.container.container,null]"
+  svThreadContextAccessor = class com.ibm.ws.util.ThreadContextAccessor$ReflectionThreadContextAccessorImpl@36c1c192
+    field = class java.lang.reflect.Field@74a3396d
+      clazz = class java.lang.Class@4b6995df
+      slot = 9
+      name = "contextClassLoader"
+      type = class java.lang.Class@251a69d7
+      modifiers = 2
+      signature = null
+      genericInfo = null
+      annotations = null
+      fieldAccessor = null
+      overrideFieldAccessor = null
+      root = class java.lang.reflect.Field@70652799
+      declaredAnnotations = null
+      ACCESS_PERMISSION = class java.lang.reflect.ReflectPermission@1c259618
+      override = true
+      reflectionFactory = class sun.reflect.ReflectionFactory@7cd89636
+      securityCheckCache = null
+    tc = class com.ibm.ejs.ras.TraceComponent@7d9a8210
+      strings[0] = "TraceComponent[com.ibm.ws.util.ThreadContextAccessor,class com.ibm.ws.util.ThreadContextAccessor,[Runtime],null,null]"
+    PRINT_STACK_ON_SET_CTX_CLASSLOADER = false
+    PRIVILEGED_ACTION = class com.ibm.ws.util.ThreadContextAccessor$1@1764f555
+    UNCHANGED = class com.ibm.ws.util.ThreadContextAccessor$Unchanged@52788ee8
+    threadContextAccessor = class com.ibm.ws.util.ThreadContextAccessor$ReflectionThreadContextAccessorImpl@36c1c192
+  ivContainer = class com.ibm.ejs.container.EJSContainer@4d9ea791
+  ivInitAtStartup = false
+  ivInitAtStartupSet = false
+  ivDefaultDataSourceJNDIName = null
+  ivUOWControl = class com.ibm.ejs.csi.TransactionControlImpl@3fb4be26
+    tc = class com.ibm.websphere.ras.TraceComponent@600d2427
+      strings[0] = "TraceComponent[com.ibm.ejs.csi.TransactionControlImpl,class com.ibm.ejs.csi.TransactionControlImpl,[EJBContainer],com.ibm.ejs.container.container,null]"
+    CLASS_NAME = "com.ibm.ejs.csi.TransactionControlImpl"
+    txService = class com.ibm.tx.jta.embeddable.impl.EmbeddableTranManagerSet@5980c751
+      tc = class com.ibm.ejs.ras.TraceComponent@60b877ef
+      _callbackManager = class com.ibm.ws.uow.UOWScopeCallbackManager@3003f11f
+      tc = class com.ibm.ws.tx.util.logging.WASTraceComponent@61acf4b5
+      _instance = class com.ibm.tx.jta.embeddable.impl.EmbeddableTranManagerSet@5980c751
+      _replayComplete = false
+      _quiesced = false
+      _thread = class com.ibm.tx.jta.embeddable.impl.EmbeddableTranManagerSet$1@418ac27d
+    uowCurrent = class com.ibm.tx.jta.embeddable.impl.EmbeddableTranManagerSet@5980c751
+    ltcCurrent = class com.ibm.tx.ltc.embeddable.impl.EmbeddableLocalTranCurrentSet@1e6f5641
+      _callbackManager = class com.ibm.ws.uow.UOWScopeCallbackManager@63f99157
+      _context = class com.ibm.tx.ltc.embeddable.impl.EmbeddableLocalTranCurrentSet$1@3fd5e0fb
+      _instance = class com.ibm.tx.ltc.embeddable.impl.EmbeddableLocalTranCurrentSet@1e6f5641
+    txStrategies = class com.ibm.ejs.csi.TranStrategy[7]
+      TranStrategy[0] = class com.ibm.ejs.csi.NotSupported@1a66dd31
+      TranStrategy[1] = class com.ibm.ejs.csi.BeanManaged@48bee28b
+      TranStrategy[2] = class com.ibm.ejs.csi.Required@1ea3cf95
+      TranStrategy[3] = class com.ibm.ejs.csi.Supports@7145df6a
+      TranStrategy[4] = class com.ibm.ejs.csi.RequiresNew@5d661b26
+      TranStrategy[5] = class com.ibm.ejs.csi.Mandatory@627300bb
+      TranStrategy[6] = class com.ibm.ejs.csi.Never@62aca407
+    userTransactionImpl = class com.ibm.ws.transaction.services.UserTransactionService@6c538ef2
+    stickyLocalTxTable = class com.ibm.ejs.util.FastHashtable@4f7f5480
+      buckets = class com.ibm.ejs.util.Bucket[251]
+      size = 0
+    TIMEOUT_CLOCK_START = 0
+    TIMEOUT_CLOCK_STOP = 2
+  ivSfFailoverCache = null
+  ivEJBMDOrchestrator = class com.ibm.ws.ejbcontainer.osgi.internal.EJBMDOrchestratorImpl@3a3d650f
+  ivWebServicesHandlerResolver = class com.ibm.ws.jaxws.ejb.EJBHandlerResolver@463dadfa
+  ivCMStatelessBeanOFactory = class com.ibm.ejs.container.CMStatelessBeanOFactory@24284956
+    tc = class com.ibm.websphere.ras.TraceComponent@42a5cccc
+      strings[0] = "TraceComponent[com.ibm.ejs.container.BeanOFactory,class com.ibm.ejs.container.BeanOFactory,[EJBContainer],com.ibm.ejs.container.container,null]"
+  ivBMStatelessBeanOFactory = null
+  ivCMStatefulBeanOFactory = null
+  ivBMStatefulBeanOFactory = null
+  ivSingletonBeanOFactory = null
+  ivManagedBeanOFactory = null
+

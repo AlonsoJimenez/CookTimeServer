@@ -1,6 +1,7 @@
 package cr.ac.tec.userObjects;
 
 import java.util.ArrayList;
+import java.util.Base64;
 
 public class RecipeBuilder {
 	
@@ -16,6 +17,10 @@ public class RecipeBuilder {
 	
 	private Recipe recipe;
 	
+	public RecipeBuilder withImage(String bytes) {
+    	recipe.setImage(bytes);
+    	return this;
+    }
 	
 	public RecipeBuilder withName(String name) {
 		recipe.setName(name);

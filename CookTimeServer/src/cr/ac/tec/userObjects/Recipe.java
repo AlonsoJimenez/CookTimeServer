@@ -2,6 +2,7 @@ package cr.ac.tec.userObjects;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Date;
 
 import javax.json.Json;
@@ -13,6 +14,7 @@ public class Recipe {
 	
 	private int difficulty;
 	private User author;
+	private byte[] imageBytes;
 	private int stars;
 	private Date publish;
 	private String dishName;
@@ -22,6 +24,10 @@ public class Recipe {
 	private ArrayList<String> tags = new ArrayList<String>();
 	private ArrayList<String> ingridients = new ArrayList<String>();
 	private ArrayList<String> steps = new ArrayList<String>();
+	
+	public void setImage(String bytes) {
+    	imageBytes = Base64.getDecoder().decode(bytes);
+    }
 	
 	public void setName(String name) {
 		this.dishName = name;
@@ -87,6 +93,7 @@ public class Recipe {
 		add("dishType", dishType).
 		add("tags", jsonList(tags)).
 		add("ingridients", jsonList(ingridients)).
+		add("picture", Base64.getEncoder().encodeToString(imageBytes)).
 		add("steps", jsonList(steps)).build();
 	}
 	

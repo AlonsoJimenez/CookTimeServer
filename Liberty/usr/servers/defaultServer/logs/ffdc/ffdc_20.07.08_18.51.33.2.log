@@ -1,0 +1,1676 @@
+------Start of DE processing------ = [7/8/20 18:51:33:562 CST]
+Exception = com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeException
+Source = com.ibm.ws.ejbcontainer.osgi.internal.EJBContainerImpl
+probeid = 233
+Stack Dump = com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeException: com.ibm.ws.exception.RuntimeError: java.lang.IllegalStateException: java.lang.IllegalStateException: CWWKS0005E: A configuration exception has occurred. No available Authentication service.
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl.startSystemModule(EJBRuntimeImpl.java:1137)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBContainerImpl.startSystemModule(EJBContainerImpl.java:232)
+	at com.ibm.ws.management.j2ee.mejb.service.ManagementEJBService.startManagementEJB(ManagementEJBService.java:160)
+	at com.ibm.ws.management.j2ee.mejb.service.ManagementEJBService.setEJBRemoteRuntime(ManagementEJBService.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.invoke(BindMethod.java:42)
+	at org.apache.felix.scr.impl.manager.DependencyManager.doInvokeBindMethod(DependencyManager.java:1882)
+	at org.apache.felix.scr.impl.manager.DependencyManager.invokeBindMethod(DependencyManager.java:1857)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.invokeBindMethod(SingleComponentManager.java:437)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleDynamicCustomizer.addedService(DependencyManager.java:830)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleDynamicCustomizer.addedService(DependencyManager.java:789)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:907)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:893)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:960)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:733)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1091)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1043)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:907)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:893)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:960)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:733)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:667)
+	at org.apache.felix.scr.impl.manager.ComponentFactoryImpl.newInstance(ComponentFactoryImpl.java:131)
+	at com.ibm.ws.transport.iiop.internal.ReadyListenerImpl.readyChanged(ReadyListenerImpl.java:110)
+	at com.ibm.ws.transport.iiop.security.AbstractCsiv2SubsystemFactory$ReadyRegistration.check(AbstractCsiv2SubsystemFactory.java:217)
+	at com.ibm.ws.transport.iiop.security.AbstractCsiv2SubsystemFactory.updateRegistered(AbstractCsiv2SubsystemFactory.java:167)
+	at com.ibm.ws.transport.iiop.server.security.CSIv2SubsystemFactory.updatedSecurityService(CSIv2SubsystemFactory.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$NotResolved.invoke(BaseMethod.java:633)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.invoke(BindMethod.java:42)
+	at org.apache.felix.scr.impl.manager.DependencyManager.invokeUpdatedMethod(DependencyManager.java:1934)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.invokeUpdatedMethod(SingleComponentManager.java:448)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.modifiedService(DependencyManager.java:1118)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.modifiedService(DependencyManager.java:1043)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerModified(ServiceTracker.java:1229)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerModified(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:883)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.setProperties(ServiceRegistrationImpl.java:172)
+	at com.ibm.ws.kernel.service.util.ServiceRegistrationModifier.updateService(ServiceRegistrationModifier.java:143)
+	at com.ibm.ws.kernel.service.util.ServiceRegistrationModifier.update(ServiceRegistrationModifier.java:103)
+	at com.ibm.ws.security.internal.SecurityServiceImpl.setUserRegistry(SecurityServiceImpl.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.invoke(BindMethod.java:42)
+	at org.apache.felix.scr.impl.manager.DependencyManager.doInvokeBindMethod(DependencyManager.java:1882)
+	at org.apache.felix.scr.impl.manager.DependencyManager.invokeBindMethod(DependencyManager.java:1857)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.invokeBindMethod(SingleComponentManager.java:437)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:328)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:297)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:544)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:1071)
+	at com.ibm.ws.kernel.service.util.ServiceRegistrationModifier.updateService(ServiceRegistrationModifier.java:145)
+	at com.ibm.ws.kernel.service.util.ServiceRegistrationModifier.registerOrUpdate(ServiceRegistrationModifier.java:84)
+	at com.ibm.ws.security.registry.internal.UserRegistryServiceImpl.activate(UserRegistryServiceImpl.java:305)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:318)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:308)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:342)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:115)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:984)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:957)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:766)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:341)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:297)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:907)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:893)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:960)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:733)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:667)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:433)
+	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.configurationUpdated(ConfigurableComponentHolder.java:441)
+	at org.apache.felix.scr.impl.manager.RegionConfigurationSupport.configurationEvent(RegionConfigurationSupport.java:340)
+	at org.apache.felix.scr.impl.manager.RegionConfigurationSupport$2.configurationEvent(RegionConfigurationSupport.java:115)
+	at com.ibm.ws.config.admin.internal.ConfigEventDispatcher$1.run(ConfigEventDispatcher.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at com.ibm.ws.config.admin.internal.UpdateQueue$Queue.run(UpdateQueue.java:66)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.ibm.ws.exception.RuntimeError: java.lang.IllegalStateException: java.lang.IllegalStateException: CWWKS0005E: A configuration exception has occurred. No available Authentication service.
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.startModule(AbstractEJBRuntime.java:529)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl.startSystemModule(EJBRuntimeImpl.java:1133)
+	... 181 more
+Caused by: java.lang.IllegalStateException: java.lang.IllegalStateException: CWWKS0005E: A configuration exception has occurred. No available Authentication service.
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.createPOA(EJBRemoteRuntimeImpl.java:317)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.getEjbAdapter(EJBRemoteRuntimeImpl.java:300)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.bind(EJBRemoteRuntimeImpl.java:185)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.bindSystem(EJBRemoteRuntimeImpl.java:179)
+	at com.ibm.ws.ejbcontainer.osgi.internal.SystemNameSpaceBinderImpl.bindBindings(SystemNameSpaceBinderImpl.java:77)
+	at com.ibm.ws.ejbcontainer.osgi.internal.SystemNameSpaceBinderImpl.bindBindings(SystemNameSpaceBinderImpl.java:24)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterface(AbstractEJBRuntime.java:997)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterfaces(AbstractEJBRuntime.java:935)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterfaces(AbstractEJBRuntime.java:862)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl.bindInterfaces(EJBRuntimeImpl.java:1195)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.startModule(AbstractEJBRuntime.java:524)
+	... 182 more
+Caused by: java.lang.IllegalStateException: CWWKS0005E: A configuration exception has occurred. No available Authentication service.
+	at com.ibm.ws.security.internal.SecurityServiceImpl.autoDetectService(SecurityServiceImpl.java:405)
+	at com.ibm.ws.security.internal.SecurityServiceImpl.getAuthenticationService(SecurityServiceImpl.java:425)
+	at com.ibm.ws.transport.iiop.server.security.CSIv2SubsystemFactory.getTargetPolicy(CSIv2SubsystemFactory.java:132)
+	at com.ibm.ws.transport.iiop.internal.ServerPolicySourceImpl.addConfiguredPolicies(ServerPolicySourceImpl.java:77)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.createPOA(EJBRemoteRuntimeImpl.java:315)
+	... 192 more
+
+Dump of callerThis
+Object type = com.ibm.ws.ejbcontainer.osgi.internal.EJBContainerImpl
+  REFERENCE_RUNTIME = "runtime"
+  REFERENCE_SESSION_RUNTIME = "sessionRuntime"
+  REFERENCE_J2EE_NAME_FACTORY = "j2eeNameFactory"
+  REFERENCE_INJECTION_ENGINE = "injectionEngine"
+  runtimeSR = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@4872e2ad
+    referenceName = "runtime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@4f7e25cc
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@7043f4c1
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  sessionRuntimeSR = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@ef49756
+    referenceName = "sessionRuntime"
+    tuple = class java.util.concurrent.atomic.AtomicReference@23538a28
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@1d2ba75d
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+      strings[0] = "TraceComponent[com.ibm.wsspi.kernel.service.utils.AtomicServiceReference,class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference,[kernelUtils],com.ibm.ws.kernel.service.utils.resources.ServiceMessages,null]"
+  j2eeNameFactorySR = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@16c1984
+    referenceName = "j2eeNameFactory"
+    tuple = class java.util.concurrent.atomic.AtomicReference@9b7f733
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@46fb8b95
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  injectionEngineSR = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@7ceb6892
+    referenceName = "injectionEngine"
+    tuple = class java.util.concurrent.atomic.AtomicReference@68f66fb8
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@2345b171
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  serialVersionUID = 1513970085448021803
+  $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@238bde65
+    strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.internal.EJBContainerImpl,class com.ibm.ws.ejbcontainer.osgi.internal.EJBContainerImpl,[EJBContainer],com.ibm.ws.ejbcontainer.osgi.internal.resources.EJBContainerMessages,null]"
+
+Dump of objectArray[0]
+Object type = java.lang.String
+  String value = "MEJB"
+
+Dump of objectArray[1]
+Object type = org.eclipse.osgi.internal.loader.EquinoxClassLoader
+  EQUINOX_REGISTERED_AS_PARALLEL = true
+  configuration = class org.eclipse.osgi.internal.framework.EquinoxConfiguration@1b5fbd6b
+    CONFIG_FILE = "config.ini"
+    INTERNAL_OS_SUNOS = "SunOS"
+    INTERNAL_OS_LINUX = "Linux"
+    INTERNAL_OS_MACOSX = "Mac OS"
+    INTERNAL_OS_AIX = "AIX"
+    INTERNAL_OS_HPUX = "HP-UX"
+    INTERNAL_OS_QNX = "QNX"
+    INTERNAL_OS_OS400 = "OS/400"
+    INTERNAL_OS_OS390 = "OS/390"
+    INTERNAL_OS_ZOS = "z/OS"
+    INTERNAL_OS_FREEBSD = "FreeBSD"
+    INTERNAL_ARCH_I386 = "i386"
+    INTERNAL_AMD64 = "amd64"
+    VARIABLE_DELIM_STRING = "$"
+    VARIABLE_DELIM_CHAR = $
+    configValues = class org.eclipse.osgi.internal.framework.EquinoxConfiguration$ConfigValues@48416321
+      NULL_CONFIG = "org.eclipse.equinox.configuration.null.value"
+      populateInitConfig = class java.util.Arrays$ArrayList@1099e30d
+      useSystemProperties = false
+      initialConfig = class java.util.HashMap@4c67956b
+      localConfig = class java.util.Properties@2f3beda4
+      exceptions = class java.util.LinkedHashMap@63010b9c
+    debug = class org.eclipse.osgi.internal.debug.Debug@6c3b31c6
+    debugOptions = class org.eclipse.osgi.internal.debug.FrameworkDebugOptions@6fbdd4fc
+      OSGI_DEBUG = "osgi.debug"
+      OSGI_DEBUG_VERBOSE = "osgi.debug.verbose"
+      PROP_TRACEFILE = "osgi.tracefile"
+      OPTIONS = ".options"
+      writeLock = class java.lang.Object@42c5ba79
+      lock = class java.lang.Object@2b476e12
+      options = null
+      disabledOptions = null
+      debugTraceCache = class java.util.HashMap@218b5476
+      outFile = null
+      verboseDebug = true
+      newSession = true
+      environmentInfo = class org.eclipse.osgi.internal.framework.EquinoxConfiguration@1b5fbd6b
+      context = class org.eclipse.osgi.internal.framework.BundleContextImpl@749c877b
+      listenerTracker = class org.osgi.util.tracker.ServiceTracker@7ed32861
+    hookRegistry = class org.eclipse.osgi.internal.hookregistry.HookRegistry@798d0413
+    aliasMapper = class org.eclipse.osgi.internal.framework.AliasMapper@4a2bfd06
+      processorAliasTable = class java.util.HashMap@1663dd43
+      processorCanonicalTable = class java.util.HashMap@56afd5fa
+      osnameAliasTable = class java.util.HashMap@4f68d2db
+      osnameCanonicalTable = class java.util.HashMap@456c7d7f
+    equinoxLocations = class org.eclipse.osgi.internal.location.EquinoxLocations@2ee223c2
+      READ_ONLY_AREA_SUFFIX = ".readOnly"
+      PROP_INSTALL_AREA = "osgi.install.area"
+      PROP_CONFIG_AREA = "osgi.configuration.area"
+      PROP_CONFIG_AREA_DEFAULT = "osgi.configuration.area.default"
+      PROP_SHARED_CONFIG_AREA = "osgi.sharedConfiguration.area"
+      PROP_INSTANCE_AREA = "osgi.instance.area"
+      PROP_INSTANCE_AREA_DEFAULT = "osgi.instance.area.default"
+      PROP_USER_AREA = "osgi.user.area"
+      PROP_USER_AREA_DEFAULT = "osgi.user.area.default"
+      PROP_USER_HOME = "user.home"
+      PROP_USER_DIR = "user.dir"
+      PROP_HOME_LOCATION_AREA = "eclipse.home.location"
+      PROP_LAUNCHER = "eclipse.launcher"
+      ECLIPSE = "eclipse"
+      PRODUCT_SITE_MARKER = ".eclipseproduct"
+      PRODUCT_SITE_ID = "id"
+      PRODUCT_SITE_VERSION = "version"
+      CONFIG_DIR = "configuration"
+      NONE = "@none"
+      NO_DEFAULT = "@noDefault"
+      USER_HOME = "@user.home"
+      USER_DIR = "@user.dir"
+      INSTALL_HASH_PLACEHOLDER = "@install.hash"
+      INSTANCE_DATA_AREA_PREFIX = ".metadata/.plugins/"
+      equinoxConfig = class org.eclipse.osgi.internal.framework.EquinoxConfiguration$ConfigValues@48416321
+      container = class org.eclipse.osgi.internal.framework.EquinoxContainer@2920567c
+      debugLocations = class java.util.concurrent.atomic.AtomicBoolean@6217b21d
+      installLocation = class org.eclipse.osgi.internal.location.BasicLocation@36d959df
+      configurationLocation = class org.eclipse.osgi.internal.location.BasicLocation@5d07c40f
+      userLocation = class org.eclipse.osgi.internal.location.BasicLocation@7ccb9adb
+      instanceLocation = class org.eclipse.osgi.internal.location.BasicLocation@23934805
+      eclipseHomeLocation = class org.eclipse.osgi.internal.location.BasicLocation@5f78ea09
+    allArgs = null
+    frameworkArgs = null
+    appArgs = null
+    inDevelopmentMode = false
+    devLocation = null
+    devMonitor = class java.lang.Object@6d790554
+    devDefaultClasspath = null
+    devProperties = null
+    devLastModified = 0
+    contextBootDelegation = false
+    compatibilityBootDelegation = false
+    compatibilityLazyTriggerOnFailLoad = false
+    LIB_EXTENSIONS = class java.util.Collections$UnmodifiableRandomAccessList@6c622633
+      serialVersionUID = -2542308836966382001
+      serialVersionUID = -283967356065247728
+      list = class java.util.Arrays$ArrayList@3b0e7345
+      serialVersionUID = 1820017752578914078
+      c = class java.util.Arrays$ArrayList@3b0e7345
+    ECLIPSE_LIB_VARIANTS = class java.util.Collections$UnmodifiableRandomAccessList@79b42574
+      serialVersionUID = -2542308836966382001
+      serialVersionUID = -283967356065247728
+      list = class java.util.ArrayList@64cdd175
+      serialVersionUID = 1820017752578914078
+      c = class java.util.ArrayList@64cdd175
+    COPY_NATIVES = false
+    ECLIPSE_NL_JAR_VARIANTS = class java.util.ArrayList@46f7e5b3
+      serialVersionUID = 8683452581122892189
+      DEFAULT_CAPACITY = 10
+      EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      elementData = class java.lang.Object[10]
+      size = 3
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 3
+      MAX_ARRAY_SIZE = 2147483639
+    DEFINE_PACKAGE_ATTRIBUTES = true
+    BUNDLE_SET_TCCL = true
+    BSN_VERSION = 3
+    BSN_VERSION_SINGLE = 1
+    BSN_VERSION_MULTIPLE = 2
+    BSN_VERSION_MANAGED = 3
+    throwErrorOnFailedStart = true
+    CLASS_CERTIFICATE = true
+    PARALLEL_CAPABLE = false
+    exceptions = class java.util.LinkedHashMap@63010b9c
+      serialVersionUID = 3801124242820219131
+      head = null
+      tail = null
+      accessOrder = false
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = class java.util.LinkedHashMap$LinkedEntrySet@1a9cda28
+      size = 0
+      modCount = 1
+      threshold = 1
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    PROP_JVM_OS_ARCH = "os.arch"
+    PROP_JVM_OS_NAME = "os.name"
+    PROP_JVM_OS_VERSION = "os.version"
+    PROP_JVM_SPEC_VERSION = "java.specification.version"
+    PROP_JVM_SPEC_NAME = "java.specification.name"
+    PROP_SETPERMS_CMD = "osgi.filepermissions.command"
+    PROP_DEBUG = "osgi.debug"
+    PROP_DEBUG_VERBOSE = "osgi.debug.verbose"
+    PROP_DEV = "osgi.dev"
+    PROP_CLEAN = "osgi.clean"
+    PROP_USE_SYSTEM_PROPERTIES = "osgi.framework.useSystemProperties"
+    PROP_FRAMEWORK = "osgi.framework"
+    ECLIPSE_FRAMEWORK_VENDOR = "Eclipse"
+    PROP_OSGI_JAVA_PROFILE = "osgi.java.profile"
+    PROP_OSGI_JAVA_PROFILE_NAME = "osgi.java.profile.name"
+    PROP_OSGI_JAVA_PROFILE_BOOTDELEGATION = "osgi.java.profile.bootdelegation"
+    PROP_OSGI_BOOTDELEGATION_IGNORE = "ignore"
+    PROP_OSGI_BOOTDELEGATION_OVERRIDE = "override"
+    PROP_OSGI_BOOTDELEGATION_NONE = "none"
+    PROP_CONTEXT_BOOTDELEGATION = "osgi.context.bootdelegation"
+    PROP_COMPATIBILITY_BOOTDELEGATION = "osgi.compatibility.bootdelegation"
+    PROP_DS_DELAYED_KEEPINSTANCES = "ds.delayed.keepInstances"
+    PROP_COMPATIBILITY_ERROR_FAILED_START = "osgi.compatibility.errorOnFailedStart"
+    PROP_COMPATIBILITY_START_LAZY = "osgi.compatibility.eagerStart.LazyActivation"
+    PROP_COMPATIBILITY_START_LAZY_ON_FAIL_CLASSLOAD = "osgi.compatibility.trigger.lazyActivation.onFailedClassLoad"
+    PROP_OSGI_OS = "osgi.os"
+    PROP_OSGI_WS = "osgi.ws"
+    PROP_OSGI_ARCH = "osgi.arch"
+    PROP_OSGI_NL = "osgi.nl"
+    PROP_OSGI_NL_USER = "osgi.nl.user"
+    PROP_ROOT_LOCALE = "equinox.root.locale"
+    PROP_PARENT_CLASSLOADER = "osgi.parentClassloader"
+    PARENT_CLASSLOADER_FWK = "fwk"
+    PROP_CONTEXTCLASSLOADER_PARENT = "osgi.contextClassLoaderParent"
+    CONTEXTCLASSLOADER_PARENT_APP = "app"
+    CONTEXTCLASSLOADER_PARENT_EXT = "ext"
+    CONTEXTCLASSLOADER_PARENT_BOOT = "boot"
+    CONTEXTCLASSLOADER_PARENT_FWK = "fwk"
+    PROP_FRAMEWORK_LIBRARY_EXTENSIONS = "osgi.framework.library.extensions"
+    PROP_COPY_NATIVES = "osgi.classloader.copy.natives"
+    PROP_DEFINE_PACKAGES = "osgi.classloader.define.packages"
+    PROP_BUNDLE_SETTCCL = "eclipse.bundle.setTCCL"
+    PROP_EQUINOX_SECURITY = "eclipse.security"
+    PROP_FILE_LIMIT = "osgi.bundlefile.limit"
+    PROP_CLASS_CERTIFICATE_SUPPORT = "osgi.support.class.certificate"
+    PROP_CLASS_LOADER_TYPE = "osgi.classloader.type"
+    CLASS_LOADER_TYPE_PARALLEL = "parallel"
+    PROP_FORCED_RESTART = "osgi.forcedRestart"
+    PROP_IGNORE_USER_CONFIGURATION = "eclipse.ignoreUserConfiguration"
+    PROPERTY_STRICT_BUNDLE_ENTRY_PATH = "osgi.strictBundleEntryPath"
+    PROP_CHECK_CONFIGURATION = "osgi.checkConfiguration"
+    inCheckConfigurationMode = true
+    DEFAULT_STATE_SAVE_DELAY_INTERVAL = "30000"
+    PROP_STATE_SAVE_DELAY_INTERVAL = "eclipse.stateSaveDelayInterval"
+    PROP_MODULE_LOCK_TIMEOUT = "osgi.module.lock.timeout"
+    PROP_MODULE_AUTO_START_ON_RESOLVE = "osgi.module.auto.start.on.resolve"
+    PROP_ALLOW_RESTRICTED_PROVIDES = "osgi.equinox.allow.restricted.provides"
+    PROP_LOG_HISTORY_MAX = "equinox.log.history.max"
+    PROP_LOG_CAPTURE_ENTRY_LOCATION = "equinox.log.capture.entry.location"
+    PROP_RESOLVER_THREAD_COUNT = "equinox.resolver.thead.count"
+    PROP_EQUINOX_RESOLVER_THREAD_COUNT = "equinox.resolver.thread.count"
+    PROP_EQUINOX_START_LEVEL_THREAD_COUNT = "equinox.start.level.thread.count"
+    PROP_EQUINOX_START_LEVEL_RESTRICT_PARALLEL = "equinox.start.level.restrict.parallel"
+    PROP_RESOLVER_REVISION_BATCH_SIZE = "equinox.resolver.revision.batch.size"
+    PROP_RESOLVER_BATCH_TIMEOUT = "equinox.resolver.batch.timeout"
+    PROP_SYSTEM_PROVIDE_HEADER = "equinox.system.provide.header"
+    SYSTEM_PROVIDE_HEADER_ORIGINAL = "original"
+    SYSTEM_PROVIDE_HEADER_SYSTEM = "system"
+    SYSTEM_PROVIDE_HEADER_SYSTEM_EXTRA = "system.extra"
+    PROP_DEFAULT_SUFFIX = ".default"
+    PROP_WITH_ECLIPSE_STARTER_DEFAULTS = class java.util.Collections$UnmodifiableRandomAccessList@1e2fea71
+      serialVersionUID = -2542308836966382001
+      serialVersionUID = -283967356065247728
+      list = class java.util.Arrays$ArrayList@3e8ba68d
+      serialVersionUID = 1820017752578914078
+      c = class java.util.Arrays$ArrayList@3e8ba68d
+    PROP_INIT_UUID = "equinox.init.uuid"
+    PROP_ACTIVE_THREAD_TYPE = "osgi.framework.activeThreadType"
+    ACTIVE_THREAD_TYPE_NORMAL = "normal"
+    PROP_GOSH_ARGS = "gosh.args"
+  debug = class org.eclipse.osgi.internal.debug.Debug@6c3b31c6
+    ECLIPSE_OSGI = "org.eclipse.osgi"
+    OPTION_DEBUG_GENERAL = "org.eclipse.osgi/debug"
+    OPTION_DEBUG_BUNDLE_TIME = "org.eclipse.osgi/debug/bundleTime"
+    OPTION_DEBUG_BUNDLE_START_TIME = "org.eclipse.osgi/debug/bundleStartTime"
+    OPTION_DEBUG_LOADER = "org.eclipse.osgi/debug/loader"
+    OPTION_DEBUG_STORAGE = "org.eclipse.osgi/debug/storage"
+    OPTION_DEBUG_EVENTS = "org.eclipse.osgi/debug/events"
+    OPTION_DEBUG_SERVICES = "org.eclipse.osgi/debug/services"
+    OPTION_DEBUG_HOOKS = "org.eclipse.osgi/debug/hooks"
+    OPTION_DEBUG_MANIFEST = "org.eclipse.osgi/debug/manifest"
+    OPTION_DEBUG_FILTER = "org.eclipse.osgi/debug/filter"
+    OPTION_DEBUG_SECURITY = "org.eclipse.osgi/debug/security"
+    OPTION_DEBUG_STARTLEVEL = "org.eclipse.osgi/debug/startlevel"
+    OPTION_DEBUG_PACKAGEADMIN = "org.eclipse.osgi/debug/packageadmin"
+    OPTION_DEBUG_PACKAGEADMIN_TIMING = "org.eclipse.osgi/debug/packageadmin/timing"
+    OPTION_MONITOR_ACTIVATION = "org.eclipse.osgi/monitor/activation"
+    OPTION_MONITOR_LAZY = "org.eclipse.osgi/monitor/lazy"
+    OPTION_DEBUG_MESSAGE_BUNDLES = "org.eclipse.osgi/debug/messageBundles"
+    OPTION_DEBUG_LOCATION = "org.eclipse.osgi/debug/location"
+    OPTION_CACHED_MANIFEST = "org.eclipse.osgi/debug/cachedmanifest"
+    OPTION_DEBUG_SYSTEM_BUNDLE = "org.eclipse.osgi/debug/systemBundle"
+    OPTION_DEBUG_BUNDLE_FILE = "org.eclipse.osgi/debug/bundleFile"
+    DEBUG_GENERAL = false
+    DEBUG_BUNDLE_TIME = false
+    DEBUG_LOADER = false
+    DEBUG_STORAGE = false
+    DEBUG_EVENTS = false
+    DEBUG_SERVICES = false
+    DEBUG_HOOKS = false
+    DEBUG_MANIFEST = false
+    DEBUG_FILTER = false
+    DEBUG_SECURITY = false
+    DEBUG_STARTLEVEL = false
+    DEBUG_PACKAGEADMIN = false
+    DEBUG_PACKAGEADMIN_TIMING = false
+    DEBUG_MESSAGE_BUNDLES = false
+    MONITOR_ACTIVATION = false
+    DEBUG_LOCATION = false
+    DEBUG_CACHED_MANIFEST = false
+    DEBUG_SYSTEM_BUNDLE = false
+    DEBUG_BUNDLE_FILE = false
+    out = class com.ibm.ws.logging.internal.impl.BaseTraceService$TeePrintStream@1ac3ed6
+      trStream = class com.ibm.ws.logging.internal.impl.BaseTraceService$TrOutputStream@7dd3cae1
+      autoFlush = true
+      trouble = false
+      formatter = null
+      textOut = class java.io.BufferedWriter@dfbc8d
+      charOut = class java.io.OutputStreamWriter@37e9ecd6
+      closing = false
+      out = class com.ibm.ws.logging.internal.impl.BaseTraceService$TrOutputStream@7dd3cae1
+  delegate = class org.eclipse.osgi.internal.loader.BundleLoader@63416a70
+    DEFAULT_PACKAGE = "."
+    JAVA_PACKAGE = "java."
+    CLASS_CONTEXT = class org.eclipse.osgi.internal.loader.BundleLoader$ClassContext@42ad440a
+      inCheck = false
+      initialized = true
+      rootGroup = class java.lang.ThreadGroup@4f56b7a0
+      packageAccessValid = false
+      packageAccess = null
+      packageAccessLock = class java.lang.Object@1cfb8ee3
+      packageDefinitionValid = false
+      packageDefinition = null
+      packageDefinitionLock = class java.lang.Object@22077b37
+    FW_CLASSLOADER = class com.ibm.ws.kernel.internal.classloader.BootstrapChildFirstJarClassloader@1ddc4ec2
+    PRE_CLASS = 1
+    POST_CLASS = 2
+    PRE_RESOURCE = 3
+    POST_RESOURCE = 4
+    PRE_RESOURCES = 5
+    POST_RESOURCES = 6
+    PACKAGENAME_FILTER = class java.util.regex.Pattern@7139448c
+      UNIX_LINES = 1
+      CASE_INSENSITIVE = 2
+      COMMENTS = 4
+      MULTILINE = 8
+      LITERAL = 16
+      DOTALL = 32
+      UNICODE_CASE = 64
+      CANON_EQ = 128
+      UNICODE_CHARACTER_CLASS = 256
+      serialVersionUID = 5073258162644648461
+      pattern = "\(osgi.wiring.package\s*=\s*([^)]+)\)"
+      flags = 0
+      compiled = true
+      normalizedPattern = "\(osgi.wiring.package\s*=\s*([^)]+)\)"
+      root = class java.util.regex.Pattern$BnM@22b1904d
+      matchRoot = class java.util.regex.Pattern$Slice@5892f8c1
+      buffer = null
+      namedGroups = null
+      groupNodes = null
+      temp = null
+      capturingGroupCount = 2
+      localCount = 1
+      cursor = 37
+      patternLength = 0
+      hasSupplementary = false
+      MAX_REPS = 2147483647
+      GREEDY = 0
+      LAZY = 1
+      POSSESSIVE = 2
+      INDEPENDENT = 3
+      lookbehindEnd = class java.util.regex.Pattern$4@c45ba0a
+      accept = class java.util.regex.Pattern$Node@6114821b
+      lastAccept = class java.util.regex.Pattern$LastNode@4f89558c
+      $assertionsDisabled = true
+    EMPTY_ENUMERATION = class java.util.Collections$3@76ce6438
+      i = class java.util.Collections$EmptyIterator@62d7cea3
+      val$c = class java.util.Collections$EmptyList@29eb4007
+    wiring = class org.eclipse.osgi.container.ModuleWiring@3b505450
+      GET_CLASSLOADER_PERM = class java.lang.RuntimePermission@157346a6
+      DYNAMICALLY_ADDED_IMPORT_DIRECTIVE = "x.dynamically.added"
+      revision = class org.eclipse.osgi.container.ModuleRevision@6bea52d4
+      capabilities = class java.util.ArrayList@6f4e754f
+      requirements = class java.util.ArrayList@1a3abe63
+      substitutedPkgNames = class java.util.Collections$EmptyList@29eb4007
+      loader = class org.eclipse.osgi.internal.container.AtomicLazyInitializer@10ab18af
+      loaderInitializer = class org.eclipse.osgi.container.ModuleWiring$LoaderInitializer@1fe22a6a
+      providedWires = class java.util.ArrayList@31ac0d4
+      requiredWires = class java.util.ArrayList@4c9caf72
+      isValid = true
+      dynamicMissRef = class java.util.concurrent.atomic.AtomicReference@4baa82e
+    container = class org.eclipse.osgi.internal.framework.EquinoxContainer@2920567c
+      NAME = "org.eclipse.osgi"
+      secureAction = class org.eclipse.osgi.framework.util.SecureAction@4cf4b485
+      equinoxConfig = class org.eclipse.osgi.internal.framework.EquinoxConfiguration@1b5fbd6b
+      logServices = class org.eclipse.osgi.internal.log.EquinoxLogServices@24fe0c81
+      storage = class org.eclipse.osgi.storage.Storage@5aab4a1b
+      packageAdmin = class org.eclipse.osgi.internal.framework.legacy.PackageAdminImpl@33128d57
+      startLevel = class org.eclipse.osgi.internal.framework.legacy.StartLevelImpl@55c0cabb
+      bootDelegation = class java.util.HashSet@18e4e86
+      bootDelegationStems = class java.lang.String[12]
+      bootDelegateAll = false
+      isProcessClassRecursionSupportedByAll = false
+      eventPublisher = class org.eclipse.osgi.internal.framework.EquinoxEventPublisher@262a6a72
+      monitor = class java.lang.Object@756ce91e
+      bootLoader = class org.eclipse.osgi.internal.framework.EquinoxContainer$1@6e5734b
+      serviceRegistry = class org.eclipse.osgi.internal.serviceregistry.ServiceRegistry@23710104
+      contextFinder = class org.eclipse.osgi.internal.framework.ContextFinder@75d0c1d1
+      signedContentFactory = class org.osgi.util.tracker.ServiceTracker@2e01f87e
+      executor = class java.util.concurrent.ScheduledThreadPoolExecutor@5b0d7e36
+      storageSaver = class org.eclipse.osgi.internal.framework.StorageSaver@49bb4850
+    debug = class org.eclipse.osgi.internal.debug.Debug@6c3b31c6
+    policy = null
+    exportedPackages = class java.util.Collections$SynchronizedCollection@13f5da24
+      serialVersionUID = 3053995032091335093
+      c = class java.util.ArrayList@337e89f4
+      mutex = class java.util.Collections$SynchronizedCollection@13f5da24
+    exportSources = class org.eclipse.osgi.internal.loader.BundleLoaderSources@2853f1f2
+      secureAction = class org.eclipse.osgi.framework.util.SecureAction@1c81325b
+      pkgSources = class java.util.concurrent.ConcurrentHashMap@256b92ae
+      loader = class org.eclipse.osgi.internal.loader.BundleLoader@63416a70
+    requiredSources = class java.util.HashMap@2d39bf64
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    importedSources = class java.util.HashMap@14f28c47
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[16]
+      entrySet = null
+      size = 10
+      modCount = 10
+      threshold = 12
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    requiredBundleWires = class java.util.Collections$EmptyList@29eb4007
+      serialVersionUID = 8842843931221139166
+      modCount = 0
+      MAX_ARRAY_SIZE = 2147483639
+    importsInitialized = true
+    dynamicAllPackages = false
+    dynamicImportPackageStems = null
+    dynamicImportPackages = class java.lang.String[6]
+      String[0] = "javax.rmi.CORBA"
+      String[1] = "org.omg.CORBA"
+      String[2] = "org.omg.CORBA.portable"
+      String[3] = "org.omg.CORBA_2_3.portable"
+      String[4] = "org.omg.PortableServer"
+      String[5] = "org.omg.PortableServer.POAPackage"
+    classLoaderCreatedMonitor = class java.lang.Object@7e22b682
+    classLoaderCreated = class org.eclipse.osgi.internal.loader.EquinoxClassLoader@5b28c973
+    classloader = class org.eclipse.osgi.internal.loader.EquinoxClassLoader@5b28c973
+    parent = class com.ibm.ws.kernel.internal.classloader.BootstrapChildFirstJarClassloader@1ddc4ec2
+    triggerClassLoaded = class java.util.concurrent.atomic.AtomicBoolean@7eb29db5
+      serialVersionUID = 4654671469794556979
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = 1
+    firstUseOfInvalidLoader = class java.util.concurrent.atomic.AtomicBoolean@daa011c
+      serialVersionUID = 4654671469794556979
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = 0
+  generation = class org.eclipse.osgi.storage.BundleInfo$Generation@56ef9176
+    generationId = 0
+    genMonitor = class java.lang.Object@729517e8
+    cachedHeaders = class org.eclipse.osgi.storage.BundleInfo$CachedManifest@577de52
+      cached = class java.util.HashMap@10a5dcef
+      generation = class org.eclipse.osgi.storage.BundleInfo$Generation@56ef9176
+    content = class java.io.File@1a77a6cc
+      fs = class java.io.WinNTFileSystem@64e7cdcb
+      path = "C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\lib\com.ibm.ws.management.j2ee.mejb_1.0.41.jar"
+      status = class java.io.File$PathStatus@61c7c1ee
+      prefixLength = 3
+      separatorChar = \
+      separator = "\"
+      pathSeparatorChar = ;
+      pathSeparator = ";"
+      PATH_OFFSET = 16
+      PREFIX_LENGTH_OFFSET = 12
+      UNSAFE = class sun.misc.Unsafe@3be3ec37
+      serialVersionUID = 301077366599181567
+      filePath = null
+      $assertionsDisabled = true
+    isDirectory = false
+    isReference = true
+    hasPackageInfo = false
+    bundleFile = class org.eclipse.osgi.storage.bundlefile.ZipBundleFile@c21c121
+      zipFile = class java.util.zip.ZipFile@5fcc1e5d
+      openLock = class java.util.concurrent.locks.ReentrantLock@27a8f0cf
+      refCondition = class java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@691d7b8
+      mruList = class org.eclipse.osgi.storage.bundlefile.MRUBundleFileList@39100fc1
+      generation = class org.eclipse.osgi.storage.BundleInfo$Generation@56ef9176
+      debug = class org.eclipse.osgi.internal.debug.Debug@6c3b31c6
+      closed = false
+      referenceCount = 0
+      secureAction = class org.eclipse.osgi.framework.util.SecureAction@39d35dfb
+      basefile = class java.io.File@1a77a6cc
+      mruIndex = 40
+    rawHeaders = class java.util.Collections$UnmodifiableMap@56d1bd1a
+      serialVersionUID = -1034234728574286014
+      m = class org.eclipse.osgi.framework.util.CaseInsensitiveDictionaryMap@1da9fbd0
+      keySet = class java.util.Collections$UnmodifiableSet@5e5d1c16
+      entrySet = null
+      values = null
+    revision = class org.eclipse.osgi.container.ModuleRevision@6bea52d4
+      symbolicName = "com.ibm.ws.management.j2ee.mejb"
+      version = class org.osgi.framework.Version@395df734
+      types = 0
+      capabilities = class java.util.ArrayList@664a8940
+      requirements = class java.util.ArrayList@1094388e
+      revisions = class org.eclipse.osgi.container.ModuleRevisions@4b63338
+      revisionInfo = class org.eclipse.osgi.storage.BundleInfo$Generation@56ef9176
+      lazyActivationPolicy = true
+    headerLocalization = class org.eclipse.osgi.storage.ManifestLocalization@6d6f6cdc
+      defaultRoot = "en"
+      generation = class org.eclipse.osgi.storage.BundleInfo$Generation@56ef9176
+      rawHeaders = class org.eclipse.osgi.storage.BundleInfo$CachedManifest@577de52
+      defaultLocaleHeaders = class org.eclipse.osgi.framework.util.CaseInsensitiveDictionaryMap$UnmodifiableDictionary@4a93c203
+      cache = class java.util.Hashtable@6e90758c
+    domain = null
+    nativeCodeFinder = null
+    storageHooks = class java.util.Collections$UnmodifiableRandomAccessList@4a89f67b
+      serialVersionUID = -2542308836966382001
+      serialVersionUID = -283967356065247728
+      list = class java.util.ArrayList@29a92807
+      serialVersionUID = 1820017752578914078
+      c = class java.util.ArrayList@29a92807
+    lastModified = 1593470851281
+    isMRJar = false
+    this$0 = class org.eclipse.osgi.storage.BundleInfo@48a31ec2
+      OSGI_BUNDLE_MANIFEST = "META-INF/MANIFEST.MF"
+      MULTI_RELEASE_HEADER = "Multi-Release"
+      MULTI_RELEASE_VERSIONS = "META-INF/versions/"
+      MULTI_RELEASE_FILTER_PREFIXES = class java.util.Collections$SingletonSet@1e4e0e1c
+      storage = class org.eclipse.osgi.storage.Storage@5aab4a1b
+      bundleId = 285
+      location = "feature@reference:file:/C:/Users/pachopaco70/Documents/GitHub/CookTimeServer/Liberty/lib/com.ibm.ws.management.j2ee.mejb_1.0.41.jar"
+      nextGenerationId = 1
+      infoMonitor = class java.lang.Object@6ef20c73
+      generationLocks = null
+  manager = class org.eclipse.osgi.internal.loader.classpath.ClasspathManager@6982a28a
+    emptyFragments = class org.eclipse.osgi.internal.loader.classpath.FragmentClasspath[0]
+    DEFAULT_CLASSPATH = class java.lang.String[1]
+      String[0] = "."
+    EMPTY_ENUMERATION = class java.util.Collections$3@26eb22b5
+      i = class java.util.Collections$EmptyIterator@62d7cea3
+      val$c = class java.util.Collections$EmptyList@29eb4007
+    generation = class org.eclipse.osgi.storage.BundleInfo$Generation@56ef9176
+    classloader = class org.eclipse.osgi.internal.loader.EquinoxClassLoader@5b28c973
+    hookRegistry = class org.eclipse.osgi.internal.hookregistry.HookRegistry@798d0413
+      HOOK_CONFIGURATORS_FILE = "hookconfigurators.properties"
+      HOOK_CONFIGURATORS = "hook.configurators"
+      PROP_HOOK_CONFIGURATORS_INCLUDE = "osgi.hook.configurators.include"
+      PROP_HOOK_CONFIGURATORS_EXCLUDE = "osgi.hook.configurators.exclude"
+      PROP_HOOK_CONFIGURATORS = "osgi.hook.configurators"
+      BUILTIN_HOOKS = "builtin.hooks"
+      container = class org.eclipse.osgi.internal.framework.EquinoxContainer@2920567c
+      initialized = true
+      classLoaderHooks = class java.util.ArrayList@70323397
+      classLoaderHooksRO = class java.util.Collections$UnmodifiableRandomAccessList@950eb79
+      storageHookFactories = class java.util.ArrayList@75612de1
+      storageHookFactoriesRO = class java.util.Collections$UnmodifiableRandomAccessList@969881f
+      bundleFileWrapperFactoryHooks = class java.util.ArrayList@68a6ac2e
+      bundleFileWrapperFactoryHooksRO = class java.util.Collections$UnmodifiableRandomAccessList@66a38960
+      activatorHookFactories = class java.util.ArrayList@1a51ae70
+      activatorHookFactoriesRO = class java.util.Collections$UnmodifiableRandomAccessList@5f3de455
+    debug = class org.eclipse.osgi.internal.debug.Debug@6c3b31c6
+    entries = class org.eclipse.osgi.internal.loader.classpath.ClasspathEntry[1]
+      ClasspathEntry[0] = class org.eclipse.osgi.internal.loader.classpath.ClasspathEntry@6ab27535
+    fragments = class org.eclipse.osgi.internal.loader.classpath.FragmentClasspath[0]
+    loadedLibraries = null
+    currentDefineContext = class java.lang.ThreadLocal@3f61152c
+      threadLocalHashCode = 1768822552
+      nextHashCode = class java.util.concurrent.atomic.AtomicInteger@42907399
+      HASH_INCREMENT = 1640531527
+  isRegisteredAsParallel = true
+  ALLPERMISSIONS = class java.security.AllPermissionCollection@6724cf9b
+    serialVersionUID = -4023755556366636806
+    all_allowed = true
+    serialVersionUID = -6727011328946861783
+    readOnly = true
+  REGISTERED_AS_PARALLEL = true
+  classNameLocks = class java.util.HashMap@2f9ff949
+    serialVersionUID = 362498820763181265
+    DEFAULT_INITIAL_CAPACITY = 16
+    MAXIMUM_CAPACITY = 1073741824
+    DEFAULT_LOAD_FACTOR = 0.75
+    TREEIFY_THRESHOLD = 8
+    UNTREEIFY_THRESHOLD = 6
+    MIN_TREEIFY_CAPACITY = 64
+    table = class java.util.HashMap$Node[8]
+      Node[0] = null
+      Node[1] = null
+      Node[2] = null
+      Node[3] = null
+      Node[4] = null
+      Node[5] = null
+      Node[6] = null
+      Node[7] = null
+    entrySet = null
+    size = 0
+    modCount = 4
+    threshold = 6
+    loadFactor = 0.75
+    keySet = null
+    values = null
+  pkgLock = class java.lang.Object@480023bf
+  parent = class com.ibm.ws.kernel.internal.classloader.BootstrapChildFirstJarClassloader@1ddc4ec2
+    KERNEL_BOOT_CLASS_PREFIX = "com.ibm.ws.kernel.boot."
+    KERNEL_BOOT_RESOURCE_PREFIX = "com/ibm/ws/kernel/boot/"
+    KERNEL_BOOT_PREFIX_LENGTH = 23
+    parent = class sun.misc.Launcher$AppClassLoader@18b4aac2
+    urls = class java.util.concurrent.CopyOnWriteArrayList@61c077
+      serialVersionUID = 8673264195747942595
+      lock = class java.util.concurrent.locks.ReentrantLock@4c79e55b
+      array = class java.lang.Object[5]
+      UNSAFE = class sun.misc.Unsafe@3be3ec37
+      lockOffset = 12
+    resourceHandlers = class java.util.concurrent.CopyOnWriteArrayList@50648bb7
+      serialVersionUID = 8673264195747942595
+      lock = class java.util.concurrent.locks.ReentrantLock@69ab788f
+      array = class java.lang.Object[5]
+      UNSAFE = class sun.misc.Unsafe@3be3ec37
+      lockOffset = 12
+    verify = false
+    hook = null
+    initialized = true
+    pdcache = class java.util.HashMap@49a10651
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[16]
+      entrySet = null
+      size = 5
+      modCount = 5
+      threshold = 12
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    debug = null
+    parent = class sun.misc.Launcher$AppClassLoader@18b4aac2
+    parallelLockMap = class java.util.concurrent.ConcurrentHashMap@3aa8e960
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 8
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[2048]
+      nextTable = null
+      baseCount = 1446
+      sizeCtl = 1536
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@3be3ec37
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    package2certs = class java.util.concurrent.ConcurrentHashMap@3444e43a
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 8
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[256]
+      nextTable = null
+      baseCount = 103
+      sizeCtl = 192
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@3be3ec37
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    nocerts = class java.security.cert.Certificate[0]
+    classes = class java.util.Vector@4089e836
+      elementData = class java.lang.Object[1280]
+      elementCount = 762
+      capacityIncrement = 0
+      serialVersionUID = -2767605614048989439
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 762
+      MAX_ARRAY_SIZE = 2147483639
+    defaultDomain = class java.security.ProtectionDomain@1dbedf8
+      codesource = class java.security.CodeSource@3ddb0ca8
+      classloader = class com.ibm.ws.kernel.internal.classloader.BootstrapChildFirstJarClassloader@1ddc4ec2
+      principals = interface java.security.Principal[0]
+      permissions = null
+      hasAllPerm = false
+      staticPermissions = false
+      key = class java.security.ProtectionDomain$Key@62eab794
+      debug = null
+    packages = class java.util.HashMap@7cc5e74a
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[256]
+      entrySet = null
+      size = 103
+      modCount = 103
+      threshold = 192
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    scl = class sun.misc.Launcher$AppClassLoader@18b4aac2
+    sclSet = true
+    loadedLibraryNames = class java.util.Vector@3a758381
+    systemNativeLibraries = class java.util.Vector@6daa9278
+    nativeLibraries = class java.util.Vector@6fb3a9dc
+      elementData = class java.lang.Object[10]
+      elementCount = 0
+      capacityIncrement = 0
+      serialVersionUID = -2767605614048989439
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 0
+      MAX_ARRAY_SIZE = 2147483639
+    nativeLibraryContext = class java.util.Stack@5cabbb14
+    usr_paths = class java.lang.String[42]
+    sys_paths = class java.lang.String[1]
+    assertionLock = class java.lang.Object@60f42444
+    defaultAssertionStatus = false
+    packageAssertionStatus = null
+    classAssertionStatus = null
+  parallelLockMap = class java.util.concurrent.ConcurrentHashMap@207ad225
+    serialVersionUID = 7249069246763182397
+    MAXIMUM_CAPACITY = 1073741824
+    DEFAULT_CAPACITY = 16
+    MAX_ARRAY_SIZE = 2147483639
+    DEFAULT_CONCURRENCY_LEVEL = 16
+    LOAD_FACTOR = 0.75
+    TREEIFY_THRESHOLD = 8
+    UNTREEIFY_THRESHOLD = 6
+    MIN_TREEIFY_CAPACITY = 64
+    MIN_TRANSFER_STRIDE = 16
+    RESIZE_STAMP_BITS = 16
+    MAX_RESIZERS = 65535
+    RESIZE_STAMP_SHIFT = 16
+    MOVED = -1
+    TREEBIN = -2
+    RESERVED = -3
+    HASH_BITS = 2147483647
+    NCPU = 8
+    serialPersistentFields = class java.io.ObjectStreamField[3]
+    table = null
+    nextTable = null
+    baseCount = 0
+    sizeCtl = 0
+    transferIndex = 0
+    cellsBusy = 0
+    counterCells = null
+    keySet = null
+    values = null
+    entrySet = null
+    U = class sun.misc.Unsafe@3be3ec37
+    SIZECTL = 20
+    TRANSFERINDEX = 32
+    BASECOUNT = 24
+    CELLSBUSY = 36
+    CELLVALUE = 144
+    ABASE = 16
+    ASHIFT = 2
+    keySet = null
+    values = null
+  package2certs = class java.util.concurrent.ConcurrentHashMap@616399a6
+    serialVersionUID = 7249069246763182397
+    MAXIMUM_CAPACITY = 1073741824
+    DEFAULT_CAPACITY = 16
+    MAX_ARRAY_SIZE = 2147483639
+    DEFAULT_CONCURRENCY_LEVEL = 16
+    LOAD_FACTOR = 0.75
+    TREEIFY_THRESHOLD = 8
+    UNTREEIFY_THRESHOLD = 6
+    MIN_TREEIFY_CAPACITY = 64
+    MIN_TRANSFER_STRIDE = 16
+    RESIZE_STAMP_BITS = 16
+    MAX_RESIZERS = 65535
+    RESIZE_STAMP_SHIFT = 16
+    MOVED = -1
+    TREEBIN = -2
+    RESERVED = -3
+    HASH_BITS = 2147483647
+    NCPU = 8
+    serialPersistentFields = class java.io.ObjectStreamField[3]
+      ObjectStreamField[0] = class java.io.ObjectStreamField@5a5a1269
+      ObjectStreamField[1] = class java.io.ObjectStreamField@4098b801
+      ObjectStreamField[2] = class java.io.ObjectStreamField@1f8dfca1
+    table = class java.util.concurrent.ConcurrentHashMap$Node[16]
+      Node[0] = null
+      Node[1] = class java.util.concurrent.ConcurrentHashMap$Node@31306b64
+      Node[2] = null
+      Node[3] = null
+      Node[4] = null
+      Node[5] = null
+      Node[6] = null
+      Node[7] = null
+      Node[8] = null
+      Node[9] = null
+      Node[10] = null
+      Node[11] = null
+      Node[12] = null
+      Node[13] = null
+      Node[14] = class java.util.concurrent.ConcurrentHashMap$Node@4f5f68a5
+      Node[15] = null
+    nextTable = null
+    baseCount = 2
+    sizeCtl = 12
+    transferIndex = 0
+    cellsBusy = 0
+    counterCells = null
+    keySet = null
+    values = null
+    entrySet = null
+    U = class sun.misc.Unsafe@3be3ec37
+      theUnsafe = class sun.misc.Unsafe@3be3ec37
+      INVALID_FIELD_OFFSET = -1
+      ARRAY_BOOLEAN_BASE_OFFSET = 16
+      ARRAY_BYTE_BASE_OFFSET = 16
+      ARRAY_SHORT_BASE_OFFSET = 16
+      ARRAY_CHAR_BASE_OFFSET = 16
+      ARRAY_INT_BASE_OFFSET = 16
+      ARRAY_LONG_BASE_OFFSET = 16
+      ARRAY_FLOAT_BASE_OFFSET = 16
+      ARRAY_DOUBLE_BASE_OFFSET = 16
+      ARRAY_OBJECT_BASE_OFFSET = 16
+      ARRAY_BOOLEAN_INDEX_SCALE = 1
+      ARRAY_BYTE_INDEX_SCALE = 1
+      ARRAY_SHORT_INDEX_SCALE = 2
+      ARRAY_CHAR_INDEX_SCALE = 2
+      ARRAY_INT_INDEX_SCALE = 4
+      ARRAY_LONG_INDEX_SCALE = 8
+      ARRAY_FLOAT_INDEX_SCALE = 4
+      ARRAY_DOUBLE_INDEX_SCALE = 8
+      ARRAY_OBJECT_INDEX_SCALE = 4
+      ADDRESS_SIZE = 8
+    SIZECTL = 20
+    TRANSFERINDEX = 32
+    BASECOUNT = 24
+    CELLSBUSY = 36
+    CELLVALUE = 144
+    ABASE = 16
+    ASHIFT = 2
+    keySet = null
+    values = null
+  nocerts = class java.security.cert.Certificate[0]
+  classes = class java.util.Vector@31e67172
+    elementData = class java.lang.Object[10]
+      Object[0] = class java.lang.Class@6f1b23a8
+      Object[1] = class java.lang.Class@4d6d2954
+      Object[2] = null
+      Object[3] = null
+      Object[4] = null
+      Object[5] = null
+      Object[6] = null
+      Object[7] = null
+      Object[8] = null
+      Object[9] = null
+    elementCount = 2
+    capacityIncrement = 0
+    serialVersionUID = -2767605614048989439
+    MAX_ARRAY_SIZE = 2147483639
+    modCount = 2
+    MAX_ARRAY_SIZE = 2147483639
+  defaultDomain = class java.security.ProtectionDomain@78b2a12a
+    codesource = class java.security.CodeSource@6138db5f
+      serialVersionUID = 4977541819976013951
+      location = null
+      signers = null
+      certs = null
+      sp = null
+      factory = null
+    classloader = class org.eclipse.osgi.internal.loader.EquinoxClassLoader@5b28c973
+    principals = interface java.security.Principal[0]
+    permissions = null
+    hasAllPerm = false
+    staticPermissions = false
+    key = class java.security.ProtectionDomain$Key@5f7360c3
+      this$0 = class java.security.ProtectionDomain@78b2a12a
+    debug = null
+  packages = class java.util.HashMap@eafafe3
+    serialVersionUID = 362498820763181265
+    DEFAULT_INITIAL_CAPACITY = 16
+    MAXIMUM_CAPACITY = 1073741824
+    DEFAULT_LOAD_FACTOR = 0.75
+    TREEIFY_THRESHOLD = 8
+    UNTREEIFY_THRESHOLD = 6
+    MIN_TREEIFY_CAPACITY = 64
+    table = class java.util.HashMap$Node[16]
+      Node[0] = null
+      Node[1] = class java.util.HashMap$Node@783595fd
+      Node[2] = null
+      Node[3] = null
+      Node[4] = null
+      Node[5] = null
+      Node[6] = null
+      Node[7] = null
+      Node[8] = null
+      Node[9] = null
+      Node[10] = null
+      Node[11] = null
+      Node[12] = null
+      Node[13] = null
+      Node[14] = class java.util.HashMap$Node@6f0086a5
+      Node[15] = null
+    entrySet = null
+    size = 2
+    modCount = 2
+    threshold = 12
+    loadFactor = 0.75
+    keySet = null
+    values = null
+  scl = class sun.misc.Launcher$AppClassLoader@18b4aac2
+    ucp = class sun.misc.URLClassPath@35e0e944
+      USER_AGENT_JAVA_VERSION = "UA-Java-Version"
+      JAVA_VERSION = "1.8.0_241"
+      DEBUG = false
+      DEBUG_LOOKUP_CACHE = false
+      DISABLE_JAR_CHECKING = false
+      DISABLE_ACC_CHECKING = false
+      DISABLE_CP_URL_CHECK = true
+      DEBUG_CP_URL_CHECK = false
+      path = class java.util.ArrayList@e6b40d9
+      urls = class java.util.Stack@6b30b3f0
+      loaders = class java.util.ArrayList@5c51ef15
+      lmap = class java.util.HashMap@49bb0965
+      jarHandler = class sun.net.www.protocol.jar.Handler@1d82e503
+      closed = false
+      acc = class java.security.AccessControlContext@3493d666
+      lookupCacheEnabled = false
+      lookupCacheURLs = null
+      lookupCacheLoader = null
+    $assertionsDisabled = true
+    ucp = class sun.misc.URLClassPath@35e0e944
+    acc = class java.security.AccessControlContext@3493d666
+      context = null
+      isPrivileged = true
+      isAuthorized = true
+      privilegedContext = null
+      combiner = null
+      permissions = null
+      parent = null
+      isWrapped = false
+      isLimited = false
+      limitedContext = null
+      debugInit = false
+      debug = null
+    closeables = class java.util.WeakHashMap@51df05ce
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      table = class java.util.WeakHashMap$Entry[16]
+      size = 0
+      threshold = 12
+      loadFactor = 0.75
+      queue = class java.lang.ref.ReferenceQueue@2efbd4a7
+      modCount = 0
+      NULL_KEY = class java.lang.Object@4f7ed396
+      entrySet = null
+      keySet = null
+      values = null
+    initialized = true
+    pdcache = class java.util.HashMap@6a772190
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[16]
+      entrySet = null
+      size = 2
+      modCount = 2
+      threshold = 12
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    debug = null
+    parent = class sun.misc.Launcher$ExtClassLoader@244fe2ea
+      instance = class sun.misc.Launcher$ExtClassLoader@244fe2ea
+      ucp = class sun.misc.URLClassPath@73437a70
+      acc = class java.security.AccessControlContext@20391a4a
+      closeables = class java.util.WeakHashMap@3158cf09
+      initialized = true
+      pdcache = class java.util.HashMap@3bf88edc
+      debug = null
+      parent = null
+      parallelLockMap = class java.util.concurrent.ConcurrentHashMap@5300f329
+      package2certs = class java.util.concurrent.ConcurrentHashMap@3b034849
+      nocerts = class java.security.cert.Certificate[0]
+      classes = class java.util.Vector@4c54e8a7
+      defaultDomain = class java.security.ProtectionDomain@33a5019f
+      packages = class java.util.HashMap@67e82579
+      scl = class sun.misc.Launcher$AppClassLoader@18b4aac2
+      sclSet = true
+      loadedLibraryNames = class java.util.Vector@3a758381
+      systemNativeLibraries = class java.util.Vector@6daa9278
+      nativeLibraries = class java.util.Vector@468878cd
+      nativeLibraryContext = class java.util.Stack@5cabbb14
+      usr_paths = class java.lang.String[42]
+      sys_paths = class java.lang.String[1]
+      assertionLock = class java.lang.Object@2d72a16b
+      defaultAssertionStatus = false
+      packageAssertionStatus = null
+      classAssertionStatus = null
+    parallelLockMap = class java.util.concurrent.ConcurrentHashMap@586f5f53
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 8
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[2048]
+      nextTable = null
+      baseCount = 855
+      sizeCtl = 1536
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@3be3ec37
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    package2certs = class java.util.concurrent.ConcurrentHashMap@72e592de
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 8
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[32]
+      nextTable = null
+      baseCount = 15
+      sizeCtl = 24
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@3be3ec37
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    nocerts = class java.security.cert.Certificate[0]
+    classes = class java.util.Vector@5b3d0839
+      elementData = class java.lang.Object[160]
+      elementCount = 98
+      capacityIncrement = 0
+      serialVersionUID = -2767605614048989439
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 98
+      MAX_ARRAY_SIZE = 2147483639
+    defaultDomain = class java.security.ProtectionDomain@815c96f
+      codesource = class java.security.CodeSource@3feb4860
+      classloader = class sun.misc.Launcher$AppClassLoader@18b4aac2
+      principals = interface java.security.Principal[0]
+      permissions = null
+      hasAllPerm = false
+      staticPermissions = false
+      key = class java.security.ProtectionDomain$Key@19c0333e
+      debug = null
+    packages = class java.util.HashMap@2aa28af9
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[32]
+      entrySet = null
+      size = 15
+      modCount = 15
+      threshold = 24
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    scl = class sun.misc.Launcher$AppClassLoader@18b4aac2
+    sclSet = true
+    loadedLibraryNames = class java.util.Vector@3a758381
+    systemNativeLibraries = class java.util.Vector@6daa9278
+    nativeLibraries = class java.util.Vector@740f8e11
+      elementData = class java.lang.Object[10]
+      elementCount = 0
+      capacityIncrement = 0
+      serialVersionUID = -2767605614048989439
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 0
+      MAX_ARRAY_SIZE = 2147483639
+    nativeLibraryContext = class java.util.Stack@5cabbb14
+    usr_paths = class java.lang.String[42]
+    sys_paths = class java.lang.String[1]
+    assertionLock = class java.lang.Object@47403c69
+    defaultAssertionStatus = false
+    packageAssertionStatus = null
+    classAssertionStatus = null
+  sclSet = true
+  loadedLibraryNames = class java.util.Vector@3a758381
+    elementData = class java.lang.Object[10]
+      Object[0] = "C:\Program Files\Java\jre1.8.0_241\bin\zip.dll"
+      Object[1] = "C:\Program Files\Java\jre1.8.0_241\bin\instrument.dll"
+      Object[2] = "C:\Program Files\Java\jre1.8.0_241\bin\net.dll"
+      Object[3] = "C:\Program Files\Java\jre1.8.0_241\bin\nio.dll"
+      Object[4] = "C:\Program Files\Java\jre1.8.0_241\bin\management.dll"
+      Object[5] = "C:\Program Files\Java\jre1.8.0_241\bin\sunec.dll"
+      Object[6] = "C:\Program Files\Java\jre1.8.0_241\bin\sunmscapi.dll"
+      Object[7] = "C:\Program Files\Java\jre1.8.0_241\bin\awt.dll"
+      Object[8] = null
+      Object[9] = null
+    elementCount = 8
+    capacityIncrement = 0
+    serialVersionUID = -2767605614048989439
+    MAX_ARRAY_SIZE = 2147483639
+    modCount = 8
+    MAX_ARRAY_SIZE = 2147483639
+  systemNativeLibraries = class java.util.Vector@6daa9278
+    elementData = class java.lang.Object[10]
+      Object[0] = class java.lang.ClassLoader$NativeLibrary@31f7716e
+      Object[1] = class java.lang.ClassLoader$NativeLibrary@8200e96
+      Object[2] = class java.lang.ClassLoader$NativeLibrary@3e0f9e05
+      Object[3] = class java.lang.ClassLoader$NativeLibrary@1d1030ba
+      Object[4] = class java.lang.ClassLoader$NativeLibrary@17665e77
+      Object[5] = class java.lang.ClassLoader$NativeLibrary@1f3aa6b3
+      Object[6] = null
+      Object[7] = null
+      Object[8] = null
+      Object[9] = null
+    elementCount = 6
+    capacityIncrement = 0
+    serialVersionUID = -2767605614048989439
+    MAX_ARRAY_SIZE = 2147483639
+    modCount = 6
+    MAX_ARRAY_SIZE = 2147483639
+  nativeLibraries = class java.util.Vector@737ca939
+    elementData = class java.lang.Object[10]
+      Object[0] = null
+      Object[1] = null
+      Object[2] = null
+      Object[3] = null
+      Object[4] = null
+      Object[5] = null
+      Object[6] = null
+      Object[7] = null
+      Object[8] = null
+      Object[9] = null
+    elementCount = 0
+    capacityIncrement = 0
+    serialVersionUID = -2767605614048989439
+    MAX_ARRAY_SIZE = 2147483639
+    modCount = 0
+    MAX_ARRAY_SIZE = 2147483639
+  nativeLibraryContext = class java.util.Stack@5cabbb14
+    serialVersionUID = 1224463164541339165
+    elementData = class java.lang.Object[10]
+      Object[0] = null
+      Object[1] = null
+      Object[2] = null
+      Object[3] = null
+      Object[4] = null
+      Object[5] = null
+      Object[6] = null
+      Object[7] = null
+      Object[8] = null
+      Object[9] = null
+    elementCount = 0
+    capacityIncrement = 0
+    serialVersionUID = -2767605614048989439
+    MAX_ARRAY_SIZE = 2147483639
+    modCount = 16
+    MAX_ARRAY_SIZE = 2147483639
+  usr_paths = class java.lang.String[42]
+    String[0] = "C:\Program Files\Java\jre1.8.0_241\bin"
+    String[1] = "C:\WINDOWS\Sun\Java\bin"
+    String[2] = "C:\WINDOWS\system32"
+    String[3] = "C:\WINDOWS"
+    String[4] = "C:/Program Files/Java/jre1.8.0_241/bin/server"
+    String[5] = "C:/Program Files/Java/jre1.8.0_241/bin"
+    String[6] = "C:/Program Files/Java/jre1.8.0_241/lib/amd64"
+    String[7] = "C:\Program Files (x86)\Common Files\Oracle\Java\javapath"
+    String[8] = "C:\Program Files (x86)\Razer Chroma SDK\bin"
+    String[9] = "C:\Program Files\Razer Chroma SDK\bin"
+    String[10] = "C:\Program Files (x86)\Intel\iCLS Client\"
+    String[11] = "C:\Program Files\Intel\iCLS Client\"
+    String[12] = "C:\Windows\system32"
+    String[13] = "C:\Windows"
+    String[14] = "C:\Windows\System32\Wbem"
+    String[15] = "C:\Windows\System32\WindowsPowerShell\v1.0\"
+    String[16] = "C:\Windows\System32\OpenSSH\"
+    String[17] = "C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL"
+    String[18] = "C:\Program Files\Intel\Intel(R) Management Engine Components\DAL"
+    String[19] = "C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT"
+    String[20] = "C:\Program Files\Intel\Intel(R) Management Engine Components\IPT"
+    String[21] = "C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps"
+    String[22] = "C:\WINDOWS\system32"
+    String[23] = "C:\WINDOWS"
+    String[24] = "C:\WINDOWS\System32\Wbem"
+    String[25] = "C:\WINDOWS\System32\WindowsPowerShell\v1.0\"
+    String[26] = "C:\WINDOWS\System32\OpenSSH\"
+    String[27] = "C:\Program Files\Java\jdk-13.0.2\bin"
+    String[28] = "C:\Users\pachopaco70\Downloads\openjfx-11.0.2_windows-x64_bin-sdk.zip\javafx-sdk-11.0.2\bin"
+    String[29] = "C:\Program Files\Java\jdk-11.0.6\bin"
+    String[30] = "C:\Program Files\Git\cmd"
+    String[31] = "C:\src\flutter\bin"
+    String[32] = "C:\Users\pachopaco70\AppData\Local\Programs\Python\Python37-32\Scripts\"
+    String[33] = "C:\Users\pachopaco70\AppData\Local\Programs\Python\Python37-32\"
+    String[34] = "C:\Users\pachopaco70\AppData\Local\Microsoft\WindowsApps"
+    String[35] = "C:\Users\pachopaco70\AppData\Local\Microsoft\WindowsApps"
+    String[36] = "C:\Program Files\Java\jdk-11.0.6\bin"
+    String[37] = "C:\Users\pachopaco70\AppData\Local\GitHubDesktop\bin"
+    String[38] = "C:\Users\pachopaco70\AppData\Local\Programs\Microsoft VS Code\bin"
+    String[39] = "C:\WINDOWS\System32"
+    String[40] = "."
+    String[41] = "."
+  sys_paths = class java.lang.String[1]
+    String[0] = "C:\Program Files\Java\jre1.8.0_241\bin"
+  assertionLock = class java.lang.Object@71932bc5
+  defaultAssertionStatus = false
+  packageAssertionStatus = null
+  classAssertionStatus = null
+
+Dump of objectArray[2]
+Object type = [Lcom.ibm.ws.ejbcontainer.osgi.EJBSystemBeanConfig;
+  EJBSystemBeanConfig[0] = class com.ibm.ws.ejbcontainer.osgi.EJBSystemBeanConfig@2be0a2b2
+    name = "ManagementEJB"
+    ejbClass = class java.lang.Class@4d6d2954
+      ANNOTATION = 8192
+      ENUM = 16384
+      SYNTHETIC = 4096
+      cachedConstructor = null
+      newInstanceCallerCache = null
+      name = "com.ibm.ws.management.j2ee.mejb.ManagementEJB"
+      allPermDomain = class java.security.ProtectionDomain@60df6a0b
+      useCaches = true
+      reflectionData = null
+      classRedefinedCount = 0
+      genericInfo = null
+      serialVersionUID = 3206093459760846163
+      serialPersistentFields = class java.io.ObjectStreamField[0]
+      reflectionFactory = class sun.reflect.ReflectionFactory@7cd89636
+      initted = true
+      enumConstants = null
+      enumConstantDirectory = null
+      annotationData = null
+      annotationType = null
+      classValueMap = null
+    remoteHomeInterface = class java.lang.Class@75f3f027
+      ANNOTATION = 8192
+      ENUM = 16384
+      SYNTHETIC = 4096
+      cachedConstructor = null
+      newInstanceCallerCache = null
+      name = "javax.management.j2ee.ManagementHome"
+      allPermDomain = class java.security.ProtectionDomain@60df6a0b
+      useCaches = true
+      reflectionData = null
+      classRedefinedCount = 0
+      genericInfo = null
+      serialVersionUID = 3206093459760846163
+      serialPersistentFields = class java.io.ObjectStreamField[0]
+      reflectionFactory = class sun.reflect.ReflectionFactory@7cd89636
+      initted = true
+      enumConstants = null
+      enumConstantDirectory = null
+      annotationData = null
+      annotationType = null
+      classValueMap = null
+    remoteInterface = class java.lang.Class@380594e6
+      ANNOTATION = 8192
+      ENUM = 16384
+      SYNTHETIC = 4096
+      cachedConstructor = null
+      newInstanceCallerCache = null
+      name = "javax.management.j2ee.Management"
+      allPermDomain = class java.security.ProtectionDomain@60df6a0b
+      useCaches = true
+      reflectionData = null
+      classRedefinedCount = 0
+      genericInfo = null
+      serialVersionUID = 3206093459760846163
+      serialPersistentFields = class java.io.ObjectStreamField[0]
+      reflectionFactory = class sun.reflect.ReflectionFactory@7cd89636
+      initted = true
+      enumConstants = null
+      enumConstantDirectory = null
+      annotationData = null
+      annotationType = null
+      classValueMap = null
+    remoteHomeBindingName = "ejb/mejb/MEJB"
+    serialVersionUID = -7545462709559200475
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@7bf52062
+      strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.osgi.EJBSystemBeanConfig,class com.ibm.ws.ejbcontainer.osgi.EJBSystemBeanConfig,[],null,null]"
+
+Dump of objectArray[3]
+Object type = com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl
+  POA_NAME = "EJB"
+  ASYNC_RESULT_POA_NAME = "AsyncResult"
+  EJB_NAMING_CONTEXT_NAME = "ejb"
+  EJB_GLOBAL_NAMING_CONTEXT_NAME = "global"
+  REFERENCE_ORB = "orbRef"
+  REFERENCE_POLICIES = "serverPolicySourceRef"
+  ASYNC_RESULT_TYPE_ID = "RMI:com.ibm.ejs.container.RemoteAsyncResult:0000000000000000"
+  orbRefSR = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@422ad63a
+    referenceName = "orbRef"
+    tuple = class java.util.concurrent.atomic.AtomicReference@3ed15d67
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@68e0afca
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+      strings[0] = "TraceComponent[com.ibm.wsspi.kernel.service.utils.AtomicServiceReference,class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference,[kernelUtils],com.ibm.ws.kernel.service.utils.resources.ServiceMessages,null]"
+  serverPolicySource = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference@64af7175
+    referenceName = "serverPolicySourceRef"
+    tuple = class java.util.concurrent.atomic.AtomicReference@453962ab
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@3be3ec37
+      valueOffset = 12
+      value = class com.ibm.wsspi.kernel.service.utils.AtomicServiceReference$ReferenceTuple@19875742
+    serialVersionUID = 2226592364007985000
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@21aee597
+  ejbAdapter = null
+  asyncResultAdapter = null
+  rootNamingContext = class org.apache.yoko.orb.CosNaming.tnaming2.NamingContextImpl@42b0c4c9
+    serialVersionUID = 1
+    core = class org.apache.yoko.orb.CosNaming.tnaming2.NamingContextImpl$Core@35652f76
+      NEXT_ID = class java.util.concurrent.atomic.AtomicLong@4d66357f
+      instanceId = 0
+      servantIds = class org.apache.yoko.orb.CosNaming.tnaming2.NamingContextImpl$Core$1@43442a42
+      bindings = class java.util.HashMap@60da582f
+      rootContext = class org.apache.yoko.orb.CosNaming.tnaming2.NamingContextImpl@42b0c4c9
+      logger = class com.ibm.ws.logging.internal.WsLogger@3769f97b
+      nonEscaped = ";/?:@&=+$;-_.!~* ()"
+      _methods = class java.util.Hashtable@6734e242
+      __ids = class java.lang.String[2]
+      delegate_ = null
+      get_interface_method = class java.lang.reflect.Method@28067e7a
+    servantCreationLock = class org.apache.yoko.orb.CosNaming.tnaming2.NamingContextImpl$ServantCreationLock@71b7339f
+  serialVersionUID = -6349284594482761319
+  $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@584b25c7
+    strings[0] = "TraceComponent[com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl,class com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl,[EJBContainer],null,null]"
+
