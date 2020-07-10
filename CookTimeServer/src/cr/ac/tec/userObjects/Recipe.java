@@ -25,7 +25,17 @@ public class Recipe {
 	private ArrayList<String> tags = new ArrayList<String>();
 	private ArrayList<String> ingridients = new ArrayList<String>();
 	private ArrayList<String> steps = new ArrayList<String>();
+	private ArrayList<String> comments = new ArrayList<String>();
 	private int difficulty;
+	
+	
+	public ArrayList<String> getComments() {
+		return comments;
+	}
+
+	public void setComments(ArrayList<String> comments) {
+		this.comments = comments;
+	}
 	
 	public String getImageBytes() {
 		return imageBytes;
@@ -136,6 +146,10 @@ public class Recipe {
 	
 	public int getStars() {
 		return this.stars;
+	}
+	
+	public void addComment(String comment) {
+		this.comments.add(comment);
 	}
 	
 

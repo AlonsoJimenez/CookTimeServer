@@ -16,5 +16,9 @@ public class EnterpriseRecipe extends Recipe{
 	public void setPrice(int price) {
 		this.price = price;
 	}
+	
+	public int getPrice() {
+		return this.price;
+	}
 
 }

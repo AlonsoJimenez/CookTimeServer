@@ -40,7 +40,7 @@ public class UserData {
 	@GET
 	public Response getMenu(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
-		return Response.ok(toResponse.getRecipes()).build();
+		return Response.ok(toResponse.recipes()).build();
 	}
 	
 	@Path("stars")
@@ -48,7 +48,7 @@ public class UserData {
 	public Response getStars(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
 		toResponse.arrayBy(SortingType.stars);
-		return Response.ok(toResponse.getRecipes()).build();
+		return Response.ok(toResponse.recipes()).build();
 	}
 	
 	@Path("date")
@@ -56,7 +56,7 @@ public class UserData {
 	public Response getDate(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
 		toResponse.arrayBy(SortingType.date);
-		return Response.ok(toResponse.getRecipes()).build();
+		return Response.ok(toResponse.recipes()).build();
 	}
 	
 	@Path("difficulty")
@@ -64,7 +64,7 @@ public class UserData {
 	public Response getDifficulty(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
 		toResponse.arrayBy(SortingType.difficulty);
-		return Response.ok(toResponse.getRecipes()).build();
+		return Response.ok(toResponse.recipes()).build();
 	}
 	
 	@Path("profiles/{search}")
@@ -146,6 +146,29 @@ public class UserData {
 		toUpdate.setName(toCreate.getName());
 		return Response.ok().build();
 	}
+	
+	@Path("followCompany")
+	@POST
+	public Response followComp(@HeaderParam("x-user") String username, @QueryParam("company")String  compName) {
+		Trees.getTrees().profileTree.find(username).followNewComp(Trees.getTrees().enterpriseTree.find(compName));
+		return Response.ok().build();
+	}
+	
+	@Path("comment/{recipe}")
+	@POST
+	public Response commentRecipe(@QueryParam("comment")String  comment, @PathParam("recipe")String recipe) {
+		Trees.getTrees().recipeTree.find(recipe).addComment(comment);
+		return Response.ok().build();
+	}
+	
+	@Path("stars/{recipe}")
+	@POST
+	public Response rate(@QueryParam("rate")int  rate, @PathParam("recipe")String recipe) {
+		Trees.getTrees().recipeTree.find(recipe).updateStars(rate);
+		return Response.ok().build();
+	}
+	
+	
 	
 	
 	

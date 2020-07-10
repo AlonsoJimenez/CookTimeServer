@@ -13,6 +13,18 @@ import cr.ac.tec.userObjects.User;
 @Produces(value = MediaType.APPLICATION_JSON)
 public class EnterpriseData {
 	
+	@Path("member/{name}")
+	@POST
+	public Response newMember(@HeaderParam("x-user")String username, @PathParam("name") String name, @QueryParam("username") String member) {
+		if(Trees.getTrees().profileTree.find(username).hasCompany(name)) {
+			if(Trees.getTrees().profileTree.find(member)!=null) {
+				Trees.getTrees().enterpriseTree.find(name).addMembers(Trees.getTrees().profileTree.find(member));;
+				return Response.ok().build();
+			}
+		}
+		return Response.status(400).build();
+	}
+	
 	@Path("edit/{name}")
 	@PUT
 	public Response editCompany(@HeaderParam("x-user")String username, @PathParam("name") String name, Enterprise enterprise) {
@@ -44,4 +56,5 @@ public class EnterpriseData {
 			return Response.status(400).build();
 		}
 	}
+	
 }

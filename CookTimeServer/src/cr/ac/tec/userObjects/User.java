@@ -32,11 +32,18 @@ public class User {
 	private ArrayList<String> followers = new ArrayList<String>();
 	private ArrayList<Enterprise> companies = new ArrayList<Enterprise>();
 	private ArrayList<String> following = new ArrayList<String>();
-    private String email;
+	private ArrayList<String> followingComp = new ArrayList<String>();
+	private String email;
     private String password;
-    
-    
-    
+	
+    public ArrayList<String> getFollowingComp() {
+		return followingComp;
+	}
+
+	public void setFollowingComp(ArrayList<String> followingComp) {
+		this.followingComp = followingComp;
+	}
+
     public  String getName() {
     	return this.name;
     }
@@ -68,7 +75,7 @@ public class User {
     	return this.myMenu;
     }
     
-    public ArrayList<Recipe> getRecipes() {
+    public ArrayList<Recipe> recipes() {
     	ArrayList<Recipe> toReturn = new ArrayList<Recipe>();
     	for(String order: myMenu) {
     		toReturn.add(Trees.getTrees().recipeTree.find(order));
@@ -164,14 +171,14 @@ public class User {
     	SortingType temp = this.sortType;
     	this.sortType = type;
     	if(type == SortingType.stars) {
-    		this.myMenu = sorter.quickSort(this.getRecipes());
+    		this.myMenu = sorter.quickSort(this.recipes());
     	}else if(type == SortingType.date) {
-    		this.myMenu = sorter.bubbleSort(this.getRecipes());
+    		this.myMenu = sorter.bubbleSort(this.recipes());
     	}else if(type == SortingType.defaultType){
     		this.sortType = temp;
-    		this.myMenu = sorter.insertionSort(this.getRecipes(), temp);
+    		this.myMenu = sorter.insertionSort(this.recipes(), temp);
     	}else {
-    		this.myMenu = sorter.radixSort(this.getRecipes());
+    		this.myMenu = sorter.radixSort(this.recipes());
     	}
     }
     
@@ -185,7 +192,7 @@ public class User {
     }
     
     public boolean hasRecipe(String recipe) {
-    	for(Recipe i : this.getRecipes()) {
+    	for(Recipe i : this.recipes()) {
     		if(i.getDishName().equals(recipe)) {
     			return true;
     		}
@@ -200,6 +207,11 @@ public class User {
     		}
     	}
     	return false;
+    }
+    
+    public void followNewComp(Enterprise company) {
+    	company.addFollower(this);
+    	this.followingComp.add(company.getEnterpriseName());
     }
     
     

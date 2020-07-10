@@ -66,6 +66,10 @@ public class Enterprise {
 		newMember.addCompany(this);
 	}
 	
+	public void addFollower(User follow) {
+		this.followers.add(follow.getEmail());
+	}
+	
 	
 	
 }
