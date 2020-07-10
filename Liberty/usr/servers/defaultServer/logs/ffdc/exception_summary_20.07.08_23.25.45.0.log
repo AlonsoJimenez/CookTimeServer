@@ -1,8 +1,0 @@
-
- Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
-------+------+---------------------------+---------------------------+---------------------------
-     0      2     7/8/20 23:25:45:292 CST     7/8/20 23:25:45:796 CST com.ibm.websphere.servlet.error.ServletErrorReport com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter 82
-                                                                            - C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.07.08_23.25.45.0.log
-     1      1     7/8/20 23:25:45:685 CST     7/8/20 23:25:45:685 CST com.ibm.websphere.servlet.error.ServletErrorReport com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter 144
-                                                                            - C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.07.08_23.25.45.1.log
-------+------+---------------------------+---------------------------+---------------------------

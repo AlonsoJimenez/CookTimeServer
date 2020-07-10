@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SortAlgorithms {
-	public ArrayList<Recipe> bubbleSort(ArrayList<Recipe> listToSort){
+	public ArrayList<String> bubbleSort(ArrayList<Recipe> listToSort){
 		ArrayList<Recipe> returnList = listToSort;
 		int length = returnList.size();
 		for(int primIndex = 0; primIndex < length-1; primIndex++) {
@@ -14,11 +14,11 @@ public class SortAlgorithms {
 				}
 			}
 		}
-		return returnList;
+		return recipeToString(returnList);
 	}
 	
-	public ArrayList<Recipe> quickSort(ArrayList<Recipe> list) {
-		return this.quickSort(list, 0, list.size()-1);
+	public ArrayList<String> quickSort(ArrayList<Recipe> list) {
+		return recipeToString(this.quickSort(list, 0, list.size()-1));
 	}
 	
 	private ArrayList<Recipe> quickSort(ArrayList<Recipe> list, int start, int end){
@@ -56,7 +56,7 @@ public class SortAlgorithms {
 		}
 	}
 	
-	public ArrayList<Recipe> insertionSort(ArrayList<Recipe> list,  SortingType type) {
+	public ArrayList<String> insertionSort(ArrayList<Recipe> list,  SortingType type) {
 		ArrayList<Recipe> returnList = list;
 		int listSize = returnList.size(); 
         for (int primIndex = 1; primIndex < listSize; ++primIndex) { 
@@ -67,11 +67,11 @@ public class SortAlgorithms {
                 secIndex = secIndex - 1; 
             }   
         }
-        return returnList;
+        return recipeToString(returnList);
 	}
 	
 	
-	public Integer findMax(ArrayList<Recipe> ar){
+	private Integer findMax(ArrayList<Recipe> ar){
         int max = ar.get(0).getDifficulty();
         for(int temp = 1; temp < ar.size(); temp++){
             if(max < ar.get(temp).getDifficulty()){
@@ -81,7 +81,7 @@ public class SortAlgorithms {
         return max;
     }
 
-    public ArrayList<Recipe> countingSort(ArrayList<Recipe> ar, int power){
+    private ArrayList<Recipe> countingSort(ArrayList<Recipe> ar, int power){
         ArrayList<Recipe> output = new ArrayList<>();
 
         ArrayList<Integer> count = new ArrayList<>();
@@ -113,7 +113,7 @@ public class SortAlgorithms {
 
     
     
-    public ArrayList<Recipe> radixSort(ArrayList<Recipe> ar){
+    public ArrayList<String> radixSort(ArrayList<Recipe> ar){
         int max = findMax(ar);
 
         for(int cont = 0; max/(int)Math.pow(10, cont) >0; cont ++){
@@ -124,7 +124,15 @@ public class SortAlgorithms {
             ar = countingSort(ar, (int)Math.pow(10, cont));
         }
 
-        return ar;
+        return recipeToString(ar);
+    }
+    
+    private ArrayList<String> recipeToString(ArrayList<Recipe> list){
+    	ArrayList<String> toReturn = new ArrayList<String>();
+    	for(Recipe recipe: list) {
+    		toReturn.add(recipe.getDishName());
+    	}
+    	return toReturn;
     }
 	
 	

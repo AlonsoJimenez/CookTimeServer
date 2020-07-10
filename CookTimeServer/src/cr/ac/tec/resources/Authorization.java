@@ -36,7 +36,7 @@ private boolean validateAuthorization(String[] userNameComponents) {
 		MessageDigest hash = MessageDigest.getInstance("MD5");
 		hash.update(userNameComponents[1].getBytes());
 		String tempPassword = DatatypeConverter.printHexBinary(hash.digest());
-		User temp = Trees.profileTree.find(userNameComponents[0]);
+		User temp = Trees.getTrees().profileTree.find(userNameComponents[0]);
 		if (temp == null) {
 			return false;
 		} else if (!tempPassword.equals(temp.getPassword())) {
@@ -57,6 +57,7 @@ private boolean validateAuthorization(String[] userNameComponents) {
 			throw new IllegalArgumentException();
 		}		
 		String userNamePass = new String(Base64.getDecoder().decode(authComponents[1]));
+		System.out.println(userNamePass);
 		return userNamePass.split(":");
 		
 	}

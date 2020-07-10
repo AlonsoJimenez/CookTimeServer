@@ -14,10 +14,12 @@ public class Node {
     public User getData() {
         return data;
     }
-
-    public void setData(User data){
-        this.data = data;
+    
+    public void setData(User profile) {
+    	this.data = profile;
     }
+
+   
 
 
 

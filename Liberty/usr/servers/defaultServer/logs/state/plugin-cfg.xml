@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!--HTTP server plugin config file for defaultServer generated on 2020.07.08 at 23:25:37 CST-->
+<?xml version="1.0" encoding="UTF-8"?><!--HTTP server plugin config file for defaultServer generated on 2020.07.09 at 18:57:48 CST-->
 <Config ASDisableNagle="false" AcceptAllContent="false" AppServerPortPreference="HostHeader" ChunkedResponse="false" ConfigHash="-326479379" FIPSEnable="false" IISDisableNagle="false" IISPluginPriority="High" IgnoreDNSFailures="false" RefreshInterval="60" ResponseChunkSize="64" SSLConsolidate="false" TrustedProxyEnable="false" VHostMatchingCompat="false">
    <Log LogLevel="Error" Name="/opt/IBM/WebSphere/Plugins/logs/webserver1/http_plugin.log"/>
    <Property Name="ESIEnable" Value="true"/>

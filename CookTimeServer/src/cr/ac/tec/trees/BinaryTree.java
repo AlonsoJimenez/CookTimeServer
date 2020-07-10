@@ -8,30 +8,26 @@ import javax.xml.bind.DatatypeConverter;
 import cr.ac.tec.userObjects.User;
 
 public class BinaryTree {
-    Node root = null;
+    private Node root =null;
     
     public void writeFile() {
     	
     }
     
-    public void createUser(String name, String lastname, String email, int age, String password) throws NoSuchAlgorithmException {
-    	User newest = new User(email, name, lastname, age);
-    	newest.setPassword(password);
-    	this.insert(newest);
-    }
-
+    
     public void insert(User profile) {
-        this.add(root, profile);
+        root = this.add(root, profile);
     }
 
-    private void add(Node current, User profile) {
+    private Node add(Node current, User profile) {
         if(current == null) {
-            current.setData(profile);
-        }else if(current.getData().getEmail().compareTo(profile.getEmail()) == -1 || current.getData().getEmail().compareTo(profile.getEmail()) == 0) {
-            this.add(current.right, profile);
+            current = new Node(profile);
+        }else if(current.getData().getEmail().compareTo(profile.getEmail()) < 0) {
+        	current.left = add(current.left, profile);
         }else {
-            this.add(current.left, profile);
+            current.right = add(current.right, profile);
         }
+        return current;
     }
 
     public User  find(String value) {
@@ -40,13 +36,19 @@ public class BinaryTree {
 
     private User find(Node current, String value) {
     	if(current == null) {
+    		System.out.println("opcion1");
         	return null;
-        }else if(current.getData().getEmail().compareTo(value) == -1 ) {
-            this.find(current.right, value);
-        } else if(current.getData().getEmail().compareTo(value) == 1){
-            this.find(current.left, value);
-        } else {return current.getData();}
+        }else if(current.getData().getEmail().compareTo(value) < 0) {
+        	System.out.println("opcion2");
+            return this.find(current.left, value);
+        } else if(current.getData().getEmail().compareTo(value) > 0){
+        	System.out.println("opcion3");
+            return this.find(current.right, value);
+        } else {
+        	System.out.println("opcion4");
+        	return current.getData();
+        }
 
-        return null;
+        
     }
 }

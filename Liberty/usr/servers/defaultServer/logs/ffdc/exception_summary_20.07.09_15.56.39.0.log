@@ -1,0 +1,10 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      4     7/9/20 15:56:38:919 CST     7/9/20 16:32:35:881 CST java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.07.09_15.56.38.0.log
+     1      2     7/9/20 16:29:47:898 CST     7/9/20 16:29:47:994 CST com.ibm.websphere.servlet.error.ServletErrorReport com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter 82
+                                                                            - C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.07.09_16.29.47.0.log
+     2      1     7/9/20 16:29:47:971 CST     7/9/20 16:29:47:971 CST com.ibm.websphere.servlet.error.ServletErrorReport com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter 144
+                                                                            - C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.07.09_16.29.47.1.log
+------+------+---------------------------+---------------------------+---------------------------

@@ -1,6 +1,7 @@
 package cr.ac.tec.trees;
 
 import cr.ac.tec.userObjects.Recipe;
+import cr.ac.tec.userObjects.User;
 
 public class AVLTree {
 	private Node root;
@@ -39,5 +40,10 @@ public class AVLTree {
 		}else if(getBalance(node) > 1) {
 			
 		}
+	}
+
+	public Recipe find(String search) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

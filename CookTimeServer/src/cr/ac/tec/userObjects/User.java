@@ -19,14 +19,6 @@ import cr.ac.tec.resources.Trees;
 
 public class User {
 	
-	public User(String email, String name, String lastname, int age){
-		this.age = age;
-		this.name = name;
-		this.lastname = lastname;
-		this.email = email;
-		
-	}
-	
 	private static SortAlgorithms sorter = new SortAlgorithms();
 	SortingType sortType = SortingType.date;
 	private boolean isChef = false;
@@ -36,22 +28,13 @@ public class User {
 	private int age;
 	private String name;
 	private String lastname;
-	private ArrayList<Recipe> myMenu;
-	private ArrayList<User> followers = new ArrayList<User>();
+	private ArrayList<String> myMenu = new ArrayList<String>();
+	private ArrayList<String> followers = new ArrayList<String>();
 	private ArrayList<Enterprise> companies = new ArrayList<Enterprise>();
-	private ArrayList<User> following = new ArrayList<User>();
-    private String email = null;
-    private String password = null;
+	private ArrayList<String> following = new ArrayList<String>();
+    private String email;
+    private String password;
     
-    /*
-    private JsonArray ListUserToJson (ArrayList<User> list) {
-    	JsonArrayBuilder arrayJson = Json.createArrayBuilder();
-    	for(User pointer: list) {
-    		arrayJson.add(pointer.getName());
-    	}
-    	return arrayJson.build();
-    }
-    */
     
     
     public  String getName() {
@@ -70,20 +53,27 @@ public class User {
     	return this.email;
     }
     
-    public ArrayList<User> getFollowers() {
+    public ArrayList<String> getFollowers() {
     	return this.followers;
     }
     
-    public ArrayList<User> getFollowing() {
+    public ArrayList<String> getFollowing() {
     	return this.following;
     }
     
     public ArrayList<Enterprise> getCompanies() {
     	return this.companies;
     }
-    
-    public ArrayList<Recipe> getMyMenu() {
+    public ArrayList<String> getMyMenu() {
     	return this.myMenu;
+    }
+    
+    public ArrayList<Recipe> getRecipes() {
+    	ArrayList<Recipe> toReturn = new ArrayList<Recipe>();
+    	for(String order: myMenu) {
+    		toReturn.add(Trees.getTrees().recipeTree.find(order));
+    	}
+    	return toReturn;
     }
     
     public boolean getIsChef() {
@@ -107,11 +97,12 @@ public class User {
     }
     
     
+    
     public void setImageBytes(String bytes) {
     	imageBytes = bytes;
     }
     
-    public void setPassword (String password) throws NoSuchAlgorithmException {
+    public void setPasswordAux (String password) throws NoSuchAlgorithmException {
     	MessageDigest hashPassword = MessageDigest.getInstance("MD5");
     	hashPassword.update(password.getBytes());
     	String encryptedPassword = DatatypeConverter.printHexBinary(hashPassword.digest());
@@ -122,6 +113,21 @@ public class User {
     	this.email = email;
     }
     
+    public void setName(String name) {
+    	this.name = name;
+    }
+    
+    public void setLastname(String lastname) {
+    	this.lastname = lastname;
+    }
+    
+    public void setAge(int age) {
+    	this.age = age;
+    }
+    
+    public void setPassword(String password) {
+    	this.password = password;
+    }
     
     public void receiveNotification(String description) {
     	this.notifications.add(description);
@@ -129,24 +135,26 @@ public class User {
     
         
     public void setNewFollower(User follower) {
-    	this.followers.add(follower);
+    	this.followers.add(follower.getEmail());
     }
 	
     public void follow(User toFollow) {
-    	following.add(toFollow);
+    	following.add(toFollow.getEmail());
     	toFollow.setNewFollower(this);
     	toFollow.receiveNotification("The user " + this.name +" " +this.lastname + " has started following you");
     }
     
     public void newFeed(Recipe recipeCode) {
-    	myMenu.add(recipeCode);
+    	myMenu.add(recipeCode.getDishName());
     	this.arrayBy(SortingType.defaultType);
     }
     
     
     public void newRecipe(Recipe codeTemp) {
-    	for(User eachUser: followers) {
-    		eachUser.newFeed(codeTemp);
+    	if(followers.size()!=0) {
+    		for(String eachUser: followers) {
+    			Trees.getTrees().profileTree.find(eachUser).newFeed(codeTemp);
+    		}
     	}
     	this.newFeed(codeTemp);
     }
@@ -156,14 +164,14 @@ public class User {
     	SortingType temp = this.sortType;
     	this.sortType = type;
     	if(type == SortingType.stars) {
-    		this.myMenu = sorter.quickSort(myMenu);
+    		this.myMenu = sorter.quickSort(this.getRecipes());
     	}else if(type == SortingType.date) {
-    		this.myMenu = sorter.bubbleSort(myMenu);
+    		this.myMenu = sorter.bubbleSort(this.getRecipes());
     	}else if(type == SortingType.defaultType){
     		this.sortType = temp;
-    		this.myMenu = sorter.insertionSort(myMenu, temp);
+    		this.myMenu = sorter.insertionSort(this.getRecipes(), temp);
     	}else {
-    		this.myMenu = sorter.radixSort(myMenu);
+    		this.myMenu = sorter.radixSort(this.getRecipes());
     	}
     }
     
@@ -176,53 +184,25 @@ public class User {
     	this.companies.add(company);
     }
     
-    
-    /*
-    public JsonObject getMenu() {
-    	JsonArrayBuilder builder = Json.createArrayBuilder();
-    	for(Recipe recipe : myMenu) {
-    		builder.add(recipe.createJson());
-    	}
-    	return Json.createObjectBuilder().add("menu", builder.build()).build();
-    }
-    */
-    public JsonObject checkNotifications(){
-    	if(notifications.isEmpty()) {
-    		return null;
-    	}else {
-    		JsonArrayBuilder notifcationsArray = Json.createArrayBuilder();
-    		JsonObjectBuilder notify = Json.createObjectBuilder();
-    		for(String note: notifications) {
-    			notifcationsArray.add(note);
+    public boolean hasRecipe(String recipe) {
+    	for(Recipe i : this.getRecipes()) {
+    		if(i.getDishName().equals(recipe)) {
+    			return true;
     		}
-    		notifications.clear();
-    		return notify.add("notifications", notifcationsArray.build()).build();
     	}
+    	return false;
     }
     
-    public JsonObject getRecipeOrganized(SortingType type) {
-    	JsonArrayBuilder builder = Json.createArrayBuilder();
-    	arrayBy(type);
-    	for(Recipe recipe : myMenu) {
-			builder.add(recipe.createJson());
-		}
-		return Json.createObjectBuilder().add("recipes", builder.build()).build();
+    public boolean hasCompany(String name) {
+    	for(Enterprise i : this.companies) {
+    		if(i.getEnterpriseName().equals(name)) {
+    			return true;
+    		}
+    	}
+    	return false;
     }
     
-    /*
-    public  JsonObject getUserJSON()  {
-        return Json.createObjectBuilder().add("email", email).
-        		add("name",name).
-        		add("isChef", Boolean.toString(isChef)).
-        		add("lastname", lastname).
-        		add("age", Integer.toString(age)).
-        		add("followers", ListUserToJson(this.followers)).
-        		add("following", ListUserToJson(this.following)).
-        		add("profilePicture", Base64.getEncoder().encodeToString(imageBytes)).
-        		add("profileDescription", profileDescription).build();
-    }
-    */
-
+    
      
     
 }

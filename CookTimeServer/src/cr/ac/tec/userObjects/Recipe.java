@@ -10,11 +10,12 @@ import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
 
+import cr.ac.tec.resources.Trees;
+
 public class Recipe {
 	
-	private int difficulty;
-	private User author;
-	private byte[] imageBytes;
+	private String author;
+	private String imageBytes;
 	private int stars;
 	private Date publish;
 	private String dishName;
@@ -24,16 +25,73 @@ public class Recipe {
 	private ArrayList<String> tags = new ArrayList<String>();
 	private ArrayList<String> ingridients = new ArrayList<String>();
 	private ArrayList<String> steps = new ArrayList<String>();
+	private int difficulty;
 	
-	public void setImage(String bytes) {
-    	imageBytes = Base64.getDecoder().decode(bytes);
-    }
+	public String getImageBytes() {
+		return imageBytes;
+	}
+
+	public void setImageBytes(String imageBytes) {
+		this.imageBytes = imageBytes;
+	}
+
+	public Date getPublish() {
+		return publish;
+	}
+
+	public void setPublish(Date publish) {
+		this.publish = publish;
+	}
+
+	public String getDishName() {
+		return dishName;
+	}
+
+	public void setDishName(String dishName) {
+		this.dishName = dishName;
+	}
+
+	public int getPortionsSize() {
+		return portionsSize;
+	}
+
+	public void setPortionsSize(int portionsSize) {
+		this.portionsSize = portionsSize;
+	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public int getPreparationMinutes() {
+		return preparationMinutes;
+	}
+
+	public String getDishType() {
+		return dishType;
+	}
+
+	public ArrayList<String> getTags() {
+		return tags;
+	}
+
+	public ArrayList<String> getIngridients() {
+		return ingridients;
+	}
+
+	public ArrayList<String> getSteps() {
+		return steps;
+	}
+
+	public void setStars(int stars) {
+		this.stars = stars;
+	}
 	
 	public void setName(String name) {
 		this.dishName = name;
 	}	
 	
-	public void setAuthor(User user) {
+	public void setAuthor(String user) {
 		this.author = user;
 	}
 	
@@ -41,9 +99,7 @@ public class Recipe {
 		this.difficulty = difficulty;
 	}
 	
-	public void setPortionSize(int size) {
-		this.portionsSize = size;
-	}
+	
 	
 	public void setPreparationMinutes(int minutes) {
 		this.preparationMinutes = minutes;
@@ -71,7 +127,7 @@ public class Recipe {
 	
 	public void updateStars(int grade) {
 		this.stars = (this.stars+grade)/2;
-		author.receiveNotification("Your recipe "+ dishName +" has been reviewed");
+		Trees.getTrees().profileTree.find(author).receiveNotification("Your recipe "+ dishName +" has been reviewed");
 	}
 	
 	public int getDay() {
@@ -82,38 +138,5 @@ public class Recipe {
 		return this.stars;
 	}
 	
-	public JsonObject createJson() {
-		return Json.createObjectBuilder().
-		add("difficulty", Integer.toString(difficulty)).
-		add("author", author.getName()).
-		add("rating",Integer.toString(stars)).
-		add("dishName", dishName).
-		add("portionSize", Integer.toString(portionsSize)).
-		add("minutes", Integer.toString(preparationMinutes)).
-		add("dishType", dishType).
-		add("tags", jsonList(tags)).
-		add("ingridients", jsonList(ingridients)).
-		add("picture", Base64.getEncoder().encodeToString(imageBytes)).
-		add("steps", jsonList(steps)).build();
-	}
-	
-	private JsonArray jsonList(ArrayList<String> list) {
-		JsonArrayBuilder builder = Json.createArrayBuilder();
-		for(String index: list) {
-			builder.add(index);
-		}
-		return builder.build();
-	}
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
