@@ -18,6 +18,8 @@ public class UserData {
 	@Path("profile")
 	@GET 
 	public Response getProfile(@HeaderParam("x-user")String username) {
+		System.out.println("rayos");
+		System.out.println(username);
 		User toResponse = Trees.getTrees().profileTree.find(username);
 		return Response.ok(toResponse).build();
 	}

@@ -9,11 +9,7 @@ import cr.ac.tec.userObjects.User;
 
 public class BinaryTree {
     private Node root =null;
-    
-    public void writeFile() {
-    	
-    }
-    
+        
     
     public void insert(User profile) {
         root = this.add(root, profile);
