@@ -42,11 +42,7 @@ public class Trees {
 			temp1.setEmail("alonso.jimenez@hotmail.com");
 			temp1.setName("Alonso");
 			temp1.setLastname("Jimenez");
-			profileTree.insert(temp1);
-			
-			
-			
-			
+			profileTree.insert(temp1);		
 		} catch (NoSuchAlgorithmException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -35,7 +35,7 @@ public class UserData {
 	@GET
 	public Response getCompanies(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
-		return Response.ok(toResponse.getNotifications()).build();
+		return Response.ok(toResponse.getCompanies()).build();
 	}
 	
 	@Path("newsFeed")

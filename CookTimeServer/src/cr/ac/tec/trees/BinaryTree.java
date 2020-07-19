@@ -8,16 +8,16 @@ import javax.xml.bind.DatatypeConverter;
 import cr.ac.tec.userObjects.User;
 
 public class BinaryTree {
-    private Node root =null;
+    private NodeBinary root =null;
         
     
     public void insert(User profile) {
         root = this.add(root, profile);
     }
 
-    private Node add(Node current, User profile) {
+    private NodeBinary add(NodeBinary current, User profile) {
         if(current == null) {
-            current = new Node(profile);
+            current = new NodeBinary(profile);
         }else if(current.getData().getEmail().compareTo(profile.getEmail()) < 0) {
         	current.left = add(current.left, profile);
         }else {
@@ -30,7 +30,7 @@ public class BinaryTree {
         return this.find(root, value);
     }
 
-    private User find(Node current, String value) {
+    private User find(NodeBinary current, String value) {
     	if(current == null) {
     		System.out.println("opcion1");
         	return null;

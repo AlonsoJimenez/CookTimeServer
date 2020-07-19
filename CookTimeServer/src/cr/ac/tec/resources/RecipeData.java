@@ -12,7 +12,7 @@ import cr.ac.tec.userObjects.User;
 @Produces(value = MediaType.APPLICATION_JSON)
 public class RecipeData {
 	@Path("edit/{name}")
-	@POST
+	@PUT
 	public Response updateRecipe(@HeaderParam("x-user")String username, @PathParam("name") String name, Recipe recipe) {
 		User temp = Trees.getTrees().profileTree.find(username);
 		if(temp.hasRecipe(name)){

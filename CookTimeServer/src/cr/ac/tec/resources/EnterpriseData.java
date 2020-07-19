@@ -22,7 +22,7 @@ public class EnterpriseData {
 				return Response.ok().build();
 			}
 		}
-		return Response.status(400).build();
+		return Response.status(400).build();	
 	}
 	
 	@Path("edit/{name}")
@@ -32,6 +32,7 @@ public class EnterpriseData {
 			Trees.getTrees().enterpriseTree.find(name).setEnterpriseName(enterprise.getEnterpriseName());
 			Trees.getTrees().enterpriseTree.find(name).setContactInfo(enterprise.getContactInfo());
 			Trees.getTrees().enterpriseTree.find(name).setOperationHours(enterprise.getOperationHours());
+			Trees.getTrees().enterpriseTree.find(name).setImageBytes(enterprise.getImageBytes());
 			return Response.ok().build();
 		}else {
 			return Response.status(400).build();

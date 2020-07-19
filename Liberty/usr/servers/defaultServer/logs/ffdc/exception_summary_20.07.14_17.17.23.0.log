@@ -1,8 +1,0 @@
-
- Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
-------+------+---------------------------+---------------------------+---------------------------
-     0      2    7/14/20 17:17:23:385 CST    7/14/20 17:18:01:828 CST org.apache.cxf.interceptor.Fault com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
-                                                                            - C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.07.14_17.17.23.0.log
-     1      4    7/14/20 17:19:03:723 CST    7/14/20 17:30:00:499 CST java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
-                                                                            - C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\ffdc\ffdc_20.07.14_17.19.03.0.log
-------+------+---------------------------+---------------------------+---------------------------

@@ -6,11 +6,15 @@ public class Enterprise {
 	
 	private String enterpriseName;
 	private String contactInfo;
+	private String imageBytes;
 	private String operationHours;
 	private  ArrayList<EnterpriseRecipe> recipes = new ArrayList<EnterpriseRecipe>();
 	private ArrayList<String> members = new ArrayList<String>();
 	private ArrayList<String> followers = new ArrayList<String>();
 	
+	public String getImageBytes() {
+		return imageBytes;
+	}
 	
 	public ArrayList<String> getFollowers() {
 		return followers;
@@ -58,6 +62,10 @@ public class Enterprise {
 
 	public void setMembers(ArrayList<String> members) {
 		this.members = members;
+	}
+	
+	public void setImageBytes(String imageBytes) {
+		this.imageBytes = imageBytes;
 	}
 	
 	public void addMembers(User newMember) {

@@ -1,32 +1,33 @@
 package cr.ac.tec.trees;
 
 import cr.ac.tec.userObjects.Enterprise;
+import cr.ac.tec.userObjects.Recipe;
 import cr.ac.tec.userObjects.User;
 
 public class SplayTree {
-    public Node root;
+    public NodeSplay root;
 
 
-    private void splay(Node tosplay){
-        if(tosplay.key.compareTo(root.key) != 0){
+    private void splay(NodeSplay tosplay){
+        if(tosplay.getData().getEnterpriseName().compareTo(root.getData().getEnterpriseName()) != 0){
             //zig
-            if(tosplay.key.compareTo(root.key) > 0){
+            if(tosplay.getData().getEnterpriseName().compareTo(root.getData().getEnterpriseName()) > 0){
 
-                Node temp = root;
+            	NodeSplay temp = root;
                 root = root.right;
                 temp.right = root.left;
                 root.left = temp;
 
                 splay(tosplay);
-                System.out.println("La nueva raiz "+ root.key);
+                System.out.println("La nueva raiz "+ root.getData().getEnterpriseName());
 
                 //zag
             }else {
-                Node temp = root;
+            	NodeSplay temp = root;
                 root = root.left;
                 temp.left = root.right;
                 root.right = temp;
-                System.out.println("La nueva raiz"+ root.key);
+                System.out.println("La nueva raiz"+ root.getData().getEnterpriseName());
 
                 splay(tosplay);
             }
@@ -35,20 +36,24 @@ public class SplayTree {
         }
     }
 
-    public String search(String svalue){
-        if(root.key.compareTo(svalue) == 0){
-            return root.key;
-        }else {
-            return search_aux(svalue, root);
-        }
-    }
+	public Enterprise find(String svalue) {
+		if (root != null) {
+			if (root.getData().getEnterpriseName().compareTo(svalue) == 0) {
+				return root.getData();
+			} else {
+				return search_aux(svalue, root);
+			}
+		} else {
+			return null;
+		}
+	}
 
-    public String search_aux(String svalue, Node current){
-        if(svalue.compareTo(current.key) == 0){
+    public Enterprise search_aux(String svalue, NodeSplay current){
+        if(svalue.compareTo(current.getData().getEnterpriseName()) == 0){
             splay(current);
-            return current.key;
+            return current.getData();
         }else {
-            if(current.key.compareTo(svalue) > 0){
+            if(current.getData().getEnterpriseName().compareTo(svalue) > 0){
                 if(current.left!=null){
                     return search_aux(svalue, current.left);
                 }else {
@@ -67,27 +72,27 @@ public class SplayTree {
 
     }
 
-    public void insert(String toin){
+    public void insert(Enterprise toin){
         if(root!=null){
             insert_aux(toin, root);
         }else {
-            root = new Node(toin);
+            root = new NodeSplay(toin);
         }
     }
 
-    private void insert_aux(String toin, Node current){
-        if(toin.compareTo(current.key) >0){
+    private void insert_aux(Enterprise toin, NodeSplay current){
+        if(toin.getEnterpriseName().compareTo(current.getData().getEnterpriseName()) >0){
             if(current.right!= null){
                 insert_aux(toin, current.right);
             }else {
-                current.right = new Node(toin);
+                current.right = new NodeSplay(toin);
                 splay(current.right);
             }
         }else {
             if(current.left!= null){
                 insert_aux(toin, current.left);
             }else {
-                current.left = new Node(toin);
+                current.left = new NodeSplay(toin);
                 splay(current.left);
             }
         }
@@ -99,7 +104,7 @@ public class SplayTree {
         postOrder_aux(root);
     }
 
-    private void postOrder_aux(Node node) {
+    private void postOrder_aux(NodeSplay node) {
         if (node == null)
             return;
 
@@ -110,19 +115,19 @@ public class SplayTree {
         postOrder_aux(node.right);
 
         // now deal with the node
-        System.out.print(node.key + " ");
+        System.out.print(node.getData().getEnterpriseName() + " ");
     }
 
     public void preOrder(){
         preOrder_aux(root);
     }
 
-    void preOrder_aux(Node node) {
+    void preOrder_aux(NodeSplay node) {
         if (node == null)
             return;
 
         /* first print data of node */
-        System.out.print(node.key + " ");
+        System.out.print(node.getData().getEnterpriseName() + " ");
 
         /* then recur on left sutree */
         preOrder_aux(node.left);
@@ -135,7 +140,7 @@ public class SplayTree {
     public void inOrder(){
         inOrder_aux(root);
     }
-    private void inOrder_aux(Node node) {
+    private void inOrder_aux(NodeSplay node) {
         if (node == null)
             return;
 
@@ -143,7 +148,7 @@ public class SplayTree {
         inOrder_aux(node.left);
 
         /* then print the data of node */
-        System.out.print(node.key + " ");
+        System.out.print(node.getData().getEnterpriseName() + " ");
 
         /* now recur on right child */
         inOrder_aux(node.right);

@@ -23,7 +23,7 @@ public class User {
 	SortingType sortType = SortingType.date;
 	private boolean isChef = false;
 	private ArrayList<String> notifications = new ArrayList<String>();
-	private String imageBytes;
+	private String imageBytes = "";
 	private String profileDescription;
 	private int age;
 	private String name;
