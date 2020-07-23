@@ -16,8 +16,8 @@ public class Recipe {
 	
 	private String author;
 	private String imageBytes;
-	private int stars;
-	private Date publish;
+	private double stars;
+	private int[] publish;
 	private String dishName;
 	private int portionsSize;
 	private int preparationMinutes;
@@ -45,11 +45,11 @@ public class Recipe {
 		this.imageBytes = imageBytes;
 	}
 
-	public Date getPublish() {
+	public int[] getPublish() {
 		return publish;
 	}
 
-	public void setPublish(Date publish) {
+	public void setPublish(int[] publish) {
 		this.publish = publish;
 	}
 
@@ -93,7 +93,7 @@ public class Recipe {
 		return steps;
 	}
 
-	public void setStars(int stars) {
+	public void setStars(double stars) {
 		this.stars = stars;
 	}
 	
@@ -135,16 +135,16 @@ public class Recipe {
 		return this.difficulty;
 	}	
 	
-	public void updateStars(int grade) {
+	public void updateStars(double grade) {
 		this.stars = (this.stars+grade)/2;
 		Trees.getTrees().profileTree.find(author).receiveNotification("Your recipe "+ dishName +" has been reviewed");
 	}
 	
-	public int getDay() {
-		return 0;
+	public int publicationDay() {
+		return publish[0] + publish[1]*30 + publish[2]*365;
 	}
 	
-	public int getStars() {
+	public double getStars() {
 		return this.stars;
 	}
 	

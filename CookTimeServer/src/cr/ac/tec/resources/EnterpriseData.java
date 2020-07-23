@@ -58,4 +58,15 @@ public class EnterpriseData {
 		}
 	}
 	
+	@Path("menu/{name}")
+	@GET
+	public Response getOwn(@HeaderParam("x-user")String username, @PathParam("name") String name) {
+		if(Trees.getTrees().profileTree.find(username).hasCompany(name)) {
+			Enterprise temp = Trees.getTrees().enterpriseTree.find(name);
+			return Response.ok(temp.getRecipes()).build();
+		}else {
+			return Response.status(400).build();
+		}
+	}
+	
 }

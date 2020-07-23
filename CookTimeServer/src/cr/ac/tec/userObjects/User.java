@@ -29,12 +29,17 @@ public class User {
 	private String name;
 	private String lastname;
 	private ArrayList<String> myMenu = new ArrayList<String>();
+	private ArrayList<String> recipes = new ArrayList<String>();
 	private ArrayList<String> followers = new ArrayList<String>();
 	private ArrayList<Enterprise> companies = new ArrayList<Enterprise>();
 	private ArrayList<String> following = new ArrayList<String>();
 	private ArrayList<String> followingComp = new ArrayList<String>();
 	private String email;
     private String password;
+    
+    public ArrayList<String> getRecipes(){
+    	return recipes;
+    }
 	
     public ArrayList<String> getFollowingComp() {
 		return followingComp;
@@ -75,9 +80,17 @@ public class User {
     	return this.myMenu;
     }
     
-    public ArrayList<Recipe> recipes() {
+    public ArrayList<Recipe> feed() {
     	ArrayList<Recipe> toReturn = new ArrayList<Recipe>();
     	for(String order: myMenu) {
+    		toReturn.add(Trees.getTrees().recipeTree.find(order));
+    	}
+    	return toReturn;
+    }
+    
+    public ArrayList<Recipe> own(){
+    	ArrayList<Recipe> toReturn = new ArrayList<Recipe>();
+    	for(String order: recipes) {
     		toReturn.add(Trees.getTrees().recipeTree.find(order));
     	}
     	return toReturn;
@@ -107,6 +120,10 @@ public class User {
     
     public void setImageBytes(String bytes) {
     	imageBytes = bytes;
+    }
+    
+    public void setRecipes(ArrayList<String> recipes) {
+    	this.recipes = recipes;
     }
     
     public void setPasswordAux (String password) throws NoSuchAlgorithmException {
@@ -144,6 +161,10 @@ public class User {
     public void setNewFollower(User follower) {
     	this.followers.add(follower.getEmail());
     }
+    
+    public void setProfileDescription(String pp) {
+    	this.profileDescription = pp;
+    }
 	
     public void follow(User toFollow) {
     	following.add(toFollow.getEmail());
@@ -166,19 +187,22 @@ public class User {
     	this.newFeed(codeTemp);
     }
     
+    public void addOwn(String name) {
+    	this.recipes.add(name);
+    }
     
     public void arrayBy(SortingType type) {
     	SortingType temp = this.sortType;
     	this.sortType = type;
     	if(type == SortingType.stars) {
-    		this.myMenu = sorter.quickSort(this.recipes());
+    		this.myMenu = sorter.quickSort(this.feed());
     	}else if(type == SortingType.date) {
-    		this.myMenu = sorter.bubbleSort(this.recipes());
+    		this.myMenu = sorter.bubbleSort(this.feed());
     	}else if(type == SortingType.defaultType){
     		this.sortType = temp;
-    		this.myMenu = sorter.insertionSort(this.recipes(), temp);
+    		this.myMenu = sorter.insertionSort(this.feed(), temp);
     	}else {
-    		this.myMenu = sorter.radixSort(this.recipes());
+    		this.myMenu = sorter.radixSort(this.feed());
     	}
     }
     
@@ -192,7 +216,7 @@ public class User {
     }
     
     public boolean hasRecipe(String recipe) {
-    	for(Recipe i : this.recipes()) {
+    	for(Recipe i : this.feed()) {
     		if(i.getDishName().equals(recipe)) {
     			return true;
     		}

@@ -38,11 +38,18 @@ public class UserData {
 		return Response.ok(toResponse.getCompanies()).build();
 	}
 	
+	@Path("own")
+	@GET
+	public Response getOwn(@HeaderParam("x-user") String username) {
+		User toResponse = Trees.getTrees().profileTree.find(username);
+		return Response.ok(toResponse.own()).build();
+	}
+	
 	@Path("newsFeed")
 	@GET
 	public Response getMenu(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
-		return Response.ok(toResponse.recipes()).build();
+		return Response.ok(toResponse.feed()).build();
 	}
 	
 	@Path("stars")
@@ -50,7 +57,7 @@ public class UserData {
 	public Response getStars(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
 		toResponse.arrayBy(SortingType.stars);
-		return Response.ok(toResponse.recipes()).build();
+		return Response.ok(toResponse.feed()).build();
 	}
 	
 	@Path("date")
@@ -58,7 +65,7 @@ public class UserData {
 	public Response getDate(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
 		toResponse.arrayBy(SortingType.date);
-		return Response.ok(toResponse.recipes()).build();
+		return Response.ok(toResponse.feed()).build();
 	}
 	
 	@Path("difficulty")
@@ -66,7 +73,7 @@ public class UserData {
 	public Response getDifficulty(@HeaderParam("x-user") String username) {
 		User toResponse = Trees.getTrees().profileTree.find(username);
 		toResponse.arrayBy(SortingType.difficulty);
-		return Response.ok(toResponse.recipes()).build();
+		return Response.ok(toResponse.feed()).build();
 	}
 	
 	@Path("profiles/{search}")
@@ -97,6 +104,7 @@ public class UserData {
 			User toResponse = Trees.getTrees().profileTree.find(username);
 			Trees.getTrees().recipeTree.insert(newRecipe);
 			toResponse.newRecipe(newRecipe);
+			toResponse.addOwn(newRecipe.getDishName());
 			return Response.ok().build();
 		}else {
 			return Response.status(400).build();
@@ -143,6 +151,7 @@ public class UserData {
 		User toUpdate = Trees.getTrees().profileTree.find(username);
 		toUpdate.setEmail(toCreate.getEmail());
 		toUpdate.setAge(toCreate.getAge());
+		toUpdate.setProfileDescription(toCreate.getProfileDescription());
 		toUpdate.setImageBytes(toCreate.getImageBytes());
 		toUpdate.setLastname(toCreate.getLastName());
 		toUpdate.setName(toCreate.getName());
@@ -165,9 +174,21 @@ public class UserData {
 	
 	@Path("stars/{recipe}")
 	@POST
-	public Response rate(@QueryParam("rate")int  rate, @PathParam("recipe")String recipe) {
+	public Response rate(@QueryParam("rate")double  rate, @PathParam("recipe")String recipe) {
 		Trees.getTrees().recipeTree.find(recipe).updateStars(rate);
 		return Response.ok().build();
+	}
+	
+	@Path("delete")
+	@DELETE
+	public Response delete(@HeaderParam("x-user") String username, @QueryParam("recipe") String dishName) {
+		Recipe temp = Trees.getTrees().recipeTree.find(dishName);
+		if(temp.getAuthor().equals(username)) {
+			Trees.getTrees().recipeTree.Deletion(dishName);
+			return Response.ok().build();
+		}else {
+			return Response.status(401).build();
+		}
 	}
 	
 	

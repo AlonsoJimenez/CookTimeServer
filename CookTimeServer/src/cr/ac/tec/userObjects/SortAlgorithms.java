@@ -9,7 +9,7 @@ public class SortAlgorithms {
 		int length = returnList.size();
 		for(int primIndex = 0; primIndex < length-1; primIndex++) {
 			for(int secIndex = 0; secIndex < length - 1 - primIndex; secIndex++) {
-				if(listToSort.get(secIndex).getDay() > listToSort.get(secIndex+1).getDay()) {
+				if(listToSort.get(secIndex).publicationDay() > listToSort.get(secIndex+1).publicationDay()) {
 					Collections.swap(returnList, secIndex, secIndex+1);
 				}
 			}
@@ -48,7 +48,7 @@ public class SortAlgorithms {
 	
 	private int getNumber(SortingType type, Recipe recipe) {
 		if(type == SortingType.date) {
-			return recipe.getDay();
+			return recipe.publicationDay();
 		}else if(type == SortingType.difficulty) {
 			return recipe.getDifficulty();
 		}else{

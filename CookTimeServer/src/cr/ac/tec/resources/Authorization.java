@@ -59,7 +59,6 @@ private boolean validateAuthorization(String[] userNameComponents) {
 			throw new IllegalArgumentException();
 		}		
 		String userNamePass = new String(Base64.getDecoder().decode(authComponents[1]));
-		System.out.println(userNamePass);
 		return userNamePass.split(":");
 		
 	}
@@ -73,7 +72,6 @@ private boolean validateAuthorization(String[] userNameComponents) {
 		}
 		
 		contextFilter.getHeaders().add("x-user", userAndPassword[0]);
-		System.out.println("aqui");
 	}
 }
 	

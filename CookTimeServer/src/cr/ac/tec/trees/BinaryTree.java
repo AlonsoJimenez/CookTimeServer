@@ -32,16 +32,12 @@ public class BinaryTree {
 
     private User find(NodeBinary current, String value) {
     	if(current == null) {
-    		System.out.println("opcion1");
         	return null;
         }else if(current.getData().getEmail().compareTo(value) < 0) {
-        	System.out.println("opcion2");
             return this.find(current.left, value);
         } else if(current.getData().getEmail().compareTo(value) > 0){
-        	System.out.println("opcion3");
             return this.find(current.right, value);
         } else {
-        	System.out.println("opcion4");
         	return current.getData();
         }
 

@@ -166,4 +166,105 @@ public class AVLTree {
         /* now recur on right subtree */
         preOrder_aux(node.right);
     }
+    
+    NodeAVL minValueNode(NodeAVL node)
+    {
+        NodeAVL current = node;
+
+        /* loop down to find the leftmost leaf */
+        while (current.left != null)
+            current = current.left;
+
+        return current;
+    }
+
+    public void Deletion(String delete){
+        if(root == null){
+            System.out.println("Raíz nula, no se procede a eliminar");
+        }else {
+            deleteNode(root, delete);
+        }
+    }
+    
+    private NodeAVL deleteNode(NodeAVL current, String delete)
+    {
+
+        // If the key to be deleted is smaller than
+        // the current's key, then it lies in left subtree
+        if (delete.compareTo(current.getData().getDishName()) < 0)
+            current.left = deleteNode(current.left, delete);
+
+            // If the key to be deleted is greater than the
+            // current's key, then it lies in right subtree
+        else if (delete.compareTo(current.getData().getDishName()) > 0)
+            current.right = deleteNode(current.right, delete);
+
+            // if key is same as current's key, then this is the node
+            // to be deleted
+        else
+        {
+            // node with only one child or no child
+            if ((current.left == null) || (current.right == null))
+            {
+            	NodeAVL temp = null;
+                if (temp == current.left)
+                    temp = current.right;
+                else
+                    temp = current.left;
+
+                // No child case
+                if (temp == null) {
+                    temp = current;
+                    current = null;
+                }
+                else // One child case
+                    current = temp; // Copy the contents of
+                // the non-empty child
+            }
+            else
+            {
+                // node with two children: Get the inorder
+                // successor (smallest in the right subtree)
+            	NodeAVL temp = minValueNode(current.right);
+
+                // Copy the inorder successor's data to this node
+                current = temp;
+
+                // Delete the inorder successor
+                current.right = deleteNode(current.right, temp.getData().getDishName());
+            }
+        }
+        
+        // UPDATE HEIGHT OF THE CURRENT NODE
+        current.height = max(height(current.left), height(current.right)) + 1;
+
+        // GET THE BALANCE FACTOR OF THIS NODE (to check whether
+        // this node became unbalanced)
+        int balance = getBalance(current);
+
+        // If this node becomes unbalanced, then there are 4 cases
+        // Left Left Case
+        if (balance > 1 && getBalance(current.left) >= 0)
+            return rightRotate(current);
+
+        // Left Right Case
+        if (balance > 1 && getBalance(current.left) < 0)
+        {
+            current.left = leftRotate(current.left);
+            return rightRotate(current);
+        }
+
+        // Right Right Case
+        if (balance < -1 && getBalance(current.right) <= 0)
+            return leftRotate(current);
+
+        // Right Left Case
+        if (balance < -1 && getBalance(current.right) > 0)
+        {
+            current.right = rightRotate(current.right);
+            return leftRotate(current);
+        }
+
+        return current;
+    }
 }
