@@ -173,6 +173,10 @@ public class User {
     	this.followers.add(follower.getEmail());
     }
     
+    public void setIsChef() {
+    	this.isChef = true;
+    }
+    
     public void setProfileDescription(String pp) {
     	this.profileDescription = pp;
     }

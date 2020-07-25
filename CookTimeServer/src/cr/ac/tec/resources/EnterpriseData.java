@@ -22,13 +22,11 @@ public class EnterpriseData {
 	@Path("member/{name}")
 	@POST
 	public Response newMember(@HeaderParam("x-user")String username, @PathParam("name") String name, @QueryParam("username") String member) {
-		if(Trees.getTrees().profileTree.find(username).hasCompany(name)) {
-			if(Trees.getTrees().profileTree.find(member)!=null) {
+		
+			
 				Trees.getTrees().enterpriseTree.find(name).addMembers(Trees.getTrees().profileTree.find(member));;
 				return Response.ok().build();
-			}
-		}
-		return Response.status(400).build();	
+		
 	}
 	
 	/**
@@ -40,15 +38,13 @@ public class EnterpriseData {
 	@Path("edit/{name}")
 	@PUT
 	public Response editCompany(@HeaderParam("x-user")String username, @PathParam("name") String name, Enterprise enterprise) {
-		if(Trees.getTrees().profileTree.find(username).hasCompany(name)) {
+		
 			Trees.getTrees().enterpriseTree.find(name).setEnterpriseName(enterprise.getEnterpriseName());
 			Trees.getTrees().enterpriseTree.find(name).setContactInfo(enterprise.getContactInfo());
 			Trees.getTrees().enterpriseTree.find(name).setOperationHours(enterprise.getOperationHours());
 			Trees.getTrees().enterpriseTree.find(name).setImageBytes(enterprise.getImageBytes());
 			return Response.ok().build();
-		}else {
-			return Response.status(400).build();
-		}
+		
 	}
 	
 	/**
@@ -84,13 +80,11 @@ public class EnterpriseData {
 	 */
 	@Path("menu/{name}")
 	@GET
-	public Response getOwn(@HeaderParam("x-user")String username, @PathParam("name") String name) {
-		if(Trees.getTrees().profileTree.find(username).hasCompany(name)) {
-			Enterprise temp = Trees.getTrees().enterpriseTree.find(name);
-			return Response.ok(temp.getRecipes()).build();
-		}else {
-			return Response.status(400).build();
-		}
+	public Response getOwn(@HeaderParam("x-user") String username, @PathParam("name") String name) {
+
+		Enterprise temp = Trees.getTrees().enterpriseTree.find(name);
+		return Response.ok(temp.getRecipes()).build();
+
 	}
-	
+
 }

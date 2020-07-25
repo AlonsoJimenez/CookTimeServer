@@ -281,6 +281,18 @@ public class UserData {
 		}
 	}
 	
+	/**
+	 * @param username
+	 * @param user
+	 * @return respuesta en cambio de chef
+	 */
+	@Path("nowChef")
+	@PUT
+	public Response editChef(@HeaderParam("x-user") String username,  @QueryParam("user") String user) {
+		Trees.getTrees().profileTree.find(user).setIsChef();
+		return Response.ok().build();
+	}
+	
 	
 	
 	
