@@ -17,10 +17,20 @@ public class SortAlgorithms {
 		return recipeToString(returnList);
 	}
 	
+	/**
+	 * @param list
+	 * @return lista de strings ordenados por fecha
+	 */
 	public ArrayList<String> quickSort(ArrayList<Recipe> list) {
 		return recipeToString(this.quickSort(list, 0, list.size()-1));
 	}
 	
+	/**
+	 * @param list
+	 * @param start
+	 * @param end
+	 * @return lista ordena de forma auxiliar
+	 */
 	private ArrayList<Recipe> quickSort(ArrayList<Recipe> list, int start, int end){
 		ArrayList<Recipe> listReturn = list;
 		if(start > end) {
@@ -31,8 +41,14 @@ public class SortAlgorithms {
 		return listReturn;
 	}
 	
+	/**
+	 * @param list
+	 * @param start
+	 * @param end
+	 * @return entero a partir lista para ordenar en quick sort
+	 */
 	private int partion(ArrayList<Recipe> list, int start, int end) {
-		int pivot = list.get(end).getStars();
+		int pivot = (int) list.get(end).getStars();
 		int begin = start-1;
 		for(int primIndex = start; primIndex < end; primIndex++) {
 			if(list.get(primIndex).getStars() <= pivot) {
@@ -46,7 +62,12 @@ public class SortAlgorithms {
 	
 	
 	
-	private int getNumber(SortingType type, Recipe recipe) {
+	/**
+	 * @param type
+	 * @param recipe
+	 * @return valor numerico de busqueda
+	 */
+	private double getNumber(SortingType type, Recipe recipe) {
 		if(type == SortingType.date) {
 			return recipe.publicationDay();
 		}else if(type == SortingType.difficulty) {
@@ -56,13 +77,18 @@ public class SortAlgorithms {
 		}
 	}
 	
+	/**
+	 * @param list
+	 * @param type
+	 * @return lista ordenada por isertion sort
+	 */
 	public ArrayList<String> insertionSort(ArrayList<Recipe> list,  SortingType type) {
 		ArrayList<Recipe> returnList = list;
 		int listSize = returnList.size(); 
         for (int primIndex = 1; primIndex < listSize; ++primIndex) { 
-            int key = getNumber(type, returnList.get(primIndex)); 
+            int key = (int) getNumber(type, returnList.get((int)primIndex)); 
             int secIndex = primIndex - 1; 
-            while (secIndex >= 0 && getNumber(type, returnList.get(secIndex)) > key) { 
+            while (secIndex >= 0 && getNumber(type, returnList.get((int)secIndex)) > key) { 
                 Collections.swap(returnList, secIndex+1, secIndex); 
                 secIndex = secIndex - 1; 
             }   
@@ -71,6 +97,10 @@ public class SortAlgorithms {
 	}
 	
 	
+	/**
+	 * @param ar
+	 * @return valor maximo para ordenar en radix
+	 */
 	private Integer findMax(ArrayList<Recipe> ar){
         int max = ar.get(0).getDifficulty();
         for(int temp = 1; temp < ar.size(); temp++){
@@ -81,6 +111,11 @@ public class SortAlgorithms {
         return max;
     }
 
+    /**
+     * @param ar
+     * @param power
+     * @return sort de enteros para radix
+     */
     private ArrayList<Recipe> countingSort(ArrayList<Recipe> ar, int power){
         ArrayList<Recipe> output = new ArrayList<>();
 
@@ -113,6 +148,10 @@ public class SortAlgorithms {
 
     
     
+    /**
+     * @param ar
+     * @return funcion de ordenamiento radix
+     */
     public ArrayList<String> radixSort(ArrayList<Recipe> ar){
         int max = findMax(ar);
 
@@ -127,6 +166,10 @@ public class SortAlgorithms {
         return recipeToString(ar);
     }
     
+    /**
+     * @param list
+     * @return funcion que devuelve listas de los nombres de las empresas
+     */
     private ArrayList<String> recipeToString(ArrayList<Recipe> list){
     	ArrayList<String> toReturn = new ArrayList<String>();
     	for(Recipe recipe: list) {

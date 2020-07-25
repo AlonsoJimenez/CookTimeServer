@@ -11,6 +11,12 @@ import cr.ac.tec.userObjects.User;
 @Consumes(value= MediaType.APPLICATION_JSON)
 @Produces(value = MediaType.APPLICATION_JSON)
 public class RecipeData {
+	/**
+	 * @param username
+	 * @param name
+	 * @param recipe
+	 * @return actualiza la receta de un usuario o compania
+	 */
 	@Path("edit/{name}")
 	@PUT
 	public Response updateRecipe(@HeaderParam("x-user")String username, @PathParam("name") String name, Recipe recipe) {

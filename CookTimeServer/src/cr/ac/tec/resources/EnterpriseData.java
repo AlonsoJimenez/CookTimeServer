@@ -13,6 +13,12 @@ import cr.ac.tec.userObjects.User;
 @Produces(value = MediaType.APPLICATION_JSON)
 public class EnterpriseData {
 	
+	/**
+	 * @param username
+	 * @param name
+	 * @param member
+	 * @return respuesta sobre interes a agregar un nuevo usuario
+	 */
 	@Path("member/{name}")
 	@POST
 	public Response newMember(@HeaderParam("x-user")String username, @PathParam("name") String name, @QueryParam("username") String member) {
@@ -25,6 +31,12 @@ public class EnterpriseData {
 		return Response.status(400).build();	
 	}
 	
+	/**
+	 * @param username
+	 * @param name
+	 * @param enterprise
+	 * @return respuesta para editar la compania
+	 */
 	@Path("edit/{name}")
 	@PUT
 	public Response editCompany(@HeaderParam("x-user")String username, @PathParam("name") String name, Enterprise enterprise) {
@@ -39,6 +51,12 @@ public class EnterpriseData {
 		}
 	}
 	
+	/**
+	 * @param username
+	 * @param name
+	 * @param recipe
+	 * @return respuesta para agregar receta a la compania
+	 */
 	@Path("recipe/{name}")
 	@POST
 	public Response newCompanyRecipe(@HeaderParam("x-user")String username, @PathParam("name") String name, EnterpriseRecipe recipe) {
@@ -58,6 +76,11 @@ public class EnterpriseData {
 		}
 	}
 	
+	/**
+	 * @param username
+	 * @param name
+	 * @return recive las recetas propias
+	 */
 	@Path("menu/{name}")
 	@GET
 	public Response getOwn(@HeaderParam("x-user")String username, @PathParam("name") String name) {

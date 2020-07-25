@@ -24,12 +24,21 @@ import javax.xml.bind.DatatypeConverter;
 
 import cr.ac.tec.userObjects.User;
 
+/**
+ *Busca el usuario para realizar validacion
+ */
 @Provider
 @PreMatching
 @Priority(Priorities.AUTHENTICATION)
 public class Authorization implements ContainerRequestFilter {
 
+	
 
+	
+/**
+ * @param userNameComponents
+ * @return verdaero en caso de tener autorizacion para acceder
+ */
 private boolean validateAuthorization(String[] userNameComponents) {
 
 	try {
@@ -52,6 +61,10 @@ private boolean validateAuthorization(String[] userNameComponents) {
 	}
 }
 
+	/**
+	 * @param userAndPassword
+	 * @return un array de strings que contiene la conrasena y el usuario
+	 */
 	private String[] getUserAndPassword(String userAndPassword) {
 		String[] authComponents = userAndPassword.split(" ");
 		if (authComponents.length != 2) {
@@ -63,6 +76,9 @@ private boolean validateAuthorization(String[] userNameComponents) {
 		
 	}
 
+	/**
+	 *Devuelve error en caso de no tener autorizacion dada
+	 */
 	@Override
 	public void filter(ContainerRequestContext contextFilter) throws IOException {
 		String authorizationHeader = contextFilter.getHeaderString("Authorization");

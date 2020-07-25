@@ -80,6 +80,9 @@ public class User {
     	return this.myMenu;
     }
     
+    /**
+     * @return valores de recetas en listas
+     */
     public ArrayList<Recipe> feed() {
     	ArrayList<Recipe> toReturn = new ArrayList<Recipe>();
     	for(String order: myMenu) {
@@ -88,6 +91,9 @@ public class User {
     	return toReturn;
     }
     
+    /**
+     * @return el menu del usuario
+     */
     public ArrayList<Recipe> own(){
     	ArrayList<Recipe> toReturn = new ArrayList<Recipe>();
     	for(String order: recipes) {
@@ -126,6 +132,11 @@ public class User {
     	this.recipes = recipes;
     }
     
+    /**
+     * @param password
+     * @throws NoSuchAlgorithmException
+     * genera contrasena encriptada
+     */
     public void setPasswordAux (String password) throws NoSuchAlgorithmException {
     	MessageDigest hashPassword = MessageDigest.getInstance("MD5");
     	hashPassword.update(password.getBytes());
@@ -236,9 +247,6 @@ public class User {
     public void followNewComp(Enterprise company) {
     	company.addFollower(this);
     	this.followingComp.add(company.getEnterpriseName());
-    }
-    
-    
-     
+    }   
     
 }

@@ -27,6 +27,9 @@ public class Trees {
 	public SplayTree enterpriseTree;
 	
 	
+	/**
+	 * @return sigleton para adquirir los arboles una unica vez
+	 */
 	public static synchronized Trees getTrees() {
 		if(singleton == null) {
 			singleton = new Trees();
@@ -34,6 +37,9 @@ public class Trees {
 		}else {return singleton;}
 	}
 	
+	/**
+	 * Instancia los arboles para cargar los datos
+	 */
 	private void justOnce() {
 		try {
 			User temp1 = new User();

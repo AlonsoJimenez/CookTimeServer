@@ -135,11 +135,19 @@ public class Recipe {
 		return this.difficulty;
 	}	
 	
+	/**
+	 * @param grade
+	 * algoritmo para calificar receta
+	 */
 	public void updateStars(double grade) {
 		this.stars = (this.stars+grade)/2;
 		Trees.getTrees().profileTree.find(author).receiveNotification("Your recipe "+ dishName +" has been reviewed");
 	}
 	
+	/**
+	 * @return
+	 * devuelve el dia en calendario cristiano de publicacion
+	 */
 	public int publicationDay() {
 		return publish[0] + publish[1]*30 + publish[2]*365;
 	}
@@ -148,6 +156,10 @@ public class Recipe {
 		return this.stars;
 	}
 	
+	/**
+	 * @param comment
+	 * agrega comentario
+	 */
 	public void addComment(String comment) {
 		this.comments.add(comment);
 	}

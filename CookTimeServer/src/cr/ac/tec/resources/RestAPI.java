@@ -8,6 +8,9 @@ import java.util.Set;
 
 @ApplicationPath("rest/")
 public class RestAPI extends Application {
+	/**
+	 *devuelve las clases que contienen cada API
+	 */
 	@Override
 	public Set<Class<?>> getClasses(){
 		Set<Class<?>> classList = new HashSet<>();

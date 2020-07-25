@@ -10,7 +10,6 @@ public class SplayTree {
 
     private void splay(NodeSplay tosplay){
         if(tosplay.getData().getEnterpriseName().compareTo(root.getData().getEnterpriseName()) != 0){
-            //zig
             if(tosplay.getData().getEnterpriseName().compareTo(root.getData().getEnterpriseName()) > 0){
 
             	NodeSplay temp = root;
@@ -21,7 +20,6 @@ public class SplayTree {
                 splay(tosplay);
                 System.out.println("La nueva raiz "+ root.getData().getEnterpriseName());
 
-                //zag
             }else {
             	NodeSplay temp = root;
                 root = root.left;
@@ -36,6 +34,10 @@ public class SplayTree {
         }
     }
 
+	/**
+	 * @param svalue
+	 * @return empresa a buscar
+	 */
 	public Enterprise find(String svalue) {
 		if (root != null) {
 			if (root.getData().getEnterpriseName().compareTo(svalue) == 0) {
@@ -48,7 +50,12 @@ public class SplayTree {
 		}
 	}
 
-    public Enterprise search_aux(String svalue, NodeSplay current){
+    /**
+     * @param svalue
+     * @param current
+     * @return funcion auxiliar de busqueda
+     */
+    private Enterprise search_aux(String svalue, NodeSplay current){
         if(svalue.compareTo(current.getData().getEnterpriseName()) == 0){
             splay(current);
             return current.getData();
@@ -72,6 +79,10 @@ public class SplayTree {
 
     }
 
+    /**
+     * @param toin
+     * funcion para insertar valores de nodos
+     */
     public void insert(Enterprise toin){
         if(root!=null){
             insert_aux(toin, root);
@@ -80,6 +91,11 @@ public class SplayTree {
         }
     }
 
+    /**
+     * @param toin
+     * @param current
+     * funcion auxuliar para insertar
+     */
     private void insert_aux(Enterprise toin, NodeSplay current){
         if(toin.getEnterpriseName().compareTo(current.getData().getEnterpriseName()) >0){
             if(current.right!= null){
@@ -100,57 +116,5 @@ public class SplayTree {
 
     }
 
-    public void postOrder(){
-        postOrder_aux(root);
-    }
-
-    private void postOrder_aux(NodeSplay node) {
-        if (node == null)
-            return;
-
-        // first recur on left subtree
-        postOrder_aux(node.left);
-
-        // then recur on right subtree
-        postOrder_aux(node.right);
-
-        // now deal with the node
-        System.out.print(node.getData().getEnterpriseName() + " ");
-    }
-
-    public void preOrder(){
-        preOrder_aux(root);
-    }
-
-    void preOrder_aux(NodeSplay node) {
-        if (node == null)
-            return;
-
-        /* first print data of node */
-        System.out.print(node.getData().getEnterpriseName() + " ");
-
-        /* then recur on left sutree */
-        preOrder_aux(node.left);
-
-        /* now recur on right subtree */
-        preOrder_aux(node.right);
-    }
-
-
-    public void inOrder(){
-        inOrder_aux(root);
-    }
-    private void inOrder_aux(NodeSplay node) {
-        if (node == null)
-            return;
-
-        /* first recur on left child */
-        inOrder_aux(node.left);
-
-        /* then print the data of node */
-        System.out.print(node.getData().getEnterpriseName() + " ");
-
-        /* now recur on right child */
-        inOrder_aux(node.right);
-    }
+   
 }

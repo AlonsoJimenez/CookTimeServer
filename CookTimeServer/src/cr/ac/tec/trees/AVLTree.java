@@ -10,6 +10,10 @@ public class AVLTree {
         this.root = null;
     }
 
+    /**
+     * @param N
+     * @return altura del nodo del arbol
+     */
     int height(NodeAVL N) {
         if (N == null)
             return 0;
@@ -17,43 +21,54 @@ public class AVLTree {
         return N.height;
     }
 
+    /**
+     * @param a
+     * @param b
+     * @return valor maximo en comapracion
+     */
     int max(int a, int b) {
         return (a > b) ? a : b;
     }
 
+    /**
+     * @param y
+     * @return realiza la rotacion derecha y devuelve el nodo principal
+     */
     NodeAVL rightRotate(NodeAVL y) {
     	NodeAVL x = y.left;
     	NodeAVL T2 = x.right;
 
-        // Perform rotation
         x.right = y;
         y.left = T2;
 
-        // Update heights
         y.height = max(height(y.left), height(y.right)) + 1;
         x.height = max(height(x.left), height(x.right)) + 1;
 
-        // Return new root
         return x;
     }
 
+    /**
+     * @param x
+     * @return realiza rotacion a la izquierda y devuelve el nodo principal
+     */
     NodeAVL leftRotate(NodeAVL x) {
     	NodeAVL y = x.right;
     	NodeAVL T2 = y.left;
 
-        // Perform rotation
         y.left = x;
         x.right = T2;
 
-        //  Update heights
         x.height = max(height(x.left), height(x.right)) + 1;
         y.height = max(height(y.left), height(y.right)) + 1;
 
-        // Return new root
         return y;
     }
 
 
+    /**
+     * @param N
+     * @return devuelve la diferencia en alturas
+     */
     int getBalance(NodeAVL N) {
         if (N == null)
             return 0;
@@ -61,6 +76,10 @@ public class AVLTree {
         return height(N.left) - height(N.right);
     }
 
+    /**
+     * @param toin
+     * inserta valores al arbol
+     */
     public void insert(Recipe toin){
         if(root!=null){
             insert_aux(toin, root);
@@ -69,6 +88,11 @@ public class AVLTree {
         }
     }
 
+    /**
+     * @param toin
+     * @param current
+     * funcion auxiliar para insertar
+     */
     private void insert_aux(Recipe toin, NodeAVL current){
         if(toin.getDishName().compareTo(current.getData().getDishName()) >0){
             if(current.right!= null){
@@ -84,33 +108,24 @@ public class AVLTree {
             }
         }
 
-        /* 2. Update height of this ancestor node */
         root.height = 1 + max(height(root.left),
                 height(root.right));
 
-        /* 3. Get the balance factor of this ancestor
-              node to check whether this node became
-              unbalanced */
-
+    
 
         int balance = getBalance(root);
 
-        // If this node becomes unbalanced, then there
-        // are 4 cases Left Left Case <
         if (balance > 1 && toin.getDishName().compareTo(root.left.getData().getDishName())<0)
             rightRotate(root);
 
-        // Right Right Case
         if (balance < -1 && toin.getDishName().compareTo(root.right.getData().getDishName())>0)
             leftRotate(root);
 
-        // Left Right Case
         if (balance > 1 && toin.getDishName().compareTo(root.left.getData().getDishName())>0) {
             root.left = leftRotate(root.left);
             rightRotate(root);
         }
 
-        // Right Left Case
         if (balance < -1 && toin.getDishName().compareTo(root.left.getData().getDishName())<0) {
             root.right = rightRotate(root.right);
             leftRotate(root);
@@ -118,6 +133,10 @@ public class AVLTree {
     }
 
 
+	/**
+	 * @param svalue
+	 * @return resultado de la busqueda en el arbol
+	 */
 	public Recipe find(String svalue){
     	if(root != null) {
     		if(root.getData().getDishName().compareTo(svalue) == 0){
@@ -128,6 +147,11 @@ public class AVLTree {
     	}else {return null;}
     }
 
+    /**
+     * @param svalue
+     * @param current
+     * @return resultado de busqueda de manera auxiliar
+     */
     public Recipe search_aux(String svalue, NodeAVL current){
         if(svalue.compareTo(current.getData().getDishName()) == 0){
             return current.getData();
@@ -157,13 +181,10 @@ public class AVLTree {
         if (node == null)
             return;
 
-        /* first print data of node */
         System.out.print(node.getData().getDishName() + " ");
 
-        /* then recur on left sutree */
         preOrder_aux(node.left);
 
-        /* now recur on right subtree */
         preOrder_aux(node.right);
     }
     
@@ -171,13 +192,16 @@ public class AVLTree {
     {
         NodeAVL current = node;
 
-        /* loop down to find the leftmost leaf */
         while (current.left != null)
             current = current.left;
 
         return current;
     }
 
+    /**
+     * @param delete
+     * ejecuta el borrado del nodo
+     */
     public void Deletion(String delete){
         if(root == null){
             System.out.println("Raíz nula, no se procede a eliminar");
@@ -186,24 +210,26 @@ public class AVLTree {
         }
     }
     
-    private NodeAVL deleteNode(NodeAVL current, String delete)
+    /**
+     * @param current
+     * @param key
+     * @return ejecucion del nodo a borrar de manera auxiliar
+     */
+    private NodeAVL deleteNode(NodeAVL current, String key)
     {
 
-        // If the key to be deleted is smaller than
-        // the current's key, then it lies in left subtree
-        if (delete.compareTo(current.getData().getDishName()) < 0)
-            current.left = deleteNode(current.left, delete);
+        if(current == null){
+            return null;
+        }
 
-            // If the key to be deleted is greater than the
-            // current's key, then it lies in right subtree
-        else if (delete.compareTo(current.getData().getDishName()) > 0)
-            current.right = deleteNode(current.right, delete);
+        if (key.compareTo(current.getData().getDishName()) < 0)
+            current.left = deleteNode(current.left, key);
 
-            // if key is same as current's key, then this is the node
-            // to be deleted
+        else if (key.compareTo(current.getData().getDishName()) > 0)
+            current.right = deleteNode(current.right, key);
+
         else
         {
-            // node with only one child or no child
             if ((current.left == null) || (current.right == null))
             {
             	NodeAVL temp = null;
@@ -212,53 +238,41 @@ public class AVLTree {
                 else
                     temp = current.left;
 
-                // No child case
                 if (temp == null) {
                     temp = current;
                     current = null;
                 }
-                else // One child case
-                    current = temp; // Copy the contents of
-                // the non-empty child
+                else 
+                    current = temp; 
             }
             else
             {
-                // node with two children: Get the inorder
-                // successor (smallest in the right subtree)
             	NodeAVL temp = minValueNode(current.right);
 
-                // Copy the inorder successor's data to this node
-                current = temp;
+                current.setData(temp.getData());
 
-                // Delete the inorder successor
                 current.right = deleteNode(current.right, temp.getData().getDishName());
             }
         }
-        
-        // UPDATE HEIGHT OF THE CURRENT NODE
+        if(current == null){
+            return null;
+        }
         current.height = max(height(current.left), height(current.right)) + 1;
 
-        // GET THE BALANCE FACTOR OF THIS NODE (to check whether
-        // this node became unbalanced)
         int balance = getBalance(current);
 
-        // If this node becomes unbalanced, then there are 4 cases
-        // Left Left Case
         if (balance > 1 && getBalance(current.left) >= 0)
             return rightRotate(current);
 
-        // Left Right Case
         if (balance > 1 && getBalance(current.left) < 0)
         {
             current.left = leftRotate(current.left);
             return rightRotate(current);
         }
 
-        // Right Right Case
         if (balance < -1 && getBalance(current.right) <= 0)
             return leftRotate(current);
 
-        // Right Left Case
         if (balance < -1 && getBalance(current.right) > 0)
         {
             current.right = rightRotate(current.right);
@@ -267,4 +281,4 @@ public class AVLTree {
 
         return current;
     }
-}
+   }
