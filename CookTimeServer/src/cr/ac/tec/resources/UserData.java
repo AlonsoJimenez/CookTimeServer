@@ -288,9 +288,13 @@ public class UserData {
 	 */
 	@Path("nowChef")
 	@PUT
-	public Response editChef(@HeaderParam("x-user") String username,  @QueryParam("user") String user) {
-		Trees.getTrees().profileTree.find(user).setIsChef();
-		return Response.ok().build();
+	public Response editChef(@HeaderParam("x-user") String username, @QueryParam("user") String user) {
+		if (username.equals("alonso.jimenez@hotmail.com")) {
+			Trees.getTrees().profileTree.find(user).setIsChef();
+			return Response.ok().build();
+		} else {
+			return Response.status(401).build();
+		}
 	}
 	
 	

@@ -13508,3 +13508,31 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 [7/25/20 12:59:04:871 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
 [7/25/20 12:59:04:872 CST] 00000068 SystemOut                                                    O rayos
 [7/25/20 12:59:04:872 CST] 00000068 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 13:02:05:965 CST] 00000080 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[7/25/20 13:02:05:977 CST] 0000002c com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9443.
+[7/25/20 13:02:05:984 CST] 0000002c com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint489 has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7276.
+[7/25/20 13:02:05:988 CST] 0000002c com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[7/25/20 13:02:05:989 CST] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/CookTimeServer/
+[7/25/20 13:02:05:989 CST] 0000002c com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint489-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7286.
+[7/25/20 13:02:06:020 CST] 00000080 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is activated.
+[7/25/20 13:02:06:020 CST] 00000080 com.ibm.jbatch.container.impl.BatchKernelImpl                I CWWKY0008I: The batch feature is using persistence type In-Memory.
+[7/25/20 13:02:06:992 CST] 00000080 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[7/25/20 13:02:07:036 CST] 00000063 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [CookTimeServer] [/CookTimeServer] [cr.ac.tec.resources.RestAPI]: Destroy successful.
+[7/25/20 13:02:07:036 CST] 00000063 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [CookTimeServer] [/CookTimeServer] [Faces Servlet]: Destroy successful.
+[7/25/20 13:02:07:044 CST] 00000063 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application CookTimeServer has stopped successfully.
+[7/25/20 13:02:07:105 CST] 00000080 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is deactivated.
+[7/25/20 13:02:07:199 CST] 00000082 org.apache.yoko.orb.OCI.Transport                            I shutdown: iiop transport using socket Socket[addr=/127.0.0.1,port=61154,localport=2809]
+[7/25/20 13:02:07:209 CST] 00000083 org.apache.yoko.orb.OCI.Transport                            I shutdown: iiop transport using socket 7c05d49b[SSL_NULL_WITH_NULL_NULL: Socket[addr=/127.0.0.1,port=61155,localport=9402]]
+[7/25/20 13:02:07:215 CST] 00000080 com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0002I: The CORBA name server is no longer available at corbaloc:iiop:localhost:2809/NameService.
+[7/25/20 13:02:07:398 CST] 00000080 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1589I: The file store has stopped successfully.
+[7/25/20 13:02:07:519 CST] 00000080 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0121I: JMS server stopped.  
+[7/25/20 13:02:07:706 CST] 00000080 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[7/25/20 13:02:07:723 CST] 00000080 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[7/25/20 13:02:07:812 CST] 00000080 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 194
+[7/25/20 13:02:07:812 CST] 00000080 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 196
+[7/25/20 13:02:07:812 CST] 00000080 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 198
+[7/25/20 13:02:07:812 CST] 00000080 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 202
+[7/25/20 13:02:07:812 CST] 00000080 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 204
+[7/25/20 13:02:07:812 CST] 00000080 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 185
+[7/25/20 13:02:07:812 CST] 00000080 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 188
+[7/25/20 13:02:08:086 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 1 hours, 3 minutes, 20.264 seconds.
