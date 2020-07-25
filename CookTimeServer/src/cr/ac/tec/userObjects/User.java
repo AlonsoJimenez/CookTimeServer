@@ -248,5 +248,5 @@ public class User {
     	company.addFollower(this);
     	this.followingComp.add(company.getEnterpriseName());
     }   
-    
+    	
 }

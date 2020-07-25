@@ -1,0 +1,1055 @@
+********************************************************************************
+product = WebSphere Application Server 20.0.0.6 (wlp-1.0.41.cl200620200528-0414)
+wlp.install.dir = C:/Users/pachopaco70/Documents/GitHub/CookTimeServer/Liberty/
+java.home = C:\Program Files\Java\jre1.8.0_241
+java.version = 1.8.0_241
+java.runtime = Java(TM) SE Runtime Environment (1.8.0_241-b07)
+os = Windows 10 (10.0; amd64) (en_US)
+process = 33208@LAPTOP-RVGN66JT
+********************************************************************************
+[7/24/20 18:30:34:540 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[7/24/20 18:30:34:614 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/20.0.0.6/lafiles/en.html
+[7/24/20 18:30:35:815 CST] 00000015 com.ibm.ws.config.xml.internal.XMLConfigParser               A CWWKG0028A: Processing included configuration resource: C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\GeneratedSSLInclude.xml
+[7/24/20 18:30:36:080 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 2.009 seconds
+[7/24/20 18:30:36:216 CST] 00000020 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[7/24/20 18:30:36:500 CST] 00000020 com.ibm.ws.config.xml.internal.ConfigValidator               A CWWKG0102I: Found conflicting settings for defaultKeyStore instance of keyStore configuration.
+  Property password has conflicting values:
+    Secure value is set in file:/C:/Users/pachopaco70/Documents/GitHub/CookTimeServer/Liberty/usr/servers/defaultServer/server.xml.
+    Secure value is set in file:/C:/Users/pachopaco70/Documents/GitHub/CookTimeServer/Liberty/usr/servers/defaultServer/GeneratedSSLInclude.xml.
+  Property password will be set to the value defined in file:/C:/Users/pachopaco70/Documents/GitHub/CookTimeServer/Liberty/usr/servers/defaultServer/server.xml.
+
+[7/24/20 18:30:36:671 CST] 00000014 com.ibm.ws.security.registry.basic.internal.BasicRegistry    W CWWKS3103W: There are no users defined for the BasicRegistry configuration of ID com.ibm.ws.security.registry.basic.config[basic].
+[7/24/20 18:30:36:700 CST] 00000014 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[7/24/20 18:30:36:987 CST] 00000018 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[7/24/20 18:30:37:825 CST] 00000017 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[7/24/20 18:30:37:838 CST] 00000017 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[7/24/20 18:30:37:842 CST] 00000017 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[7/24/20 18:30:38:993 CST] 00000014 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[7/24/20 18:30:39:011 CST] 00000030 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0008I: The security service is ready.
+[7/24/20 18:30:39:016 CST] 00000030 com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.069 seconds.
+[7/24/20 18:30:39:330 CST] 0000001c com.ibm.ws.ssl.config.WSKeyStore                             I Successfully loaded default keystore: C:/Users/pachopaco70/Documents/GitHub/CookTimeServer/Liberty/usr/servers/defaultServer/resources/security/key.p12 of type: PKCS12
+[7/24/20 18:30:40:917 CST] 00000014 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[7/24/20 18:30:41:013 CST] 00000014 com.ibm.ws.security.jaspi.AuthConfigFactoryWrapper           I CWWKS1655I: The default Java Authentication SPI for Containers (JASPIC) AuthConfigFactory class com.ibm.ws.security.jaspi.ProviderRegistry is being used because the Java security property authconfigprovider.factory is not set. 
+[7/24/20 18:30:41:720 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.ws.addr.2.6.2 (185) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+[7/24/20 18:30:41:729 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.bindings.soap.2.6.2 (188) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+[7/24/20 18:30:41:733 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.bindings.xml.2.6.2 (194) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+[7/24/20 18:30:41:736 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.frontend.jaxws.2.6.2 (196) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+[7/24/20 18:30:41:740 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.management.2.6.2 (198) [org.apache.cxf.management.InstrumentationManager]
+[7/24/20 18:30:41:744 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.transports.http.2.6.2 (202) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+[7/24/20 18:30:41:748 CST] 00000014 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf.cxf.rt.ws.policy.2.6.2 (204) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+[7/24/20 18:30:42:959 CST] 00000018 com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0001I: The CORBA name server is now available at corbaloc:iiop:localhost:2809/NameService.
+[7/24/20 18:30:44:321 CST] 00000032 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application CookTimeServer.
+[7/24/20 18:30:44:323 CST] 00000032 bm.ws.app.manager.war.internal.WARDeployedAppInfoFactoryImpl I CWWKZ0134I: The CookTimeServer application is using the loose application definition at the C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\apps\CookTimeServer.war.xml location.
+[7/24/20 18:30:45:784 CST] 00000032 org.jboss.weld.Version                                       I WELD-000900: 2.4.8 (Final)
+[7/24/20 18:30:46:539 CST] 00000032 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[7/24/20 18:30:46:568 CST] 00000032 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: CookTimeServer.
+[7/24/20 18:30:46:572 CST] 00000032 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module CookTimeServer has been bound to default_host.
+[7/24/20 18:30:46:575 CST] 00000032 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/CookTimeServer/
+[7/24/20 18:30:46:642 CST] 00000036 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\Users\pachopaco70\Documents\GitHub\CookTimeServer\Liberty\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[7/24/20 18:30:46:760 CST] 00000033 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/CookTimeServer
+[7/24/20 18:30:46:777 CST] 00000033 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[7/24/20 18:30:47:148 CST] 00000033 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[7/24/20 18:30:47:461 CST] 00000033 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Reading standard config META-INF/standard-faces-config.xml
+[7/24/20 18:30:47:808 CST] 00000033 org.apache.myfaces.config.DefaultFacesConfigurationProvider  I Reading config /WEB-INF/faces-config.xml
+[7/24/20 18:30:47:999 CST] 00000033 org.apache.myfaces.spi.impl.DefaultInjectionProviderFactory  I Using InjectionProvider com.ibm.ws.jsf.spi.impl.WASCDIAnnotationDelegateInjectionProvider
+[7/24/20 18:30:48:056 CST] 00000033 org.apache.myfaces.util.ExternalSpecifications               I MyFaces CDI support enabled
+[7/24/20 18:30:48:090 CST] 00000033 org.apache.myfaces.util.ExternalSpecifications               I MyFaces Bean Validation support enabled
+[7/24/20 18:30:48:175 CST] 00000033 org.apache.myfaces.application.ApplicationImpl               I Couldn't discover the current project stage, using Production
+[7/24/20 18:30:48:177 CST] 00000033 org.apache.myfaces.config.FacesConfigurator                  I Serialization provider : class org.apache.myfaces.shared_impl.util.serial.DefaultSerialFactory
+[7/24/20 18:30:48:203 CST] 00000033 org.apache.myfaces.webapp.AbstractFacesInitializer           I ServletContext initialized.
+[7/24/20 18:30:48:209 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I Tomahawk jar not available. Autoscrolling, DetectJavascript, AddResourceClass and CheckExtensionsFilter are disabled now.
+[7/24/20 18:30:48:209 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I Scanning for context init parameters not defined. It is not necessary to define them all into your web.xml, they are just provided here for informative purposes. To disable this messages set org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS config param to 'false'
+[7/24/20 18:30:48:209 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.RESOURCE_EXCLUDES' found, using default value '.class .jsp .jspx .properties .xhtml .groovy'.
+[7/24/20 18:30:48:209 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.STATE_SAVING_METHOD' found, using default value 'server'.
+[7/24/20 18:30:48:209 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FULL_STATE_SAVING_VIEW_IDS' found.
+[7/24/20 18:30:48:210 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.PARTIAL_STATE_SAVING' found, using default value 'true (false with 1.2 webapps)'.
+[7/24/20 18:30:48:210 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.SERIALIZE_SERVER_STATE' found, using default value 'false'.
+[7/24/20 18:30:48:211 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.DEFAULT_SUFFIX' found, using default value '.xhtml .view.xml .jsp'.
+[7/24/20 18:30:48:211 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_SUFFIX' found, using default value '.xhtml'.
+[7/24/20 18:30:48:211 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_VIEW_MAPPINGS' found.
+[7/24/20 18:30:48:213 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'DISABLE_FACELET_JSF_VIEWHANDLER' found.
+[7/24/20 18:30:48:213 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_BUFFER_SIZE' found, using default value '1024'.
+[7/24/20 18:30:48:213 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_DECORATORS' found.
+[7/24/20 18:30:48:214 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_LIBRARIES' found.
+[7/24/20 18:30:48:214 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_REFRESH_PERIOD' found, using default value '-1'.
+[7/24/20 18:30:48:214 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_SKIP_COMMENTS' found.
+[7/24/20 18:30:48:214 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.HONOR_CURRENT_COMPONENT_ATTRIBUTES' found, using default value 'false'.
+[7/24/20 18:30:48:215 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.VALIDATE_EMPTY_FIELDS' found, using default value 'auto'.
+[7/24/20 18:30:48:215 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.INTERPRET_EMPTY_STRING_SUBMITTED_VALUES_AS_NULL' found, using default value 'false'.
+[7/24/20 18:30:48:216 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE' found, using default value 'false'.
+[7/24/20 18:30:48:216 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ENUM_CONVERTER_ALLOW_STRING_PASSTROUGH' found, using default value 'false'.
+[7/24/20 18:30:48:216 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.validator.DISABLE_DEFAULT_BEAN_VALIDATOR' found, using default value 'true'.
+[7/24/20 18:30:48:216 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.CONFIG_FILES' found.
+[7/24/20 18:30:48:216 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.LIFECYCLE_ID' found.
+[7/24/20 18:30:48:216 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ERROR_HANDLER' found.
+[7/24/20 18:30:48:216 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+[7/24/20 18:30:48:217 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+[7/24/20 18:30:48:217 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.PRETTY_HTML' found, using default value 'true'.
+[7/24/20 18:30:48:217 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ALLOW_JAVASCRIPT' found, using default value 'true'.
+[7/24/20 18:30:48:217 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CONFIG_REFRESH_PERIOD' found, using default value '2'.
+[7/24/20 18:30:48:218 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEWSTATE_JAVASCRIPT' found, using default value 'false'.
+[7/24/20 18:30:48:218 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_VIEWSTATE_ID' found, using default value 'true'.
+[7/24/20 18:30:48:218 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_XHTML_LINKS' found, using default value 'true'.
+[7/24/20 18:30:48:218 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_CLEAR_JAVASCRIPT_FOR_BUTTON' found, using default value 'false'.
+[7/24/20 18:30:48:219 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_HIDDEN_FIELDS_FOR_LINK_PARAMS' found, using default value 'false'.
+[7/24/20 18:30:48:219 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SAVE_FORM_SUBMIT_LINK_IE' found, using default value 'false'.
+[7/24/20 18:30:48:219 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DELEGATE_FACES_SERVLET' found.
+[7/24/20 18:30:48:219 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS' found, using default value 'auto'.
+[7/24/20 18:30:48:219 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.REFRESH_TRANSIENT_BUILD_ON_PSS_PRESERVE_STATE' found, using default value 'false'.
+[7/24/20 18:30:48:219 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VALIDATE_XML' found.
+[7/24/20 18:30:48:219 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.WRAP_SCRIPT_CONTENT_WITH_XML_COMMENT_TAG' found, using default value 'false'.
+[7/24/20 18:30:48:220 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_FORM_SUBMIT_SCRIPT_INLINE' found, using default value 'false'.
+[7/24/20 18:30:48:220 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DEBUG_PHASE_LISTENER' found.
+[7/24/20 18:30:48:220 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_REFRESH_TARGET_AJAX' found, using default value 'false'.
+[7/24/20 18:30:48:220 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_CC_EL_RESOLVER' found, using default value 'false'.
+[7/24/20 18:30:48:220 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DEFAULT_RESPONSE_WRITER_CONTENT_TYPE_MODE' found, using default value 'text/html'.
+[7/24/20 18:30:48:220 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_UNIQUE_IDS_CACHE_ENABLED' found, using default value 'true'.
+[7/24/20 18:30:48:221 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.COMPONENT_UNIQUE_IDS_CACHE_SIZE' found, using default value '100'.
+[7/24/20 18:30:48:221 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SUPPORT_JSP_AND_FACES_EL' found, using default value 'true'.
+[7/24/20 18:30:48:221 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.GAE_JSF_JAR_FILES' found.
+[7/24/20 18:30:48:221 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.GAE_JSF_ANNOTATIONS_JAR_FILES' found.
+[7/24/20 18:30:48:221 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_VIEW_NOT_FOUND' found, using default value 'false'.
+[7/24/20 18:30:48:221 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.EARLY_FLUSH_ENABLED' found, using default value 'false'.
+[7/24/20 18:30:48:222 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CDI_MANAGED_CONVERTERS_ENABLED' found, using default value 'false'.
+[7/24/20 18:30:48:222 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CDI_MANAGED_VALIDATORS_ENABLED' found, using default value 'false'.
+[7/24/20 18:30:48:222 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_FACELETS_COMPATIBILITY' found, using default value 'false'.
+[7/24/20 18:30:48:222 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RENDER_FORM_VIEW_STATE_AT_BEGIN' found, using default value 'false'.
+[7/24/20 18:30:48:222 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.FLASH_SCOPE_DISABLED' found, using default value 'false'.
+[7/24/20 18:30:48:222 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.NUMBER_OF_VIEWS_IN_SESSION' found, using default value '20'.
+[7/24/20 18:30:48:222 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.NUMBER_OF_SEQUENTIAL_VIEWS_IN_SESSION' found, using default value '4'.
+[7/24/20 18:30:48:223 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.NUMBER_OF_FLASH_TOKENS_IN_SESSION' found.
+[7/24/20 18:30:48:223 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.FACES_FLOW_CLIENT_WINDOW_IDS_IN_SESSION' found.
+[7/24/20 18:30:48:223 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RESOURCE_MAX_TIME_EXPIRES' found, using default value '604800000'.
+[7/24/20 18:30:48:223 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_SIZE' found, using default value '500'.
+[7/24/20 18:30:48:223 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RESOURCE_HANDLER_CACHE_ENABLED' found, using default value 'true'.
+[7/24/20 18:30:48:223 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.USE_ENCRYPTION' found, using default value 'true'.
+[7/24/20 18:30:48:223 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SECRET' found.
+[7/24/20 18:30:48:224 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ALGORITHM' found, using default value 'DES'.
+[7/24/20 18:30:48:224 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SECRET.CACHE' found.
+[7/24/20 18:30:48:225 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ALGORITHM.IV' found.
+[7/24/20 18:30:48:225 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ALGORITHM.PARAMETERS' found, using default value 'ECB/PKCS5Padding'.
+[7/24/20 18:30:48:225 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SERIAL_FACTORY' found.
+[7/24/20 18:30:48:225 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_CLIENT' found, using default value 'false'.
+[7/24/20 18:30:48:225 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.MAC_ALGORITHM' found, using default value 'HmacSHA1'.
+[7/24/20 18:30:48:226 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.MAC_SECRET' found.
+[7/24/20 18:30:48:226 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.MAC_SECRET.CACHE' found.
+[7/24/20 18:30:48:226 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.PROJECT_STAGE' found, using default value 'Production'.
+[7/24/20 18:30:48:226 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.LAZY_LOAD_CONFIG_OBJECTS' found, using default value 'true'.
+[7/24/20 18:30:48:226 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.STRICT_JSF_2_ALLOW_SLASH_LIBRARY_NAME' found, using default value 'false'.
+[7/24/20 18:30:48:226 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RESOURCE_BUFFER_SIZE' found, using default value '2048'.
+[7/24/20 18:30:48:227 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN' found, using default value 'none'.
+[7/24/20 18:30:48:227 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_LENGTH' found, using default value '16'.
+[7/24/20 18:30:48:227 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_CLASS' found.
+[7/24/20 18:30:48:227 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_PROVIDER' found.
+[7/24/20 18:30:48:228 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_CSRF_SESSION_TOKEN_SECURE_RANDOM_ALGORITM' found, using default value 'SHA1PRNG'.
+[7/24/20 18:30:48:228 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CLIENT_VIEW_STATE_TIMEOUT' found, using default value '0'.
+[7/24/20 18:30:48:228 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SERIALIZE_STATE_IN_SESSION' found, using default value 'false'.
+[7/24/20 18:30:48:228 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.COMPRESS_STATE_IN_SESSION' found, using default value 'true'.
+[7/24/20 18:30:48:228 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CACHE_OLD_VIEWS_IN_SESSION_MODE' found, using default value 'off'.
+[7/24/20 18:30:48:229 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.USE_FLASH_SCOPE_PURGE_VIEWS_IN_SESSION' found, using default value 'false'.
+[7/24/20 18:30:48:229 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN' found, using default value 'none'.
+[7/24/20 18:30:48:229 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN_LENGTH' found, using default value '8'.
+[7/24/20 18:30:48:229 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN_SECURE_RANDOM_CLASS' found.
+[7/24/20 18:30:48:229 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN_SECURE_RANDOM_PROVIDER' found.
+[7/24/20 18:30:48:229 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.RANDOM_KEY_IN_VIEW_STATE_SESSION_TOKEN_SECURE_RANDOM_ALGORITM' found, using default value 'SHA1PRNG'.
+[7/24/20 18:30:48:230 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.LIBRARIES' found.
+[7/24/20 18:30:48:230 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VALIDATE' found, using default value 'false'.
+[7/24/20 18:30:48:230 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.annotation.SCAN_PACKAGES' found.
+[7/24/20 18:30:48:230 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.config.annotation.LifecycleProvider' found.
+[7/24/20 18:30:48:230 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.EL_RESOLVER_COMPARATOR' found.
+[7/24/20 18:30:48:230 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.EL_RESOLVER_PREDICATE' found.
+[7/24/20 18:30:48:230 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DEFAULT_WINDOW_MODE' found, using default value 'url'.
+[7/24/20 18:30:48:231 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_SIZE' found, using default value '500'.
+[7/24/20 18:30:48:231 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECKED_VIEWID_CACHE_ENABLED' found, using default value 'true'.
+[7/24/20 18:30:48:231 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ERROR_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-error.xml'.
+[7/24/20 18:30:48:231 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.DEBUG_TEMPLATE_RESOURCE' found, using default value 'META-INF/rsc/myfaces-dev-debug.xml'.
+[7/24/20 18:30:48:231 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.ERROR_HANDLING' found, using default value 'false, on Development Project stage: true'.
+[7/24/20 18:30:48:231 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.HANDLE_STATE_CACHING_MECHANICS' found, using default value 'true'.
+[7/24/20 18:30:48:231 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.AUTOCOMPLETE_OFF_VIEW_STATE' found, using default value 'true'.
+[7/24/20 18:30:48:232 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.USE_MULTIPLE_JS_FILES_FOR_JSF_UNCOMPRESSED_JS' found, using default value 'false'.
+[7/24/20 18:30:48:232 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.JSF_JS_MODE' found, using default value 'normal'.
+[7/24/20 18:30:48:232 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.TEMPORAL_RESOURCEHANDLER_CACHE_ENABLED' found, using default value 'false'.
+[7/24/20 18:30:48:232 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SERVICE_PROVIDER_FINDER' found.
+[7/24/20 18:30:48:232 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.spi.InjectionProvider' found.
+[7/24/20 18:30:48:232 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.DISABLE_FACELET_JSF_VIEWHANDLER' found, using default value 'false'.
+[7/24/20 18:30:48:232 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.SAVE_STATE_WITH_VISIT_TREE_ON_PSS' found, using default value 'true'.
+[7/24/20 18:30:48:233 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CHECK_ID_PRODUCTION_MODE' found, using default value 'auto'.
+[7/24/20 18:30:48:233 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.BUFFER_SIZE' found.
+[7/24/20 18:30:48:233 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.REFRESH_PERIOD' found, using default value '-1'.
+[7/24/20 18:30:48:233 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'javax.faces.FACELETS_RESOURCE_RESOLVER' found.
+[7/24/20 18:30:48:233 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.RESOURCE_RESOLVER' found.
+[7/24/20 18:30:48:233 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.MARK_INITIAL_STATE_WHEN_APPLY_BUILD_VIEW' found, using default value 'false'.
+[7/24/20 18:30:48:233 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.DECORATORS' found.
+[7/24/20 18:30:48:234 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'facelets.SKIP_COMMENTS' found.
+[7/24/20 18:30:48:234 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.WRAP_TAG_EXCEPTIONS_AS_CONTEXT_AWARE' found, using default value 'true'.
+[7/24/20 18:30:48:234 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.CACHE_EL_EXPRESSIONS' found, using default value 'noCache'.
+[7/24/20 18:30:48:234 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_POOL_MAX_POOL_SIZE' found, using default value '5'.
+[7/24/20 18:30:48:234 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_POOL_MAX_DYNAMIC_PARTIAL_LIMIT' found, using default value '2'.
+[7/24/20 18:30:48:234 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_POOL_ENTRY_MODE' found, using default value 'soft'.
+[7/24/20 18:30:48:235 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.VIEW_POOL_DEFERRED_NAVIGATION' found, using default value 'false'.
+[7/24/20 18:30:48:235 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.EXPRESSION_FACTORY' found.
+[7/24/20 18:30:48:235 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.INITIALIZE_ALWAYS_STANDALONE' found, using default value 'false'.
+[7/24/20 18:30:48:235 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.LOG_WEB_CONTEXT_PARAMS' found, using default value 'auto'.
+[7/24/20 18:30:48:235 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.FACES_INITIALIZER' found.
+[7/24/20 18:30:48:235 CST] 00000033 org.apache.myfaces.webapp.WebConfigParamsLogger              I No context init parameter 'org.apache.myfaces.FACES_INIT_PLUGINS' found.
+[7/24/20 18:30:48:236 CST] 00000033 org.apache.myfaces.util.ExternalSpecifications               I MyFaces Unified EL support enabled
+[7/24/20 18:30:48:242 CST] 00000033 org.apache.myfaces.view.facelets.ViewPoolProcessor           I org.apache.myfaces.CACHE_EL_EXPRESSIONS web config parameter is set to "noCache". To enable view pooling this param must be set to "alwaysRecompile". View Pooling disabled.
+[7/24/20 18:30:48:270 CST] 00000033 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application CookTimeServer started in 3.948 seconds.
+[7/24/20 18:30:48:454 CST] 00000020 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[7/24/20 18:30:48:466 CST] 00000020 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint489 has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7276.
+[7/24/20 18:30:48:467 CST] 00000020 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel defaultHttpEndpoint-ssl has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9443.
+[7/24/20 18:30:48:468 CST] 00000020 com.ibm.ws.tcpchannel.internal.TCPPort                       I CWWKO0219I: TCP Channel wasJmsEndpoint489-ssl has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7286.
+[7/24/20 18:30:48:497 CST] 00000033 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [CookTimeServer] [/CookTimeServer] [Faces Servlet]: Initialization successful.
+[7/24/20 18:30:48:543 CST] 00000020 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [appClientSupport-1.0, appSecurity-2.0, batch-1.0, beanValidation-1.1, cdi-1.2, concurrent-1.0, distributedMap-1.0, ejb-3.2, ejbHome-3.2, ejbLite-3.2, ejbPersistentTimer-3.2, ejbRemote-3.2, el-3.0, j2eeManagement-1.1, jacc-1.5, jaspic-1.1, javaMail-1.5, javaee-7.0, jaxb-2.2, jaxrs-2.0, jaxrsClient-2.0, jaxws-2.2, jca-1.7, jcaInboundSecurity-1.0, jdbc-4.1, jms-2.0, jndi-1.0, jpa-2.1, jpaContainer-2.1, jsf-2.2, json-1.0, jsonp-1.0, jsp-2.3, localConnector-1.0, managedBeans-1.0, mdb-3.2, servlet-3.1, ssl-1.0, wasJmsClient-2.0, wasJmsSecurity-1.0, wasJmsServer-1.0, webProfile-7.0, websocket-1.1].
+[7/24/20 18:30:48:545 CST] 00000020 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 12.466 seconds.
+[7/24/20 18:30:48:546 CST] 00000020 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 14.478 seconds.
+[7/24/20 18:30:57:783 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:30:58:120 CST] 00000059 .ibm.ws.jaxrs.2.0.common:1.0.41.cl200620200528-0414(id=257)] I Setting the server's publish address to be /rest/
+[7/24/20 18:30:58:406 CST] 00000059 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [CookTimeServer] [/CookTimeServer] [cr.ac.tec.resources.RestAPI]: Initialization successful.
+[7/24/20 18:31:00:661 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:04:347 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:04:432 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:04:435 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:04:437 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:31:04:437 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:05:053 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:16:104 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:16:106 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:16:109 CST] 0000005a SystemOut                                                    O rayos
+[7/24/20 18:31:16:109 CST] 0000005a SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:21:347 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:21:350 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:21:353 CST] 00000028 SystemOut                                                    O rayos
+[7/24/20 18:31:21:353 CST] 00000028 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:27:243 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:27:246 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:27:246 CST] 0000005b SystemOut                                                    O rayos
+[7/24/20 18:31:27:247 CST] 0000005b SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:29:716 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:29:719 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:29:720 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:31:29:721 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:32:632 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:32:637 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:32:641 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:31:32:641 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:33:525 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:33:527 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:33:527 CST] 0000005b SystemOut                                                    O rayos
+[7/24/20 18:31:33:528 CST] 0000005b SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:34:463 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:34:465 CST] 0000002b SystemOut                                                    O rayos
+[7/24/20 18:31:34:465 CST] 0000002b SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:34:467 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:36:014 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:36:017 CST] 00000033 SystemOut                                                    O rayos
+[7/24/20 18:31:36:017 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:36:017 CST] 00000033 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:37:042 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:37:045 CST] 00000033 SystemOut                                                    O rayos
+[7/24/20 18:31:37:045 CST] 00000033 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:37:045 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:38:951 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:38:953 CST] 0000002c SystemOut                                                    O rayos
+[7/24/20 18:31:38:953 CST] 0000002c SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:38:954 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:40:297 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:40:299 CST] 00000057 SystemOut                                                    O rayos
+[7/24/20 18:31:40:299 CST] 00000057 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:40:299 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:41:905 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:41:906 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:41:907 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:31:41:907 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:43:790 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:43:792 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:43:793 CST] 00000020 SystemOut                                                    O rayos
+[7/24/20 18:31:43:794 CST] 00000020 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:45:728 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:45:730 CST] 0000002c SystemOut                                                    O rayos
+[7/24/20 18:31:45:731 CST] 0000002c SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:45:733 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:48:161 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:48:165 CST] 0000005a SystemOut                                                    O rayos
+[7/24/20 18:31:48:165 CST] 0000005a SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:48:164 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:50:330 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:50:332 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:50:334 CST] 00000033 SystemOut                                                    O rayos
+[7/24/20 18:31:50:334 CST] 00000033 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:51:516 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:51:516 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:51:520 CST] 00000033 SystemOut                                                    O rayos
+[7/24/20 18:31:51:520 CST] 00000033 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:53:864 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:53:868 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:53:871 CST] 00000057 SystemOut                                                    O rayos
+[7/24/20 18:31:53:871 CST] 00000057 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:31:55:976 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:31:56:268 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:06:987 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:07:087 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:08:434 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:08:484 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:08:486 CST] 00000057 SystemOut                                                    O rayos
+[7/24/20 18:32:08:487 CST] 00000057 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:08:492 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:08:797 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:18:453 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:18:456 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:18:458 CST] 0000005b SystemOut                                                    O rayos
+[7/24/20 18:32:18:458 CST] 0000005b SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:18:491 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:18:495 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:18:498 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:32:18:499 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:23:114 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:23:117 CST] 00000058 SystemOut                                                    O rayos
+[7/24/20 18:32:23:117 CST] 00000058 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:23:130 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:23:131 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:23:137 CST] 00000054 SystemOut                                                    O rayos
+[7/24/20 18:32:23:137 CST] 00000054 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:23:177 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:24:849 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:24:849 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:24:851 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:32:24:851 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:24:850 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:24:848 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:24:860 CST] 00000037 SystemOut                                                    O rayos
+[7/24/20 18:32:24:860 CST] 00000037 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:26:307 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:26:315 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:26:319 CST] 00000024 SystemOut                                                    O rayos
+[7/24/20 18:32:26:319 CST] 00000024 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:26:337 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:26:337 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:26:342 CST] 00000057 SystemOut                                                    O rayos
+[7/24/20 18:32:26:342 CST] 00000057 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:27:873 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:27:879 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:27:881 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:27:883 CST] 0000005a SystemOut                                                    O rayos
+[7/24/20 18:32:27:884 CST] 0000005a SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:27:885 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:27:887 CST] 0000005b SystemOut                                                    O rayos
+[7/24/20 18:32:27:887 CST] 0000005b SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:29:269 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:29:272 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:29:274 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:32:29:274 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:29:281 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:29:284 CST] 0000002c SystemOut                                                    O rayos
+[7/24/20 18:32:29:284 CST] 0000002c SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:29:285 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:30:546 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:30:548 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:30:551 CST] 00000024 SystemOut                                                    O rayos
+[7/24/20 18:32:30:551 CST] 00000024 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:30:554 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:30:557 CST] 00000024 SystemOut                                                    O rayos
+[7/24/20 18:32:30:557 CST] 00000024 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:30:564 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:32:998 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:33:002 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:32:33:003 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:33:003 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:33:022 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:33:024 CST] 0000002e SystemOut                                                    O rayos
+[7/24/20 18:32:33:024 CST] 0000002e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:33:024 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:35:491 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:35:495 CST] 00000024 SystemOut                                                    O rayos
+[7/24/20 18:32:35:496 CST] 00000024 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:35:496 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:35:507 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:35:509 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:35:517 CST] 00000030 SystemOut                                                    O rayos
+[7/24/20 18:32:35:517 CST] 00000030 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:37:034 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:37:040 CST] 0000005a SystemOut                                                    O rayos
+[7/24/20 18:32:37:040 CST] 0000005a SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:37:045 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:37:045 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:37:048 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:37:050 CST] 00000028 SystemOut                                                    O rayos
+[7/24/20 18:32:37:050 CST] 00000028 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:38:730 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:38:733 CST] 00000020 SystemOut                                                    O rayos
+[7/24/20 18:32:38:733 CST] 00000020 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:38:733 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:38:737 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:38:738 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:38:740 CST] 00000020 SystemOut                                                    O rayos
+[7/24/20 18:32:38:740 CST] 00000020 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:39:875 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:39:877 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:39:878 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:39:880 CST] 00000037 SystemOut                                                    O rayos
+[7/24/20 18:32:39:880 CST] 00000037 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:39:884 CST] 0000002e SystemOut                                                    O rayos
+[7/24/20 18:32:39:884 CST] 0000002e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:39:891 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:42:144 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:42:152 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:42:155 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:32:42:156 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:42:158 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:42:162 CST] 0000002b SystemOut                                                    O rayos
+[7/24/20 18:32:42:162 CST] 0000002b SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:42:167 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:43:437 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:43:440 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:43:441 CST] 00000024 SystemOut                                                    O rayos
+[7/24/20 18:32:43:441 CST] 00000024 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:43:445 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:43:448 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:32:43:448 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:43:496 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:46:645 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:46:647 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:46:647 CST] 00000058 SystemOut                                                    O rayos
+[7/24/20 18:32:46:648 CST] 00000058 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:46:649 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:46:655 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:46:658 CST] 0000002e SystemOut                                                    O rayos
+[7/24/20 18:32:46:658 CST] 0000002e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:48:587 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:48:589 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:32:48:589 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:48:589 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:48:636 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:48:638 CST] 00000054 SystemOut                                                    O rayos
+[7/24/20 18:32:48:638 CST] 00000054 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:48:653 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:49:885 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:49:887 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:49:887 CST] 00000024 SystemOut                                                    O rayos
+[7/24/20 18:32:49:888 CST] 00000024 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:49:891 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:49:906 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:49:908 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:32:49:908 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:51:913 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:51:915 CST] 0000002e SystemOut                                                    O rayos
+[7/24/20 18:32:51:915 CST] 0000002e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:51:923 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:51:925 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:51:926 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:32:51:926 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:32:51:930 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:53:151 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:53:534 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:32:58:825 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:06:795 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:06:925 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:15:397 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:15:482 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:18:813 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:22:769 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:25:562 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:25:600 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:25:602 CST] 00000037 SystemOut                                                    O rayos
+[7/24/20 18:33:25:602 CST] 00000037 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:33:25:602 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:25:956 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:28:626 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:30:013 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:30:410 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:43:872 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:43:881 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:43:883 CST] 0000002c SystemOut                                                    O rayos
+[7/24/20 18:33:43:883 CST] 0000002c SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:33:44:004 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:44:195 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:44:197 CST] 00000057 SystemOut                                                    O rayos
+[7/24/20 18:33:44:197 CST] 00000057 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:33:44:202 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:44:928 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:44:930 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:33:44:930 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:33:44:931 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:47:622 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:33:47:628 CST] 0000002b .ibm.ws.jaxrs.2.0.common:1.0.41.cl200620200528-0414(id=257)] W Application {http://resources.tec.ac.cr/}RecipeData has thrown exception, unwinding now
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5037)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:546)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:480)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:345)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:316)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at java.lang.String.compareTo(Unknown Source)
+	at cr.ac.tec.trees.AVLTree.find(AVLTree.java:123)
+	at cr.ac.tec.resources.UserData.delete(UserData.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	... 45 more
+
+[7/24/20 18:33:47:632 CST] 0000002b .ibm.ws.jaxrs.2.0.common:1.0.41.cl200620200528-0414(id=257)] W Exception in handleFault on interceptor org.apache.cxf.jaxrs.interceptor.JAXRSDefaultFaultOutInterceptor@a7cd707
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5037)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:546)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:480)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:345)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:316)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at java.lang.String.compareTo(Unknown Source)
+	at cr.ac.tec.trees.AVLTree.find(AVLTree.java:123)
+	at cr.ac.tec.resources.UserData.delete(UserData.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	... 45 more
+
+[7/24/20 18:33:47:636 CST] 0000002b .ibm.ws.jaxrs.2.0.common:1.0.41.cl200620200528-0414(id=257)] E An unexpected error occurred during error handling. No further error processing will occur.
+org.apache.cxf.interceptor.Fault
+	at org.apache.cxf.service.invoker.AbstractInvoker.createFault(AbstractInvoker.java:162)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:128)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5037)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:546)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:480)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:345)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:316)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at java.lang.String.compareTo(Unknown Source)
+	at cr.ac.tec.trees.AVLTree.find(AVLTree.java:123)
+	at cr.ac.tec.resources.UserData.delete(UserData.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	... 45 more
+
+[7/24/20 18:33:47:697 CST] 0000002b com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'java.lang.String.compareTo:-1'
+java.lang.NullPointerException
+	at java.lang.String.compareTo(Unknown Source)
+	at cr.ac.tec.trees.AVLTree.find(AVLTree.java:123)
+	at cr.ac.tec.resources.UserData.delete(UserData.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5037)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:546)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:480)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:345)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:316)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+[7/24/20 18:33:48:023 CST] 0000002b com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105" at ffdc_20.07.24_18.33.47.0.log
+[7/24/20 18:33:48:101 CST] 0000002b com.ibm.ws.webcontainer.webapp                               E SRVE0315E: An exception occurred: java.lang.Throwable: java.lang.NullPointerException
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5095)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:314)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:279)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:1134)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:415)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:374)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:546)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:480)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:345)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:316)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:167)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:75)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:958)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1047)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at java.lang.String.compareTo(Unknown Source)
+	at cr.ac.tec.trees.AVLTree.find(AVLTree.java:123)
+	at cr.ac.tec.resources.UserData.delete(UserData.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsServerFactoryBean.performInvocation(LibertyJaxRsServerFactoryBean.java:656)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.performInvocation(LibertyJaxRsInvoker.java:160)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:273)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:191)
+	at com.ibm.ws.jaxrs20.server.LibertyJaxRsInvoker.invoke(LibertyJaxRsInvoker.java:444)
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:101)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:61)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:99)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:309)
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:124)
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:271)
+	at com.ibm.ws.jaxrs20.endpoint.AbstractJaxRsWebEndpoint.invoke(AbstractJaxRsWebEndpoint.java:136)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.handleRequest(IBMRestServlet.java:146)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.doDelete(IBMRestServlet.java:131)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at com.ibm.websphere.jaxrs.server.IBMRestServlet.service(IBMRestServlet.java:96)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1230)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:729)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:426)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.invokeTarget(WebAppFilterChain.java:182)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:93)
+	at com.ibm.ws.security.jaspi.JaspiServletFilter.doFilter(JaspiServletFilter.java:56)
+	at com.ibm.ws.webcontainer.filter.FilterInstanceWrapper.doFilter(FilterInstanceWrapper.java:201)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterChain.doFilter(WebAppFilterChain.java:90)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.doFilter(WebAppFilterManager.java:1001)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1139)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:5037)
+	... 20 more
+
+[7/24/20 18:34:23:992 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:24:644 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:24:647 CST] 0000002e SystemOut                                                    O rayos
+[7/24/20 18:34:24:647 CST] 0000002e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:24:647 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:38:878 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:38:880 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:34:38:881 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:38:896 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:38:902 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:38:904 CST] 00000058 SystemOut                                                    O rayos
+[7/24/20 18:34:38:904 CST] 00000058 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:38:910 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:38:946 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:38:976 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:38:989 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:34:38:989 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:43:798 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:43:800 CST] 00000037 SystemOut                                                    O rayos
+[7/24/20 18:34:43:800 CST] 00000037 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:43:821 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:43:839 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:43:842 CST] 00000030 SystemOut                                                    O rayos
+[7/24/20 18:34:43:842 CST] 00000030 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:43:882 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:43:909 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:43:909 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:43:911 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:34:43:918 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:45:732 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:45:736 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:45:738 CST] 00000057 SystemOut                                                    O rayos
+[7/24/20 18:34:45:738 CST] 00000057 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:45:749 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:45:751 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:45:752 CST] 0000002c SystemOut                                                    O rayos
+[7/24/20 18:34:45:752 CST] 0000002c SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:45:772 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:45:773 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:45:774 CST] 0000002b SystemOut                                                    O rayos
+[7/24/20 18:34:45:776 CST] 0000002b SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:52:056 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:52:057 CST] 00000054 SystemOut                                                    O rayos
+[7/24/20 18:34:52:058 CST] 00000054 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:52:319 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:52:337 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:52:339 CST] 0000002e SystemOut                                                    O rayos
+[7/24/20 18:34:52:340 CST] 0000002e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:52:349 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:52:358 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:52:360 CST] 0000005a SystemOut                                                    O rayos
+[7/24/20 18:34:52:360 CST] 0000005a SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:52:362 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:56:109 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:56:251 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:58:538 CST] 00000057 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:58:541 CST] 00000057 SystemOut                                                    O rayos
+[7/24/20 18:34:58:541 CST] 00000057 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:58:546 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:58:770 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:58:867 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:58:868 CST] 00000028 SystemOut                                                    O rayos
+[7/24/20 18:34:58:869 CST] 00000028 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:34:58:870 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:59:645 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:34:59:647 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:00:091 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:03:152 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:03:154 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:03:165 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:03:308 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:05:414 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:05:421 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:05:427 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:05:523 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:05:628 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:05:652 CST] 00000020 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:05:655 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:05:778 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:06:095 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:06:097 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:06:100 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:06:307 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:06:350 CST] 00000037 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:06:355 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:06:356 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:06:489 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:496 CST] 00000024 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:499 CST] 00000024 SystemOut                                                    O rayos
+[7/24/20 18:35:21:499 CST] 00000024 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:35:21:618 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:623 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:658 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:658 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:660 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:35:21:660 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:35:21:667 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:667 CST] 0000005b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:673 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:690 CST] 0000005a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:21:692 CST] 0000005a SystemOut                                                    O rayos
+[7/24/20 18:35:21:692 CST] 0000005a SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:35:21:694 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:22:166 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:26:512 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:26:514 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:26:518 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:35:26:619 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:50:23:049 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:50:23:928 CST] 0000005e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:32:027 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:32:046 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:32:047 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:51:32:047 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:51:32:048 CST] 0000006a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:32:778 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:33:441 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:35:129 CST] 0000006a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:35:132 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:35:596 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:39:028 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:39:100 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:39:106 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:39:119 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:39:476 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:42:080 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:42:132 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:42:142 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:42:160 CST] 0000006a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:42:373 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:52:235 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:52:246 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:52:532 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:51:59:845 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:10:898 CST] 0000005e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:10:940 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:10:942 CST] 0000002c SystemOut                                                    O rayos
+[7/24/20 18:52:10:943 CST] 0000002c SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:11:056 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:11:370 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:18:797 CST] 00000062 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:18:803 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:18:805 CST] 0000002c SystemOut                                                    O rayos
+[7/24/20 18:52:18:805 CST] 0000002c SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:23:164 CST] 00000068 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:23:170 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:23:173 CST] 0000002c SystemOut                                                    O rayos
+[7/24/20 18:52:23:173 CST] 0000002c SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:24:664 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:24:673 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:24:684 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:52:24:685 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:26:071 CST] 00000062 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:26:073 CST] 00000062 SystemOut                                                    O rayos
+[7/24/20 18:52:26:073 CST] 00000062 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:26:075 CST] 00000068 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:27:267 CST] 00000068 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:27:269 CST] 00000068 SystemOut                                                    O rayos
+[7/24/20 18:52:27:269 CST] 00000068 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:27:280 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:30:828 CST] 0000005e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:30:831 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:30:831 CST] 0000005e SystemOut                                                    O rayos
+[7/24/20 18:52:30:832 CST] 0000005e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:34:535 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:34:538 CST] 00000058 SystemOut                                                    O rayos
+[7/24/20 18:52:34:538 CST] 00000058 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:34:539 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:36:317 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:36:319 CST] 00000033 SystemOut                                                    O rayos
+[7/24/20 18:52:36:319 CST] 00000033 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:36:342 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:37:499 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:37:500 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:52:37:500 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:37:506 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:39:455 CST] 00000068 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:39:457 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:39:459 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:52:39:459 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:40:717 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:40:720 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:40:722 CST] 0000002e SystemOut                                                    O rayos
+[7/24/20 18:52:40:722 CST] 0000002e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:42:729 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:42:731 CST] 00000028 SystemOut                                                    O rayos
+[7/24/20 18:52:42:731 CST] 00000028 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:42:731 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:44:486 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:44:489 CST] 00000054 SystemOut                                                    O rayos
+[7/24/20 18:52:44:489 CST] 00000054 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:44:490 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:45:521 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:45:524 CST] 00000059 SystemOut                                                    O rayos
+[7/24/20 18:52:45:524 CST] 00000059 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:45:532 CST] 00000069 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:46:933 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:46:935 CST] 0000006a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:46:937 CST] 0000006a SystemOut                                                    O rayos
+[7/24/20 18:52:46:937 CST] 0000006a SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:48:094 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:48:111 CST] 00000060 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:48:114 CST] 00000060 SystemOut                                                    O rayos
+[7/24/20 18:52:48:114 CST] 00000060 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:49:255 CST] 00000059 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:49:266 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:49:268 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:52:49:268 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:50:411 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:50:413 CST] 00000069 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:50:415 CST] 00000069 SystemOut                                                    O rayos
+[7/24/20 18:52:50:415 CST] 00000069 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:53:252 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:53:264 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:53:266 CST] 0000005d SystemOut                                                    O rayos
+[7/24/20 18:52:53:266 CST] 0000005d SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:52:57:434 CST] 0000005e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:57:450 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:52:57:461 CST] 0000002f SystemOut                                                    O rayos
+[7/24/20 18:52:57:461 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:53:00:216 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:53:00:217 CST] 0000002e SystemOut                                                    O rayos
+[7/24/20 18:53:00:217 CST] 0000002e SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:53:00:219 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:53:01:215 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:53:01:217 CST] 00000028 SystemOut                                                    O rayos
+[7/24/20 18:53:01:217 CST] 00000028 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:53:01:219 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:53:05:346 CST] 00000068 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:53:05:525 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:53:41:243 CST] 0000005e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:53:41:359 CST] 0000002e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:26:540 CST] 0000006a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:26:578 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:26:580 CST] 00000033 SystemOut                                                    O rayos
+[7/24/20 18:57:26:580 CST] 00000033 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:57:26:609 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:27:067 CST] 00000028 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:29:564 CST] 0000006a y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:30:699 CST] 00000033 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:30:701 CST] 00000068 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:30:702 CST] 00000068 SystemOut                                                    O rayos
+[7/24/20 18:57:30:703 CST] 00000068 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:57:30:759 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:31:009 CST] 00000069 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:31:011 CST] 00000069 SystemOut                                                    O rayos
+[7/24/20 18:57:31:011 CST] 0000005e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:57:31:011 CST] 00000069 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/24/20 18:57:37:517 CST] 00000054 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/24/20 18:59:23:589 CST] 00000070 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[7/24/20 18:59:23:598 CST] 00000060 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9443.
+[7/24/20 18:59:23:606 CST] 00000060 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint489 has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7276.
+[7/24/20 18:59:23:609 CST] 00000060 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[7/24/20 18:59:23:609 CST] 00000060 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/CookTimeServer/
+[7/24/20 18:59:23:611 CST] 00000060 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint489-ssl has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 7286.
+[7/24/20 18:59:23:661 CST] 00000070 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is activated.
+[7/24/20 18:59:23:662 CST] 00000070 com.ibm.jbatch.container.impl.BatchKernelImpl                I CWWKY0008I: The batch feature is using persistence type In-Memory.
+[7/24/20 18:59:24:614 CST] 00000070 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[7/24/20 18:59:24:670 CST] 00000069 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [CookTimeServer] [/CookTimeServer] [cr.ac.tec.resources.RestAPI]: Destroy successful.
+[7/24/20 18:59:24:671 CST] 00000069 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [CookTimeServer] [/CookTimeServer] [Faces Servlet]: Destroy successful.
+[7/24/20 18:59:24:704 CST] 00000069 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application CookTimeServer has stopped successfully.
+[7/24/20 18:59:24:768 CST] 00000070 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is deactivated.
+[7/24/20 18:59:24:862 CST] 00000072 org.apache.yoko.orb.OCI.Transport                            I shutdown: iiop transport using socket Socket[addr=/127.0.0.1,port=61309,localport=2809]
+[7/24/20 18:59:24:872 CST] 00000073 org.apache.yoko.orb.OCI.Transport                            I shutdown: iiop transport using socket 4ba62f6e[SSL_NULL_WITH_NULL_NULL: Socket[addr=/127.0.0.1,port=61310,localport=9402]]
+[7/24/20 18:59:24:887 CST] 00000070 com.ibm.ws.transport.iiop.internal.ORBWrapperInternal        A CWWKI0002I: The CORBA name server is no longer available at corbaloc:iiop:localhost:2809/NameService.
+[7/24/20 18:59:25:175 CST] 00000070 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1589I: The file store has stopped successfully.
+[7/24/20 18:59:25:296 CST] 00000070 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0121I: JMS server stopped.  
+[7/24/20 18:59:25:482 CST] 00000070 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[7/24/20 18:59:25:498 CST] 00000070 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[7/24/20 18:59:25:581 CST] 00000070 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 194
+[7/24/20 18:59:25:581 CST] 00000070 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 196
+[7/24/20 18:59:25:581 CST] 00000070 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 198
+[7/24/20 18:59:25:581 CST] 00000070 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 202
+[7/24/20 18:59:25:581 CST] 00000070 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 204
+[7/24/20 18:59:25:581 CST] 00000070 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 185
+[7/24/20 18:59:25:581 CST] 00000070 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 188
+[7/24/20 18:59:25:919 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 28 minutes, 51.85 seconds.
