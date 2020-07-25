@@ -13431,3 +13431,80 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 [7/25/20 12:45:02:449 CST] 00000036 SystemOut                                                    O rayos
 [7/25/20 12:45:02:450 CST] 00000036 SystemOut                                                    O alonso.jimenez@hotmail.com
 [7/25/20 12:45:02:459 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:47:48:562 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:47:49:372 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:47:56:282 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:47:56:317 CST] 00000065 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:47:56:319 CST] 00000065 SystemOut                                                    O rayos
+[7/25/20 12:47:56:319 CST] 00000065 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:47:56:321 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:47:56:755 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:37:897 CST] 00000065 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:38:388 CST] 00000036 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:40:414 CST] 00000062 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:40:503 CST] 00000029 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:40:505 CST] 00000029 SystemOut                                                    O rayos
+[7/25/20 12:57:40:505 CST] 00000029 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:57:40:505 CST] 00000036 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:40:808 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:51:480 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:51:483 CST] 0000005d SystemOut                                                    O rayos
+[7/25/20 12:57:51:483 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:57:51:483 CST] 0000005d SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:08:255 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:08:258 CST] 00000064 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:08:259 CST] 00000064 SystemOut                                                    O rayos
+[7/25/20 12:58:08:259 CST] 00000064 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:19:163 CST] 00000029 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:19:326 CST] 00000068 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:20:989 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:20:991 CST] 00000030 SystemOut                                                    O rayos
+[7/25/20 12:58:20:991 CST] 00000030 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:20:996 CST] 00000062 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:21:039 CST] 00000064 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:21:315 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:21:317 CST] 00000058 SystemOut                                                    O rayos
+[7/25/20 12:58:21:317 CST] 00000058 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:21:318 CST] 00000065 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:23:273 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:23:589 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:25:347 CST] 00000063 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:25:349 CST] 0000002f y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:25:351 CST] 0000002f SystemOut                                                    O rayos
+[7/25/20 12:58:25:352 CST] 0000002f SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:29:501 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:29:503 CST] 0000002c SystemOut                                                    O Splay Finalizado.
+[7/25/20 12:58:35:938 CST] 00000063 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:35:940 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:35:941 CST] 0000005d SystemOut                                                    O rayos
+[7/25/20 12:58:35:941 CST] 0000005d SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:36:419 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:36:421 CST] 00000061 SystemOut                                                    O rayos
+[7/25/20 12:58:36:421 CST] 00000061 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:36:434 CST] 0000005e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:36:485 CST] 00000063 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:36:713 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:36:714 CST] 00000058 SystemOut                                                    O rayos
+[7/25/20 12:58:36:715 CST] 00000058 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:36:715 CST] 00000064 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:38:513 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:38:797 CST] 00000032 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:40:417 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:40:418 CST] 00000061 SystemOut                                                    O rayos
+[7/25/20 12:58:40:418 CST] 0000005e y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:40:419 CST] 00000061 SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:44:507 CST] 0000002c y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:45:953 CST] 00000065 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:45:959 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:46:520 CST] 0000002b y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:46:522 CST] 0000002b SystemOut                                                    O rayos
+[7/25/20 12:58:46:522 CST] 0000002b SystemOut                                                    O alonso.jimenez@hotmail.com
+[7/25/20 12:58:46:529 CST] 00000030 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:46:532 CST] 00000062 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:46:540 CST] 0000005d y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:48:650 CST] 00000065 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:58:48:656 CST] 00000061 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:59:04:870 CST] 00000068 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:59:04:871 CST] 00000058 y.authentication.jaas.modules.UsernameAndPasswordLoginModule A CWWKS1100A: Authentication did not succeed for user ID alonso.jimenez@hotmail.com. An invalid user ID or password was specified.
+[7/25/20 12:59:04:872 CST] 00000068 SystemOut                                                    O rayos
+[7/25/20 12:59:04:872 CST] 00000068 SystemOut                                                    O alonso.jimenez@hotmail.com
