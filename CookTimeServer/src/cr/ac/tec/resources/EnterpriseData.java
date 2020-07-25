@@ -59,21 +59,22 @@ public class EnterpriseData {
 	 */
 	@Path("recipe/{name}")
 	@POST
-	public Response newCompanyRecipe(@HeaderParam("x-user")String username, @PathParam("name") String name, EnterpriseRecipe recipe) {
-		if(Trees.getTrees().profileTree.find(username).hasCompany(name)) {
-			Enterprise temp = Trees.getTrees().enterpriseTree.find(name);
-			if(recipe.getIsPublic()) {
-				for(String order: temp.getFollowers()) {
-					Trees.getTrees().profileTree.find(order).newFeed(recipe);
-				}
-			}
-			for(String order: temp.getMembers()) {
+	public Response newCompanyRecipe(@HeaderParam("x-user") String username, @PathParam("name") String name,
+			EnterpriseRecipe recipe) {
+
+		Enterprise temp = Trees.getTrees().enterpriseTree.find(name);
+		Trees.getTrees().recipeTree.insert(recipe);
+		temp.addRecipe(recipe);
+		if (recipe.getIsPublic()) {
+			for (String order : temp.getFollowers()) {
 				Trees.getTrees().profileTree.find(order).newFeed(recipe);
 			}
-			return Response.ok().build();
-		}else {
-			return Response.status(400).build();
 		}
+		for (String order : temp.getMembers()) {
+			Trees.getTrees().profileTree.find(order).newFeed(recipe);
+		}
+		return Response.ok().build();
+
 	}
 	
 	/**

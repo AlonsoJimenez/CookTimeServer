@@ -7,6 +7,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import cr.ac.tec.userObjects.Enterprise;
+import cr.ac.tec.userObjects.EnterpriseRecipe;
 import cr.ac.tec.userObjects.Recipe;
 import cr.ac.tec.userObjects.SortingType;
 import cr.ac.tec.userObjects.User;

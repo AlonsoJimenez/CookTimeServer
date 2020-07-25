@@ -95,6 +95,10 @@ public class Enterprise {
 		this.followers.add(follow.getEmail());
 	}
 	
+	public void addRecipe(EnterpriseRecipe recipe) {
+		this.recipes.add(recipe);
+	}
+	
 	
 	
 }

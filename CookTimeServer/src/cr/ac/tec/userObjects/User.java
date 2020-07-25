@@ -235,14 +235,7 @@ public class User {
     	return false;
     }
     
-    public boolean hasCompany(String name) {
-    	for(Enterprise i : this.companies) {
-    		if(i.getEnterpriseName().equals(name)) {
-    			return true;
-    		}
-    	}
-    	return false;
-    }
+   
     
     public void followNewComp(Enterprise company) {
     	company.addFollower(this);
